@@ -1,0 +1,54 @@
+﻿@using Sitecore.Analytics;
+@using Sitecore.Analytics.Model.Entities;
+@using ContactFacets.POC.Models;
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+    <p>This is a test page to validate if the contact facet is working.</p>
+    </div>
+    
+    @{
+        var ran = new Random();
+
+        var users = new List<PersonalInfo> {
+            new PersonalInfo { Email = "pepito@hotmail.com", EngagementPoints = 9, FirstName = "Pepito", SurName = "Perez" },
+            new PersonalInfo { Email = "juan@gmail.com", EngagementPoints = 7, FirstName = "Juan", SurName = "Castaño" },
+            new PersonalInfo { Email = "pablo@gmail.com", EngagementPoints = 10, FirstName = "Pablo", SurName = "Neruda" },
+            new PersonalInfo { Email = "oscar@hotmail.com", EngagementPoints = 12, FirstName = "Oscar", SurName = "Restrepo" },
+            new PersonalInfo { Email = "julian@gmail.com", EngagementPoints = 8, FirstName = "Julián", SurName = "Heredia" },
+            new PersonalInfo { Email = "jimmy@gmail.com", EngagementPoints = 6, FirstName = "Jimmy", SurName = "Coral" }
+        };
+
+        foreach (var user in users)
+        {
+            Tracker.Current.Session.Identify(user.Email);
+            Tracker.Current.Interaction.Value = user.EngagementPoints;
+
+            var contactInfo = Tracker.Current.Contact;
+
+            var personalInfo = contactInfo.GetFacet<IContactPersonalInfo>("Personal");
+            personalInfo.FirstName = user.FirstName;
+            personalInfo.Surname = user.SurName;
+
+            var aiInfo = contactInfo.GetFacet<IAIContactPersonalInfo>(AIContactPersonalInfo.FacetName);
+            aiInfo.AIResult = "Bot : "+ ran.Next(0,100)+ "%, Competitor : " + ran.Next(0, 100) + "%, Bad client : " + ran.Next(0, 100) + "%";
+            aiInfo.AITraining = "Bot, Competitor, Bad client";
+
+            <p><b>Employee data contact facet updated (@personalInfo.FirstName + @personalInfo.Surname)</b></p>
+            <p>Contact ID: @contactInfo.ContactId.ToString()></p>
+            <p>AIResult : @aiInfo.AIResult</p>
+            <p>AITraining : @aiInfo.AITraining</p>
+        }
+
+        Session.Abandon();
+    }    
+    
+</body>
+</html>
