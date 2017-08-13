@@ -144,7 +144,7 @@
     <Content Include="Web.config" />
     <Content Include="Views\MainLayout.cshtml" />
     <None Include="App_Config\Include\ContactFacets.POC.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <Content Include="App_Config\Include\Rainbow.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.zSharedSecret.config.example" />
