@@ -142,7 +142,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Web.config" />
-    <Content Include="App_Config\ConnectionStrings.config" />
     <Content Include="Views\MainLayout.cshtml" />
     <None Include="App_Config\Include\ContactFacets.POC.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -158,10 +157,9 @@
     <Content Include="App_Config\Include\Unicorn\Unicorn.CustomSerializationFolder.config.example" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.NewItemsOnly.example" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.Dependency.config.example" />
-    <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.Default.example" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.AutoPublish.config" />
-    <None Include="App_Config\Include\Unicorn.Configs.Default.config">
+    <None Include="App_Config\Include\Unicorn\Unicorn.Configs.Default.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
