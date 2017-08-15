@@ -38,7 +38,7 @@
             personalInfo.Surname = user.SurName;
 
             var aiInfo = contactInfo.GetFacet<IAIContactPersonalInfo>(AIContactPersonalInfo.FacetName);
-            aiInfo.AIResult = "Bot : " + ran.Next(0, 100) + "%, Competitor : " + ran.Next(0, 100) + "%, Bad client : " + ran.Next(0, 100) + "%";
+            aiInfo.AIResult = "Bot:" + ran.Next(0, 100) + "%|Competitor:" + ran.Next(0, 100) + "%|Bad client:" + ran.Next(0, 100) + "%";
             aiInfo.AITraining = "Bot, Competitor, Bad client";
 
             <p><b>Employee data contact facet updated (@personalInfo.FirstName + @personalInfo.Surname)</b></p>
