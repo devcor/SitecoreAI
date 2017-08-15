@@ -4,7 +4,7 @@ define(["sitecore", "/-/speak/v1/experienceprofile/DataProviderHelper.js"], func
             $('.sc-progressindicator').first().show().hide();
             var tableName = "ai"; // Case Sensitive!
             var localUrl = "/intel/" + tableName;
-
+             
             providerHelper.setupHeaders([
                 { urlKey: localUrl + "?", headerValue: tableName }
             ]);
@@ -13,6 +13,7 @@ define(["sitecore", "/-/speak/v1/experienceprofile/DataProviderHelper.js"], func
 
             providerHelper.initProvider(this.TrainingDataProvider, tableName, url, this.AITabMessageBar);
             //providerHelper.subscribeAccordionHeader(this.TrainingDataProvider, this.TrainingAccordion);
+            /**/
 
             providerHelper.getData(this.TrainingDataProvider,
                 $.proxy(function (jsonData) {
