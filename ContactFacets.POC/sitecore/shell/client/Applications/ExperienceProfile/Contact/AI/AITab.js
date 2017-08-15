@@ -12,7 +12,7 @@ define(["sitecore", "/-/speak/v1/experienceprofile/DataProviderHelper.js"], func
             var url = sc.Contact.baseUrl + localUrl;
 
             providerHelper.initProvider(this.TrainingDataProvider, tableName, url, this.AITabMessageBar);
-            providerHelper.subscribeAccordionHeader(this.TrainingDataProvider, this.TrainingAccordion);
+            //providerHelper.subscribeAccordionHeader(this.TrainingDataProvider, this.TrainingAccordion);
 
             providerHelper.getData(this.TrainingDataProvider,
                 $.proxy(function (jsonData) {
@@ -20,8 +20,9 @@ define(["sitecore", "/-/speak/v1/experienceprofile/DataProviderHelper.js"], func
                     if (jsonData.data.dataSet != null && jsonData.data.dataSet.ai.length > 0) {
                         var aiData = jsonData.data.dataSet.ai[0]
                         this.TrainingDataProvider.set(dataSetProperty, jsonData);
-                        this.NoTrainingData.set("text", aiData.AITraining);
+                        this.TrainingData.set("text", aiData.AITraining);
                         this.NoDetailsData.set("text", aiData.AIResult);
+                        //this.AITabMessageBar.addMessage("notification", this.NoTrainingData.get("text"));
                     }/* else {
                         this.EmployeeIdLabel.set("isVisible", false);
                         this.AITabMessageBar.addMessage("notification", this.NoEmployeeData.get("text"));

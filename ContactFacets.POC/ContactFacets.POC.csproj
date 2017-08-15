@@ -165,9 +165,7 @@
     <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.Dependency.config.example" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.AutoPublish.config" />
-    <None Include="App_Config\Include\Unicorn\Unicorn.Configs.Default.config">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.Default.config" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <Content Include="SITECORE_AI\Tabs\Tabs.yml" />
     <Content Include="SITECORE_AI\Tabs\Tabs\AI.yml" />
