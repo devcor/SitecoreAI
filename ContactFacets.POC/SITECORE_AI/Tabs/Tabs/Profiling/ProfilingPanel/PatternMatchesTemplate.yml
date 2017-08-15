@@ -1,0 +1,291 @@
+﻿---
+ID: "f904a652-09b4-42c3-8e3a-bb482f030b7a"
+Parent: "107970de-5786-4730-8a80-7b772d4c2b88"
+Template: "76f63df7-0235-4164-86ab-84b5ec48cb2a"
+Path: /sitecore/client/Applications/ExperienceProfile/Contact/PageSettings/Tabs/Profiling/ProfilingPanel/PatternMatchesTemplate
+DB: core
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r>
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{759BEFD1-3323-404D-A243-E0ED81163C03}">
+        <r
+          id="{CB83D434-31ED-4AC3-A280-CCE2B63F9743}"
+          par="PageCodeScriptFileName=%2fsitecore%2fshell%2fclient%2fApplications%2fExperienceProfile%2fContact%2fProfiling%2fProfilePatternMatches.js"
+          ph="Page.Body"
+          uid="{4F04D9CF-3545-4CFA-AFDE-2D249DBFC61C}" />
+        <r
+          id="{442BD093-FBAD-4E36-BC08-489E16C82D08}"
+          par="Id=ProfilingRowAccordion&amp;IsCollapsible=0"
+          ph="Page.Body"
+          uid="{BFEC5552-8F7B-4068-9678-0FD555557BF6}" />
+        <r
+          id="{A91523CD-6E56-4F08-8B21-C39018E0134A}"
+          par="Id=RadarDataProvider&amp;PageNumber=1&amp;PageSize=100"
+          ph="ProfilingRowAccordion.Body"
+          uid="{57B842F0-7807-460A-B8C5-74AE15F0F2E3}" />
+        <r
+          id="{A91523CD-6E56-4F08-8B21-C39018E0134A}"
+          par="Id=BarsDataProvider&amp;PageNumber=1&amp;PageSize=10"
+          ph="ProfilingRowAccordion.Body"
+          uid="{57B842F0-7807-460A-B8C5-74AE15F0F2E3}" />
+        <r
+          id="{C4393722-39FA-4869-9582-3A8EB8983A0D}"
+          par="Id=ContactRowPanel"
+          ph="ProfilingRowAccordion.Body"
+          uid="{F28DE018-2845-4B65-9405-5D47C8BB0378}" />
+        <r
+          id="{5CB208F6-1860-426B-8221-FAA85B329848}"
+          par="Id=RadarColumn&amp;GridColumns=5"
+          ph="ContactRowPanel.Content"
+          uid="{10596E3D-BE7A-4E96-AFED-DE4B29A75C3F}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=RadarErrorBorder&amp;IsVisible=%7bBinding+RadarDataProvider.hasError%7d&amp;UsePadding=1"
+          ph="RadarColumn.Content"
+          uid="{EA4FF791-30D4-4558-B33F-60F23DD4E505}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=RadarBorder&amp;IsVisible=%7bBinding+RadarDataProvider.hasError%2c+Converter%3dNot%7d&amp;ContentAlignment=Center&amp;UsePadding=1"
+          ph="RadarColumn.Content"
+          uid="{08CE386C-DE0F-4CD7-92C9-7DE4F0C2B92B}" />
+        <r
+          ds="{88134D50-FA78-406D-8C52-8286EB12BB25}"
+          id="{FE9723FC-56E4-4CA8-9C64-CB34F29462A5}"
+          par="Id=RadarChartProgressIndicator&amp;IsBusy=%7bBinding+RadarDataProvider.IsBusy%7d&amp;TargetControl=RadarBorder"
+          ph="RadarColumn.Content"
+          uid="{02C1BBC7-5969-44A2-8D6D-7BB62D972316}" />
+        <r
+          id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}"
+          par="Id=RadarChartLabel&amp;Text=PERCENTAGE"
+          ph="RadarBorder.Content"
+          uid="{635D18A8-B887-455E-B177-171E2AB44CDE}" />
+        <r
+          id="{E0E9BE29-2F09-4A34-88C2-D6AA8E023F38}"
+          par="Id=RadarChart&amp;SingleChartWidth=280&amp;ShowLegend=False&amp;ShowAxis=True&amp;CategoryChartField=%7bC70443C3-1A82-4E02-9295-DA7596B82448%7d&amp;SeriesChartField=%7bA66DC67F-8F4C-4CFE-832D-9344EDE1C332%7d&amp;ValueChartFields=%7b8C373962-E457-47A9-8EA1-B6B2D6AC01AC%7d&amp;ShowValues=False&amp;SingleChartHeight=240"
+          ph="RadarBorder.Content"
+          uid="{B6BE648F-8A61-4E87-949C-2334A4B4E839}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=RadarLegendBorder&amp;IsVisible=False"
+          ph="RadarBorder.Content"
+          uid="{0DF803CC-EA3E-4E22-A100-C31B52CC9327}" />
+        <r
+          id="{4B77BB29-C937-4620-A6CC-A14B1A38DE8A}"
+          par="Id=RadarLegendView&amp;Path=%2fsitecore%2fshell%2fclient%2fApplications%2fExperienceProfile%2fContact%2fProfiling%2fRenderLegendView.cshtml"
+          ph="RadarLegendBorder.Content"
+          uid="{F3DE319E-1C5E-4944-BAD9-B88EF9D07A51}" />
+        <r
+          id="{5CB208F6-1860-426B-8221-FAA85B329848}"
+          par="Id=BestPatternColumn&amp;GridColumns=3"
+          ph="ContactRowPanel.Content"
+          uid="{67E9D3CD-B1FE-4AA9-B3BA-AAA2D4E32797}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=BestPatternBorder&amp;ContentAlignment=Left&amp;UsePadding=1"
+          ph="BestPatternColumn.Content"
+          uid="{337ACA48-9BA6-4C5C-8F3B-77E27886495A}" />
+        <r
+          ds="{54B1C73D-0C62-4093-8C98-CA57C58F7925}"
+          id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}"
+          par="Id=BestPatternMatchLabel"
+          ph="BestPatternBorder.Content"
+          uid="{C01C2734-59E3-4BF9-B0BE-36088F9ED1C8}" />
+        <r
+          id="{F517C5E4-9A53-46C3-B922-5B44E6DAAA48}"
+          par="Id=BestPatternImage&amp;ImageUrl=%2fsitecore%2fshell%2fclient%2fApplications%2fExperienceProfile%2fCommon%2fimages%2fpattern128x128.png&amp;Width=128px&amp;Height=128px"
+          ph="BestPatternBorder.Content"
+          uid="{44194B64-9BF8-4338-8C03-4DEA8C92842A}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=RecencyVisitBorder"
+          ph="BestPatternBorder.Content"
+          uid="{783829B7-A195-42D9-B672-F93BE5506134}" />
+        <r
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=RecencyVisitLabel"
+          ph="RecencyVisitBorder.Content"
+          uid="{DA32293F-BE54-4B5A-9385-D7FD3397AA35}" />
+        <r
+          ds="{4E2B5BA3-8738-4D52-AA2D-462ABAF73775}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=RecencyVisitTitle"
+          ph="RecencyVisitBorder.Content"
+          uid="{DA32293F-BE54-4B5A-9385-D7FD3397AA35}" />
+        <r
+          id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}"
+          par="Id=RecencyLabel"
+          ph="BestPatternBorder.Content"
+          uid="{8EBD78FF-56D8-4F5C-9401-AA11B0C54791}" />
+        <r
+          id="{5CB208F6-1860-426B-8221-FAA85B329848}"
+          par="Id=BarColumn&amp;GridColumns=4"
+          ph="ContactRowPanel.Content"
+          uid="{10596E3D-BE7A-4E96-AFED-DE4B29A75C3F}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=BarsErrorBorder&amp;IsVisible=%7bBinding+BarsDataProvider.hasError%7d&amp;UsePadding=1"
+          ph="BarColumn.Content"
+          uid="{EA4FF791-30D4-4558-B33F-60F23DD4E505}" />
+        <r
+          ds="{88134D50-FA78-406D-8C52-8286EB12BB25}"
+          id="{FE9723FC-56E4-4CA8-9C64-CB34F29462A5}"
+          par="Id=BarsProgressIndicator&amp;IsBusy=%7bBinding+BarsDataProvider.IsBusy%7d&amp;TargetControl=BarsMainBorder"
+          ph="BarColumn.Content"
+          uid="{02C1BBC7-5969-44A2-8D6D-7BB62D972316}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=BarsMainBorder&amp;IsVisible=%7bBinding+BarsDataProvider.hasError%2c+Converter%3dNot%7d&amp;UsePadding=0"
+          ph="BarColumn.Content"
+          uid="{08CE386C-DE0F-4CD7-92C9-7DE4F0C2B92B}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=BarsMainVisibleBorder&amp;IsVisible=%7bBinding+BarsDataProvider.HasData%7d"
+          ph="BarsMainBorder.Content"
+          uid="{15532B0D-1236-4D79-B6A0-8C70E8C5D4BD}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=NoPatternsMachedBorder&amp;IsVisible=False&amp;UsePadding=1"
+          ph="BarColumn.Content"
+          uid="{0D292520-6ED2-4A7F-B8CF-2209AD97C231}" />
+        <r
+          ds="{C94DE9E2-96ED-4306-9110-CDAE6F5407B1}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=NoPatternsMachedText"
+          ph="NoPatternsMachedBorder.Content"
+          uid="{1A01393E-EE39-4C43-86C2-F6FA3DBA95C1}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=BarsBorder&amp;IsVisible=False&amp;UsePadding=1"
+          ph="BarsMainVisibleBorder.Content"
+          uid="{AEADC3CC-4D3B-4CD0-A172-AE69FE6F7F9E}" />
+        <r
+          ds="{D52DEDCB-9C6C-43B9-BEA6-E8C65A139257}"
+          id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}"
+          par="Id=OtherPatternMatchesLabel&amp;IsVisible=False"
+          ph="BarsBorder.Content"
+          uid="{CA23C85C-BB66-4992-AFFD-C968D3A3A85F}" />
+        <r
+          id="{4B77BB29-C937-4620-A6CC-A14B1A38DE8A}"
+          par="Id=BarsView&amp;Path=%2fsitecore%2fshell%2fclient%2fApplications%2fExperienceProfile%2fContact%2fProfiling%2fBarView.cshtml"
+          ph="BarsBorder.Content"
+          uid="{F3DE319E-1C5E-4944-BAD9-B88EF9D07A51}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=MoreBarsBorder&amp;IsVisible=%7bBinding+BarsDataProvider.HasMoreData%7d&amp;ContentAlignment=Right"
+          ph="BarsBorder.Content"
+          uid="{A7267986-D945-42E5-87A1-98F7AB0DA52C}" />
+        <r
+          ds="{7ABF5356-59B0-4044-87EE-2FFC4834CE0D}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=MoreBarsText"
+          ph="MoreBarsBorder.Content"
+          uid="{B32EF07B-CADD-4114-98FB-A101BECB1A8D}" />
+        <r
+          id="{5521B8A4-2728-414D-8711-A0404515AE2C}"
+          par="Click=javascript%3aapp.BarsDataProvider.nextListData()&amp;Id=MoreBarsIconButton&amp;ImageUrl=%2fsitecore%2fshell%2fclient%2fApplications%2fExperienceProfile%2fCommon%2fimages%2fchevron-big-2-01.png"
+          ph="MoreBarsBorder.Content"
+          uid="{82C1605B-4DCE-46A8-A4A9-D856189DD38B}" />
+        <r
+          id="{913AB005-2527-4C2D-9827-FB3A8DFB135C}"
+          par="Click=javascript%3aapp.setupSmartPanel()&amp;Id=HeaderIconButton&amp;ImageUrl=%2fsitecore%2fshell%2fclient%2fApplications%2fExperienceProfile%2fCommon%2fimages%2finfos-question-circle-4.png"
+          ph="ProfilingRowAccordion.ActionBar"
+          uid="{6DA599F5-C015-41DA-8991-53B586CFE25F}" />
+        <r
+          id="{F517C5E4-9A53-46C3-B922-5B44E6DAAA48}"
+          par="Id=RadarErrorImage&amp;ImageUrl=%2fsitecore%2fshell%2fclient%2fApplications%2fExperienceProfile%2fCommon%2fimages%2ferror_red.png&amp;Width=16px&amp;Height=16px"
+          ph="RadarErrorBorder.Content"
+          uid="{E0425E5C-96C3-4E5F-AA34-E0036AFB230F}" />
+        <r
+          ds="{2B5DE738-19C8-48D7-87E8-052A3498FBE9}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="&amp;Id=RadarErrorHeader&amp;Text=Error+found"
+          ph="RadarErrorBorder.Content"
+          uid="{3DB7917A-2EB6-4FED-8D1D-59A4C3D48038}" />
+        <r
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="&amp;Id=RadarErrorText&amp;TextType=Label&amp;Text=%7bBinding+RadarDataProvider.errorMessage%7d"
+          ph="RadarErrorBorder.Content"
+          uid="{77843299-393D-4A6B-92FE-9B4049110C81}" />
+        <r
+          id="{F517C5E4-9A53-46C3-B922-5B44E6DAAA48}"
+          par="Id=BarsErrorImage&amp;ImageUrl=%2fsitecore%2fshell%2fclient%2fApplications%2fExperienceProfile%2fCommon%2fimages%2ferror_red.png&amp;Width=16px&amp;Height=16px"
+          ph="BarsErrorBorder.Content"
+          uid="{E0425E5C-96C3-4E5F-AA34-E0036AFB230F}" />
+        <r
+          ds="{2B5DE738-19C8-48D7-87E8-052A3498FBE9}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="&amp;Id=BarsErrorHeader"
+          ph="BarsErrorBorder.Content"
+          uid="{3DB7917A-2EB6-4FED-8D1D-59A4C3D48038}" />
+        <r
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="&amp;Id=BarsErrorText&amp;TextType=Label&amp;Text=%7bBinding+RadarDataProvider.errorMessage%7d"
+          ph="BarsErrorBorder.Content"
+          uid="{77843299-393D-4A6B-92FE-9B4049110C81}" />
+      </d>
+    </r>
+Languages:
+- Language: da
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: PatternMatchesTemplate
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170113T074654Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: "de-DE"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: MusterübereinstimmungenVorlage
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: "20140611T165137:635381022974336909"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20131219T115224
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: パターン マッチ テンプレート
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170113T075731Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

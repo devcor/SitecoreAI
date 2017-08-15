@@ -1,0 +1,92 @@
+﻿---
+ID: "79e52c25-1cbb-47d8-8dc7-f11213ba470f"
+Parent: "342e187a-1fce-4d2c-9124-cf37c1c7195c"
+Template: "d3cefe6e-e51b-4a84-b92e-aaf8aa8e8dc8"
+Path: /sitecore/client/Applications/ExperienceProfile/Contact/PageSettings/Tabs/Activity/Activity Subtabs/Keywords/KeywordsPanel/DialogInternalListControl/Pageviews
+DB: core
+SharedFields:
+- ID: "1c50efbe-47cd-4a9b-9eef-a466e75c4977"
+  Hint: Width
+  Value: 150px
+- ID: "876d7f97-dcff-4a17-b1cc-7d127a273489"
+  Hint: ContentAlignment
+  Value: "{07A8B1E1-D779-4CF2-81FC-0768ABF97CDC}"
+- ID: "b2a46ae4-38f9-4538-a2b3-8021083e0e40"
+  Hint: Sortable
+  Type: Checkbox
+  Value: 1
+- ID: "e67f1b1f-3488-4cf4-80ae-be285c918c2e"
+  Hint: DataField
+  Value: PageViewCount
+Languages:
+- Language: da
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Pageviews
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170113T074545Z
+    - ID: "2e9fd749-0f47-4397-8ba2-c56c65366bf0"
+      Hint: HeaderText
+      Value: Sidevisning
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: "de-DE"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Seitenaufrufe
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: "20140611T164707:635381020276033669"
+    - ID: "2e9fd749-0f47-4397-8ba2-c56c65366bf0"
+      Hint: HeaderText
+      Value: Seitenaufruf
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20131128T153214Z
+    - ID: "2e9fd749-0f47-4397-8ba2-c56c65366bf0"
+      Hint: HeaderText
+      Value: Pageviews
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "7ad5458f-19c3-4173-ad67-3bfaf7cd3c7f"
+      Hint: HeaderAlignment
+      Value: "{D6AD4470-B309-4558-BE16-2B4B4C9BC8D8}"
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: ページ ビュー
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170113T075617Z
+    - ID: "2e9fd749-0f47-4397-8ba2-c56c65366bf0"
+      Hint: HeaderText
+      Value: ページ ビュー
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

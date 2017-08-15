@@ -1,0 +1,165 @@
+﻿---
+ID: "a1dd65a6-300e-4c18-9803-31fc80e1147a"
+Parent: "e6d64792-d33c-43c1-964d-3c74a1c0fe95"
+Template: "f62b4cd7-754c-4461-810f-2b6bd2c92a0d"
+Path: /sitecore/client/Applications/ExperienceProfile/Contact/PageSettings/Tabs/Activity/Activity Subtabs/Visits/VisitsPanel
+DB: core
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+- ID: "deab3795-056f-4421-adf0-758844461b72"
+  Hint: Placeholder Name
+  Value: VisitsPanel
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r>
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{759BEFD1-3323-404D-A243-E0ED81163C03}">
+        <r
+          id="{CB83D434-31ED-4AC3-A280-CCE2B63F9743}"
+          par="PageCodeScriptFileName=%2fsitecore%2fshell%2fclient%2fApplications%2fExperienceProfile%2fContact%2fVisits%2fVisits.js"
+          ph="Page.Body"
+          uid="{9432852A-1028-489A-AF00-E34E69FB3F05}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=VisitTabBorder&amp;UsePadding=0&amp;ShowBorder=0"
+          ph="Page.Body"
+          uid="{108F60BB-5CB4-406A-8792-730E3C585B5E}" />
+        <r
+          id="{910155C7-3881-4A56-90FB-D126490EDE55}"
+          par="Id=VisitTabMessageBar"
+          ph="VisitTabBorder.Content"
+          uid="{5D7FD58F-34F9-417A-87A2-E7CDFFA4FE27}" />
+        <r
+          ds="{12E881BA-847F-4E04-966A-15FEEB6528D7}"
+          id="{442BD093-FBAD-4E36-BC08-489E16C82D08}"
+          par="Id=VisitsAccordion&amp;IsCollapsible=0"
+          ph="VisitTabBorder.Content"
+          uid="{36B0E5DE-7138-47A0-B426-36733DA22D6B}" />
+        <r
+          ds="{A39C7402-EE09-4E30-A017-E08883135FBE}"
+          id="{442BD093-FBAD-4E36-BC08-489E16C82D08}"
+          par="Id=EventsAccordion&amp;IsCollapsible=0"
+          ph="VisitTabBorder.Content"
+          uid="{04E79BCE-17F9-45CC-A7DE-5D505967FAE0}" />
+        <r
+          ds="{087B42E1-D1EB-4D77-AA0A-EFDDDB2ADA81}"
+          id="{ACE0AFD6-3DE0-42CF-8E62-4E68CD810A8D}"
+          par="Id=VisitsList&amp;Items=%7bBinding+VisitsDataProvider.cidata%7d&amp;ViewMode=DetailList&amp;IsActiveResizeEnabled=True"
+          ph="VisitsAccordion.Body"
+          uid="{9821F049-A1BB-49AD-B673-03B23BD28AF7}" />
+        <r
+          ds="{88134D50-FA78-406D-8C52-8286EB12BB25}"
+          id="{FE9723FC-56E4-4CA8-9C64-CB34F29462A5}"
+          par="Id=ProgressIndicatorVisitsList&amp;IsBusy=%7bBinding+VisitsDataProvider.IsBusy%7d&amp;TargetControl=VisitsList"
+          ph="VisitsAccordion.Body"
+          uid="{7CDFC095-C9E3-4E45-A711-5D7EAA9739F9}" />
+        <r
+          ds="{6CD06869-4264-420C-A161-3220DD3AB7BA}"
+          id="{A91523CD-6E56-4F08-8B21-C39018E0134A}"
+          par="Id=VisitsDataProvider&amp;PageSize=5"
+          ph="VisitsAccordion.Body"
+          uid="{40805A0D-4999-48ED-86AD-C8ABD73111E4}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=MoreVisitsBorder&amp;IsVisible=%7bBinding+VisitsDataProvider.HasMoreData%7d&amp;ContentAlignment=Center&amp;UsePadding=1"
+          ph="VisitsAccordion.Body"
+          uid="{A951F56F-AEE9-449A-9410-0494E680712F}" />
+        <r
+          ds="{7FE4B60B-C65B-4801-901A-C27BC53FB939}"
+          id="{913AB005-2527-4C2D-9827-FB3A8DFB135C}"
+          par="Click=javascript%3aapp.VisitsDataProvider.nextListData()&amp;Id=MoreVisitsButton&amp;Dimension=Large"
+          ph="MoreVisitsBorder.Content"
+          uid="{D8549A22-909E-4329-956E-254D87FEB0D2}" />
+        <r
+          ds="{4FEFAB3D-7174-4B7F-9AD9-8F43249689EA}"
+          id="{ACE0AFD6-3DE0-42CF-8E62-4E68CD810A8D}"
+          par="Id=EventsList&amp;Items=%7bBinding+EventsDataProvider.cidata%7d&amp;ViewMode=DetailList&amp;Height=500"
+          ph="EventsAccordion.Body"
+          uid="{B068A237-BB64-46D9-9ED1-CCF033D2DFF6}" />
+        <r
+          ds="{88134D50-FA78-406D-8C52-8286EB12BB25}"
+          id="{FE9723FC-56E4-4CA8-9C64-CB34F29462A5}"
+          par="Id=ProgressIndicatorEventsList&amp;IsBusy=%7bBinding+EventsDataProvider.IsBusy%7d&amp;TargetControl=EventsList"
+          ph="EventsAccordion.Body"
+          uid="{7CDFC095-C9E3-4E45-A711-5D7EAA9739F9}" />
+        <r
+          ds="{6CD06869-4264-420C-A161-3220DD3AB7BA}"
+          id="{A91523CD-6E56-4F08-8B21-C39018E0134A}"
+          par="Id=EventsDataProvider"
+          ph="EventsAccordion.Body"
+          uid="{E6641AAB-AFE0-4B60-88F8-60FDBD5E1ED6}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=MoreEventsBorder&amp;IsVisible=%7bBinding+EventsDataProvider.HasMoreData%7d&amp;ContentAlignment=Center&amp;UsePadding=1"
+          ph="EventsAccordion.Body"
+          uid="{A951F56F-AEE9-449A-9410-0494E680712F}" />
+        <r
+          ds="{7FE4B60B-C65B-4801-901A-C27BC53FB939}"
+          id="{913AB005-2527-4C2D-9827-FB3A8DFB135C}"
+          par="Click=javascript%3aapp.EventsDataProvider.nextListData()&amp;Id=MoreEventsButton&amp;Dimension=Large"
+          ph="MoreEventsBorder.Content"
+          uid="{D8549A22-909E-4329-956E-254D87FEB0D2}" />
+      </d>
+    </r>
+Languages:
+- Language: da
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: VisitsPanel
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170113T074606Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: "de-DE"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: BesuchePanel
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: "20140611T164821:635381021019918587"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20131121T121351
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 訪問パネル
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170113T075639Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

@@ -1,0 +1,128 @@
+﻿---
+ID: "3e6d7931-f5d2-46a6-92b2-e53ec09100f4"
+Parent: "e1addf9d-f168-4234-80bc-2599465104d4"
+Template: "f62b4cd7-754c-4461-810f-2b6bd2c92a0d"
+Path: /sitecore/client/Applications/ExperienceProfile/Contact/PageSettings/Tabs/Overview/OverviewPanel/RecentCampaignTemplate
+DB: core
+SharedFields:
+- ID: "deab3795-056f-4421-adf0-758844461b72"
+  Hint: Placeholder Name
+  Value: RecentCampaignTemplate
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r>
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{759BEFD1-3323-404D-A243-E0ED81163C03}">
+        <r
+          id="{CB83D434-31ED-4AC3-A280-CCE2B63F9743}"
+          ph="Page.Body"
+          uid="{F68705C5-523A-4F10-AB99-DF946490D23F}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=CampaignBorder"
+          ph="Page.Body"
+          uid="{90CB1647-D4DB-436C-A66F-2BD72B316D16}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=CampaignNameBorder"
+          ph="CampaignBorder.Content"
+          uid="{90CB1647-D4DB-436C-A66F-2BD72B316D16}" />
+        <r
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="&amp;Id=CampaignName&amp;TextType=Value"
+          ph="CampaignNameBorder.Content"
+          uid="{3F3D9559-B188-4904-BEDB-8CA93ED641E8}" />
+        <r
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="&amp;Id=CampaignColon&amp;TextType=Text&amp;Text=%3a"
+          ph="CampaignNameBorder.Content"
+          uid="{3F3D9559-B188-4904-BEDB-8CA93ED641E8}" />
+        <r
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="&amp;Id=CampaignChannel&amp;TextType=Text"
+          ph="CampaignNameBorder.Content"
+          uid="{3F3D9559-B188-4904-BEDB-8CA93ED641E8}" />
+        <r
+          ds="{562DEA33-A38C-4725-9DB3-CC58A2DA3C7F}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="&amp;Id=ConvertedTitle"
+          ph="CampaignBorder.Content"
+          uid="{117151EF-CF87-4C93-9F9E-4093474F60FC}" />
+        <r
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=VisitsAgo"
+          ph="CampaignBorder.Content"
+          uid="{52612CF0-BA6E-4F2E-8082-8DB124F82120}" />
+        <r
+          ds="{58BA4D6C-727F-4AA5-8696-98DB76BBA07C}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=VisitsAgoTitle"
+          ph="CampaignBorder.Content"
+          uid="{78BFFEB5-8074-427C-9E26-74D17662DFB2}" />
+        <r
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=Recency"
+          ph="CampaignBorder.Content"
+          uid="{B219BFEE-0EBD-43C0-9700-502085D2A26A}" />
+      </d>
+    </r>
+Languages:
+- Language: da
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: RecentCampaignTemplate
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170113T074512Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: "de-DE"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: KürzlicheKampagnevorlage
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: "20140611T164451:635381018910569166"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20131225T113316
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 最近のキャンペーン テンプレート
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170113T075544Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

@@ -1,0 +1,80 @@
+﻿---
+ID: "11a970be-75c5-48d2-939a-93f5b4f4de6c"
+Parent: "107970de-5786-4730-8a80-7b772d4c2b88"
+Template: "1c98e698-030c-43ff-8b6c-08d6d7e1b8dc"
+Path: /sitecore/client/Applications/ExperienceProfile/Contact/PageSettings/Tabs/Profiling/ProfilingPanel/NoProfilingDataAccordion
+DB: core
+SharedFields:
+- ID: "937f9157-5396-41a0-b51d-2aaddf3f50a5"
+  Hint: IsCollapsible
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: da
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: NoProfilingDataAccordion
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170113T074447Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8d593ebb-4a48-4b85-8e79-bf745023bd61"
+      Hint: Header
+      Value: Profilering
+- Language: "de-DE"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: KeineProfilingDatenAccordion
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: "20140611T164257:635381017770826250"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8d593ebb-4a48-4b85-8e79-bf745023bd61"
+      Hint: Header
+      Value: Profiling
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20140224T114133
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8d593ebb-4a48-4b85-8e79-bf745023bd61"
+      Hint: Header
+      Value: Profiling
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: プロファイリング データ アコーディオンがありません
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170113T075516Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8d593ebb-4a48-4b85-8e79-bf745023bd61"
+      Hint: Header
+      Value: プロファイリング

@@ -1,0 +1,75 @@
+﻿---
+ID: "3d290d8d-98fd-4cb1-a323-e65f330273a1"
+Parent: "e1addf9d-f168-4234-80bc-2599465104d4"
+Template: "1c98e698-030c-43ff-8b6c-08d6d7e1b8dc"
+Path: /sitecore/client/Applications/ExperienceProfile/Contact/PageSettings/Tabs/Overview/OverviewPanel/BestPatternMatchesAccordion
+DB: core
+Languages:
+- Language: da
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: BestPatternMatchesAccordion
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170113T074511Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8d593ebb-4a48-4b85-8e79-bf745023bd61"
+      Hint: Header
+      Value: De bedste mønstermatches
+- Language: "de-DE"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: BesteÜbereinstimmungenAccordion
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: "20140611T164446:635381018860424793"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8d593ebb-4a48-4b85-8e79-bf745023bd61"
+      Hint: Header
+      Value: Beste Übereinstimmungen
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20131128T151613
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8d593ebb-4a48-4b85-8e79-bf745023bd61"
+      Hint: Header
+      Value: Best pattern matches
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: ベスト パターン マッチ アコーディオン
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170113T075543Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8d593ebb-4a48-4b85-8e79-bf745023bd61"
+      Hint: Header
+      Value: ベスト パターン マッチ

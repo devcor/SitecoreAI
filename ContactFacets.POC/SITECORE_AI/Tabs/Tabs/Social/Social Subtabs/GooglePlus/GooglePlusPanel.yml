@@ -1,0 +1,486 @@
+﻿---
+ID: "88d8aeeb-5763-453e-8a35-c0d74e11361f"
+Parent: "67641b80-d834-4c29-a789-cb12323ccf53"
+Template: "f62b4cd7-754c-4461-810f-2b6bd2c92a0d"
+Path: /sitecore/client/Applications/ExperienceProfile/Contact/PageSettings/Tabs/Social/Social Subtabs/GooglePlus/GooglePlusPanel
+DB: core
+SharedFields:
+- ID: "deab3795-056f-4421-adf0-758844461b72"
+  Hint: Placeholder Name
+  Value: GooglePlusPanel
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r>
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{759BEFD1-3323-404D-A243-E0ED81163C03}">
+        <r
+          id="{CB83D434-31ED-4AC3-A280-CCE2B63F9743}"
+          par="PageCodeScriptFileName=%2fsitecore%2fshell%2fclient%2fApplications%2fExperienceProfile%2fContact%2fSocial%2fGooglePlusTab.js"
+          ph="Page.Body"
+          uid="{FB1B740A-DA8E-4CA1-9E6B-E30475082525}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=GooglePlusTabBorder"
+          ph="Page.Body"
+          uid="{D3A6E9C1-EE77-4104-BEC4-EC598651946B}" />
+        <r
+          ds="{116B39CD-40B4-409A-B46F-5BFD1722F83F}"
+          id="{442BD093-FBAD-4E36-BC08-489E16C82D08}"
+          par="Id=NoGooglePlusDataPanel&amp;IsVisible=False&amp;IsCollapsible=0"
+          ph="GooglePlusTabBorder.Content"
+          uid="{A1E403EC-A081-4EEF-B518-68070DC2A372}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=NoGooglePlusDataBorder&amp;ContentAlignment=Center&amp;UsePadding=1"
+          ph="NoGooglePlusDataPanel.Body"
+          uid="{F3B77C80-EC29-4DC8-A5E9-282E87FF877C}" />
+        <r
+          ds="{FB2AAA78-6DA1-4FC4-84DC-BA2F4E4F8E0D}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=NoGooglePlusDataText"
+          ph="NoGooglePlusDataBorder.Content"
+          uid="{E12604F2-4F9F-49FC-A2A8-8C950058E7A6}" />
+        <r
+          ds="{1FAF9747-68A1-4FD4-9FDE-C8EF77D1186F}"
+          id="{442BD093-FBAD-4E36-BC08-489E16C82D08}"
+          par="Id=GooglePlusInformationPanel&amp;IsVisible=False"
+          ph="GooglePlusTabBorder.Content"
+          uid="{217E554F-2A71-4CDD-B236-15037C3B1171}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=GooglePlusBasicInformationBorder&amp;UsePadding=0"
+          ph="GooglePlusInformationPanel.Body"
+          uid="{00A64F44-971C-458B-B830-354CEBCDCDDE}" />
+        <r
+          id="{C4393722-39FA-4869-9582-3A8EB8983A0D}"
+          par="UsePadding=True&amp;Id=GooglePlusBasicInformationRow1"
+          ph="GooglePlusBasicInformationBorder.Content"
+          uid="{D58586B4-4980-4580-9F36-A519A6FC145C}" />
+        <r
+          id="{5CB208F6-1860-426B-8221-FAA85B329848}"
+          par="Id=GooglePlusScreenNameColumn&amp;GridColumns=4"
+          ph="GooglePlusBasicInformationRow1.Content"
+          uid="{4BFBF79A-7FD5-4D6B-A97A-02211357F751}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=GooglePlusScreenNameLabelBorder"
+          ph="GooglePlusScreenNameColumn.Content"
+          uid="{380C0996-C371-4C31-83C6-812561D9A7F2}" />
+        <r
+          ds="{1DEDC804-4680-4045-9882-42020F539C89}"
+          id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}"
+          par="Id=GooglePlusScreenNameLabel"
+          ph="GooglePlusScreenNameLabelBorder.Content"
+          uid="{D89A8A6E-D2C7-4FA2-B2DC-E51702D56ED9}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=GooglePlusScreenNameValueBorder"
+          ph="GooglePlusScreenNameColumn.Content"
+          uid="{E3722D88-8BF7-4B9F-B7BD-78A12C846C8A}" />
+        <r
+          ds="{1F61373B-8994-4D4F-8051-D8357F4202F2}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=GooglePlusScreenNameValue"
+          ph="GooglePlusScreenNameValueBorder.Content"
+          uid="{3A9E776D-97F4-4C7E-9946-6640B5C7FB89}" />
+        <r
+          id="{5CB208F6-1860-426B-8221-FAA85B329848}"
+          par="Id=GooglePlusRelationshipStatusColumn&amp;GridColumns=4"
+          ph="GooglePlusBasicInformationRow1.Content"
+          uid="{3A897BDB-5A37-4637-9ED8-39C48788E2D3}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=GooglePlusRelationshipStatusLabelBorder"
+          ph="GooglePlusRelationshipStatusColumn.Content"
+          uid="{5D036AAE-AD7F-4083-9356-DE3443B24596}" />
+        <r
+          ds="{A04A5609-B63D-4B8D-BFF1-95583A8F868C}"
+          id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}"
+          par="Id=GooglePlusRelationshipStatusLabel"
+          ph="GooglePlusRelationshipStatusLabelBorder.Content"
+          uid="{CBF6975A-A474-465B-BDF5-0C283B237B17}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=GooglePlusRelationshipStatusValueBorder"
+          ph="GooglePlusRelationshipStatusColumn.Content"
+          uid="{0C5D8215-ECFA-4EE4-A9C5-4276D82654B4}" />
+        <r
+          ds="{1F61373B-8994-4D4F-8051-D8357F4202F2}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=GooglePlusRelationshipStatusValue"
+          ph="GooglePlusRelationshipStatusValueBorder.Content"
+          uid="{61993B2E-558F-4309-B602-E2E08BF154DC}" />
+        <r
+          id="{5CB208F6-1860-426B-8221-FAA85B329848}"
+          par="Id=GooglePlusLinkColumn&amp;GridColumns=4"
+          ph="GooglePlusBasicInformationRow1.Content"
+          uid="{F4EF38EA-E94D-4E35-BA19-4D711A4EBF66}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=GooglePlusLinkLabelBorder"
+          ph="GooglePlusLinkColumn.Content"
+          uid="{659FC139-A955-45C6-B827-66743B453B75}" />
+        <r
+          ds="{6962A194-149C-42BB-A4A3-881AB9B9EAF4}"
+          id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}"
+          par="Id=GooglePlusLinkLabel"
+          ph="GooglePlusLinkLabelBorder.Content"
+          uid="{36005D7F-18D4-4162-8E62-1921032931CA}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=GooglePlusLinkValueBorder"
+          ph="GooglePlusLinkColumn.Content"
+          uid="{5035029C-3D92-4C22-BBF2-306A4A534FF3}" />
+        <r
+          id="{162FC747-B9E6-4FCE-A96C-1EFE125643F2}"
+          par="Id=GooglePlusLinkValue"
+          ph="GooglePlusLinkValueBorder.Content"
+          uid="{58E72A39-7FE5-45D1-A3F2-9D0F4D985B82}" />
+        <r
+          id="{C4393722-39FA-4869-9582-3A8EB8983A0D}"
+          par="UsePadding=True&amp;Id=GooglePlusBasicInformationRow2"
+          ph="GooglePlusBasicInformationBorder.Content"
+          uid="{2ABF400F-E869-4B60-A376-958EA3031175}" />
+        <r
+          id="{5CB208F6-1860-426B-8221-FAA85B329848}"
+          par="Id=GooglePlusFirstNameColumn&amp;GridColumns=4"
+          ph="GooglePlusBasicInformationRow2.Content"
+          uid="{324A42D6-D0D9-4429-B128-A5D8BBC3987C}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=GooglePlusFirstNameLabelBorder"
+          ph="GooglePlusFirstNameColumn.Content"
+          uid="{32E67C19-DC0C-4F11-B89A-7951EF7216BF}" />
+        <r
+          ds="{9A29684E-0127-48AC-BBBD-0F45B6F6107E}"
+          id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}"
+          par="Id=GooglePlusFirstNameLabel"
+          ph="GooglePlusFirstNameLabelBorder.Content"
+          uid="{B7FE8795-160B-4719-994B-AED674DBDEC9}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=GooglePlusFirstNameValueBorder"
+          ph="GooglePlusFirstNameColumn.Content"
+          uid="{3004600A-2EEA-4295-A717-664C70EEFD1A}" />
+        <r
+          ds="{1F61373B-8994-4D4F-8051-D8357F4202F2}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=GooglePlusFirstNameValue"
+          ph="GooglePlusFirstNameValueBorder.Content"
+          uid="{1F8FE684-C005-4E56-8C60-A59B02D2CDCE}" />
+        <r
+          id="{5CB208F6-1860-426B-8221-FAA85B329848}"
+          par="Id=GooglePlusDayOfBirthColumn&amp;GridColumns=4"
+          ph="GooglePlusBasicInformationRow2.Content"
+          uid="{51ED573D-6583-4C29-AD10-B3E25E2FD38C}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=GooglePlusDayOfBirthLabelBorder"
+          ph="GooglePlusDayOfBirthColumn.Content"
+          uid="{75AB7F8F-E8A5-4C4E-9CF2-F49DBC7D7EAC}" />
+        <r
+          ds="{2F10F994-889C-4213-B8AD-61B2E1A78DB4}"
+          id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}"
+          par="Id=GooglePlusDayOfBirthLabel"
+          ph="GooglePlusDayOfBirthLabelBorder.Content"
+          uid="{D5981E9A-0A03-4256-B5F3-D7D3B4FAD0A4}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=GooglePlusDayOfBirthValueBorder"
+          ph="GooglePlusDayOfBirthColumn.Content"
+          uid="{1A5F56A1-FB9B-4B50-A417-EFE52857308D}" />
+        <r
+          ds="{1F61373B-8994-4D4F-8051-D8357F4202F2}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=GooglePlusDayOfBirthValue"
+          ph="GooglePlusDayOfBirthValueBorder.Content"
+          uid="{758B724D-ACFD-4A8C-A66D-D3FBC5B20979}" />
+        <r
+          id="{5CB208F6-1860-426B-8221-FAA85B329848}"
+          par="Id=GooglePlusCompaniesColumn&amp;GridColumns=4"
+          ph="GooglePlusBasicInformationRow2.Content"
+          uid="{CE8EBEB9-5F6A-40AC-884B-5834C867B58E}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=GooglePlusCompaniesLabelBorder"
+          ph="GooglePlusCompaniesColumn.Content"
+          uid="{959C86F3-F216-4405-81F2-C5692D3E5AF1}" />
+        <r
+          ds="{755DD89D-1DEA-484C-8FE9-1055DE5A5830}"
+          id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}"
+          par="Id=GooglePlusCompaniesLabel"
+          ph="GooglePlusCompaniesLabelBorder.Content"
+          uid="{652873D2-14E5-4949-B004-7348FADB76CF}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=GooglePlusCompaniesValueBorder"
+          ph="GooglePlusCompaniesColumn.Content"
+          uid="{838B328A-072A-4924-AF7B-AC7A5197E37B}" />
+        <r
+          ds="{1F61373B-8994-4D4F-8051-D8357F4202F2}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=GooglePlusCompaniesValue"
+          ph="GooglePlusCompaniesValueBorder.Content"
+          uid="{86A5B74B-CF99-4BF9-9F62-4A44BB5B20AE}" />
+        <r
+          id="{C4393722-39FA-4869-9582-3A8EB8983A0D}"
+          par="UsePadding=True&amp;Id=GooglePlusBasicInformationRow3"
+          ph="GooglePlusBasicInformationBorder.Content"
+          uid="{E34585D8-6EF8-4A19-BC3E-499EE90BF44D}" />
+        <r
+          id="{5CB208F6-1860-426B-8221-FAA85B329848}"
+          par="Id=GooglePlusLastNameColumn&amp;GridColumns=4"
+          ph="GooglePlusBasicInformationRow3.Content"
+          uid="{B9F74AAF-3680-4FEB-90E5-3F941A9C5698}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=GooglePlusLastNameLabelBorder"
+          ph="GooglePlusLastNameColumn.Content"
+          uid="{8B2871FA-6BA3-42EC-80D7-1B079750A1CB}" />
+        <r
+          ds="{58D7D54A-F3CC-4CD7-827A-7D9A14220867}"
+          id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}"
+          par="Id=GooglePlusLastNameLabel"
+          ph="GooglePlusLastNameLabelBorder.Content"
+          uid="{6C80F9C0-FA1B-4251-B20B-E9A8DA56FFB5}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=GooglePlusLastNameValueBorder"
+          ph="GooglePlusLastNameColumn.Content"
+          uid="{50EAA6BB-7B49-4209-8C8E-02FC774396FD}" />
+        <r
+          ds="{1F61373B-8994-4D4F-8051-D8357F4202F2}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=GooglePlusLastNameValue"
+          ph="GooglePlusLastNameValueBorder.Content"
+          uid="{E892D5D5-95E2-4E19-8DAF-5DBBD59BE87E}" />
+        <r
+          id="{5CB208F6-1860-426B-8221-FAA85B329848}"
+          par="Id=GooglePlusLocationColumn&amp;GridColumns=4"
+          ph="GooglePlusBasicInformationRow3.Content"
+          uid="{85B8EF40-A4F3-4EF9-9EB7-CB73A6B14769}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=GooglePlusLocationLabelBorder"
+          ph="GooglePlusLocationColumn.Content"
+          uid="{7281D069-9F79-49A8-ABD7-19E47FD45580}" />
+        <r
+          ds="{2262F19F-E2A3-4340-9836-EE1B385CB0FE}"
+          id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}"
+          par="Id=GooglePlusLocationLabel"
+          ph="GooglePlusLocationLabelBorder.Content"
+          uid="{D7E4F7D4-8C77-4E8C-9220-EC61103BDBF4}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=GooglePlusLocationValueBorder"
+          ph="GooglePlusLocationColumn.Content"
+          uid="{C93957F0-FAB9-4BB5-9063-ECCD6547DA3B}" />
+        <r
+          ds="{1F61373B-8994-4D4F-8051-D8357F4202F2}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=GooglePlusLocationValue"
+          ph="GooglePlusLocationValueBorder.Content"
+          uid="{C97578A4-637B-4438-9A9F-37AF31D8DDEC}" />
+        <r
+          id="{5CB208F6-1860-426B-8221-FAA85B329848}"
+          par="Id=GooglePlusEducationColumn&amp;GridColumns=4"
+          ph="GooglePlusBasicInformationRow3.Content"
+          uid="{58328FF6-9FEB-4724-AE63-F583B5E63FCD}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=GooglePlusEducationLabelBorder"
+          ph="GooglePlusEducationColumn.Content"
+          uid="{75EF250E-19AD-495E-B57D-8159D0FF57A9}" />
+        <r
+          ds="{14D59F8C-FD19-47C9-B2A5-9ADB715CDD30}"
+          id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}"
+          par="Id=GooglePlusEducationLabel"
+          ph="GooglePlusEducationLabelBorder.Content"
+          uid="{A6C170F8-8641-4690-B564-04D02C83BF94}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=GooglePlusEducationValueBorder"
+          ph="GooglePlusEducationColumn.Content"
+          uid="{84E9EE80-42FE-428D-86E1-0DE0EA4CA5D6}" />
+        <r
+          ds="{1F61373B-8994-4D4F-8051-D8357F4202F2}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=GooglePlusEducationValue"
+          ph="GooglePlusEducationValueBorder.Content"
+          uid="{3C6E4433-DE66-4609-9664-81F010E759F5}" />
+        <r
+          id="{C4393722-39FA-4869-9582-3A8EB8983A0D}"
+          par="UsePadding=True&amp;Id=GooglePlusBasicInformationRow4"
+          ph="GooglePlusBasicInformationBorder.Content"
+          uid="{AEC24FE7-6473-4751-9CCD-F90712E6D923}" />
+        <r
+          id="{5CB208F6-1860-426B-8221-FAA85B329848}"
+          par="Id=GooglePlusGenderColumn&amp;GridColumns=4"
+          ph="GooglePlusBasicInformationRow4.Content"
+          uid="{27563E02-E302-4ED8-A93A-318C4F689A34}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=GooglePlusGenderLabelBorder"
+          ph="GooglePlusGenderColumn.Content"
+          uid="{CBB55AA4-126D-43AD-B732-DBBE1E174968}" />
+        <r
+          ds="{C8E541B9-205F-461A-A003-10CBA16D59BC}"
+          id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}"
+          par="Id=GooglePlusGenderLabel"
+          ph="GooglePlusGenderLabelBorder.Content"
+          uid="{90F2FEA4-D6F4-42E5-A994-D0408536A63D}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=GooglePlusGenderValueBorder"
+          ph="GooglePlusGenderColumn.Content"
+          uid="{621BE5E9-0E53-4D7A-9129-BC07AE004C4C}" />
+        <r
+          ds="{1F61373B-8994-4D4F-8051-D8357F4202F2}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=GooglePlusGenderValue"
+          ph="GooglePlusGenderValueBorder.Content"
+          uid="{38118BD9-C845-478C-AA33-23F9C66872CB}" />
+        <r
+          id="{5CB208F6-1860-426B-8221-FAA85B329848}"
+          par="Id=GooglePlusPreviousLocationsColumn&amp;GridColumns=4"
+          ph="GooglePlusBasicInformationRow4.Content"
+          uid="{13FA729A-7E5F-43F8-9A47-BE544B5DDF48}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=GooglePlusPreviousLocationsLabelBorder"
+          ph="GooglePlusPreviousLocationsColumn.Content"
+          uid="{6D7AA4B3-A384-4CD9-B244-CED76086FFC9}" />
+        <r
+          ds="{91860427-0CA4-4202-811A-8928A71FCE58}"
+          id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}"
+          par="Id=GooglePlusPreviousLocationsLabel"
+          ph="GooglePlusPreviousLocationsLabelBorder.Content"
+          uid="{C0258451-6B78-44C3-BDAC-6C08900CF58F}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=GooglePlusPreviousLocationsValueBorder"
+          ph="GooglePlusPreviousLocationsColumn.Content"
+          uid="{B192A646-2D2D-41D5-BD02-5CAA7BF73B83}" />
+        <r
+          ds="{1F61373B-8994-4D4F-8051-D8357F4202F2}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=GooglePlusPreviousLocationsValue"
+          ph="GooglePlusPreviousLocationsValueBorder.Content"
+          uid="{5A9CE7E8-28F1-4BCB-99BB-BEA930B380A2}" />
+        <r
+          id="{5CB208F6-1860-426B-8221-FAA85B329848}"
+          par="Id=GooglePlusCircledByColumn&amp;GridColumns=4"
+          ph="GooglePlusBasicInformationRow4.Content"
+          uid="{0FE5D483-444E-437F-B3F9-7C012C7CCF99}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=GooglePlusCircledByLabelBorder"
+          ph="GooglePlusCircledByColumn.Content"
+          uid="{7CD4FA65-36DD-4423-B6A8-990AF47EFDC0}" />
+        <r
+          ds="{BFC88716-4081-468E-A408-3E430BCB537D}"
+          id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}"
+          par="Id=GooglePlusCircledByLabel"
+          ph="GooglePlusCircledByLabelBorder.Content"
+          uid="{2BCCDD5B-6CE9-4E11-9F21-42F1E748483E}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=GooglePlusCircledByValueBorder"
+          ph="GooglePlusCircledByColumn.Content"
+          uid="{9FD408CF-B4CA-4B49-89C6-1BC4C4574FC5}" />
+        <r
+          ds="{1F61373B-8994-4D4F-8051-D8357F4202F2}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=GooglePlusCircledByValue"
+          ph="GooglePlusCircledByValueBorder.Content"
+          uid="{7BDDA9CD-A13E-4469-A584-FD710319AB5D}" />
+        <r
+          ds="{A74098E1-46D9-4813-866A-F1D23EE32FE0}"
+          id="{442BD093-FBAD-4E36-BC08-489E16C82D08}"
+          par="Id=GooglePlusRecentActivityPanel&amp;IsVisible=False&amp;IsOpen=False"
+          ph="GooglePlusTabBorder.Content"
+          uid="{4482201F-8407-4D20-A518-53E5E0327A48}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=NoGooglePlusRecentActivityBorder&amp;IsVisible=False&amp;ContentAlignment=Center&amp;UsePadding=1"
+          ph="GooglePlusRecentActivityPanel.Body"
+          uid="{3987B541-51CD-4C13-9AC3-5B21F83EAE05}" />
+        <r
+          ds="{CE884C3D-1016-4C20-A7A4-26C9F4684A8B}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=NoGooglePlusRecentActivityText"
+          ph="NoGooglePlusRecentActivityBorder.Content"
+          uid="{C8C5422B-5098-4623-990C-895F1D2C2807}" />
+        <r
+          ds="{88134D50-FA78-406D-8C52-8286EB12BB25}"
+          id="{FE9723FC-56E4-4CA8-9C64-CB34F29462A5}"
+          par="Id=GooglePlusRecentActivityProgressIndicator&amp;AutoShowTimeout=1000&amp;TargetControl=GooglePlusRecentActivityBorder"
+          ph="GooglePlusRecentActivityPanel.Body"
+          uid="{9A281E76-21CB-4188-BF15-574AC9C36974}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=GooglePlusRecentActivityBorder&amp;UsePadding=1"
+          ph="GooglePlusRecentActivityPanel.Body"
+          uid="{07DC8B7E-2E1A-4C10-9594-5809741C9CA9}" />
+      </d>
+    </r>
+Languages:
+- Language: da
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: GooglePlusPanel
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170614T103612Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: "de-DE"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: GooglePlusPanel
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170614T104120Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20140626T140632Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: GooglePlus パネル
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170614T104506Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

@@ -1,0 +1,401 @@
+﻿---
+ID: "55871658-c6ff-42c4-9a13-68b761c98579"
+Parent: "53f11df9-eb06-4de7-ba7e-386f99668722"
+Template: "f62b4cd7-754c-4461-810f-2b6bd2c92a0d"
+Path: /sitecore/client/Applications/ExperienceProfile/Contact/PageSettings/Tabs/Social/Social Subtabs/Twitter/TwitterPanel
+DB: core
+SharedFields:
+- ID: "deab3795-056f-4421-adf0-758844461b72"
+  Hint: Placeholder Name
+  Value: TwitterPanel
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r>
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{759BEFD1-3323-404D-A243-E0ED81163C03}">
+        <r
+          id="{CB83D434-31ED-4AC3-A280-CCE2B63F9743}"
+          par="PageCodeScriptFileName=%2fsitecore%2fshell%2fclient%2fApplications%2fExperienceProfile%2fContact%2fSocial%2fTwitterTab.js"
+          ph="Page.Body"
+          uid="{B1E287B0-04C2-44E2-8F70-DC0C65908C00}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=TwitterTabBorder"
+          ph="Page.Body"
+          uid="{2E0D24E4-64A5-4FD7-A7B4-9593FAFABC01}" />
+        <r
+          ds="{116B39CD-40B4-409A-B46F-5BFD1722F83F}"
+          id="{442BD093-FBAD-4E36-BC08-489E16C82D08}"
+          par="Id=NoTwitterDataPanel&amp;IsVisible=False&amp;IsCollapsible=0"
+          ph="TwitterTabBorder.Content"
+          uid="{79616674-7AE0-42BB-BB77-A7E7C9B62886}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=NoTwitterDataBorder&amp;ContentAlignment=Center&amp;UsePadding=1"
+          ph="NoTwitterDataPanel.Body"
+          uid="{6FE9CD81-ED8E-4338-8375-DCB952831180}" />
+        <r
+          ds="{D7E7EFC3-2FAB-4386-95DC-E0249B9F3471}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=NoTwitterDataText"
+          ph="NoTwitterDataBorder.Content"
+          uid="{B1D2AF03-2EA7-440A-AC80-7363693A9CBF}" />
+        <r
+          ds="{1FAF9747-68A1-4FD4-9FDE-C8EF77D1186F}"
+          id="{442BD093-FBAD-4E36-BC08-489E16C82D08}"
+          par="Id=TwitterInformationPanel&amp;IsVisible=False"
+          ph="TwitterTabBorder.Content"
+          uid="{0C64396B-EC07-41EE-A3D4-82FEACE1076E}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=TwitterBasicInformationBorder&amp;UsePadding=0"
+          ph="TwitterInformationPanel.Body"
+          uid="{1B9F353C-BD78-45DE-8ED9-DC79E39D59B1}" />
+        <r
+          id="{C4393722-39FA-4869-9582-3A8EB8983A0D}"
+          par="UsePadding=True&amp;Id=TwitterBasicInformationRow1"
+          ph="TwitterBasicInformationBorder.Content"
+          uid="{F545D2C8-E612-4B74-B7B1-900C91F8A62B}" />
+        <r
+          id="{5CB208F6-1860-426B-8221-FAA85B329848}"
+          par="Id=TwitterScreenNameColumn&amp;GridColumns=4"
+          ph="TwitterBasicInformationRow1.Content"
+          uid="{D6DC90FC-6995-49E9-BE51-0975093FBC45}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=TwitterScreenNameLabelBorder"
+          ph="TwitterScreenNameColumn.Content"
+          uid="{26C682FA-BE70-4E74-BC36-1E63D5A1F487}" />
+        <r
+          ds="{1DEDC804-4680-4045-9882-42020F539C89}"
+          id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}"
+          par="Id=TwitterScreenNameLabel"
+          ph="TwitterScreenNameLabelBorder.Content"
+          uid="{A8383B23-CC7F-4ADC-B96C-07627228A4B8}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=TwitterScreenNameValueBorder"
+          ph="TwitterScreenNameColumn.Content"
+          uid="{4F1A20BE-1A2D-4E9F-B57A-E70F3B5B1D4D}" />
+        <r
+          ds="{1F61373B-8994-4D4F-8051-D8357F4202F2}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=TwitterScreenNameValue"
+          ph="TwitterScreenNameValueBorder.Content"
+          uid="{CC24C0E9-690F-4B02-8D70-DF3B4D0443D1}" />
+        <r
+          id="{5CB208F6-1860-426B-8221-FAA85B329848}"
+          par="Id=TwitterLocationColumn&amp;GridColumns=4"
+          ph="TwitterBasicInformationRow1.Content"
+          uid="{3AAD74FE-2A5D-4081-ABC5-C7D15FDAFC85}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=TwitterLocationLabelBorder"
+          ph="TwitterLocationColumn.Content"
+          uid="{16B260C6-D575-49C9-AF93-04176015953C}" />
+        <r
+          ds="{2262F19F-E2A3-4340-9836-EE1B385CB0FE}"
+          id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}"
+          par="Id=TwitterLocationLabel"
+          ph="TwitterLocationLabelBorder.Content"
+          uid="{3AEEA55B-EFEE-4AE0-AF00-4E67CFA20DE2}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=TwitterLocationValueBorder"
+          ph="TwitterLocationColumn.Content"
+          uid="{2482A169-EDFF-4D50-BF2B-3657DD9418FF}" />
+        <r
+          ds="{1F61373B-8994-4D4F-8051-D8357F4202F2}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=TwitterLocationValue"
+          ph="TwitterLocationValueBorder.Content"
+          uid="{E7D9692B-BC65-44B6-9623-05FE2AEF7C16}" />
+        <r
+          id="{5CB208F6-1860-426B-8221-FAA85B329848}"
+          par="Id=TwitterNumberOfFollowersColumn&amp;GridColumns=4"
+          ph="TwitterBasicInformationRow1.Content"
+          uid="{C83D13B5-4D0C-4C8A-9917-51E61DA65E5F}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=TwitterNumberOfFollowersLabelBorder"
+          ph="TwitterNumberOfFollowersColumn.Content"
+          uid="{767F1539-910C-450F-BE06-3202D10F171F}" />
+        <r
+          ds="{73D1C396-13EB-4115-80E3-44820DF1634E}"
+          id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}"
+          par="Id=TwitterNumberOfFollowersLabel"
+          ph="TwitterNumberOfFollowersLabelBorder.Content"
+          uid="{8AE1A89F-7BF1-46DF-91F6-0337209D8476}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=TwitterNumberOfFollowersValueBorder"
+          ph="TwitterNumberOfFollowersColumn.Content"
+          uid="{767F1539-910C-450F-BE06-3202D10F171F}" />
+        <r
+          ds="{1F61373B-8994-4D4F-8051-D8357F4202F2}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=TwitterNumberOfFollowersValue"
+          ph="TwitterNumberOfFollowersValueBorder.Content"
+          uid="{8AE1A89F-7BF1-46DF-91F6-0337209D8476}" />
+        <r
+          id="{C4393722-39FA-4869-9582-3A8EB8983A0D}"
+          par="UsePadding=True&amp;Id=TwitterBasicInformationRow2"
+          ph="TwitterBasicInformationBorder.Content"
+          uid="{F545D2C8-E612-4B74-B7B1-900C91F8A62B}" />
+        <r
+          id="{5CB208F6-1860-426B-8221-FAA85B329848}"
+          par="Id=TwitterNameColumn&amp;GridColumns=4"
+          ph="TwitterBasicInformationRow2.Content"
+          uid="{3AAD74FE-2A5D-4081-ABC5-C7D15FDAFC85}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=TwitterNameLabelBorder"
+          ph="TwitterNameColumn.Content"
+          uid="{16B260C6-D575-49C9-AF93-04176015953C}" />
+        <r
+          ds="{EC0747F1-D132-435B-B61E-A9CF11321D35}"
+          id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}"
+          par="Id=TwitterNameLabel"
+          ph="TwitterNameLabelBorder.Content"
+          uid="{3AEEA55B-EFEE-4AE0-AF00-4E67CFA20DE2}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=TwitterNameValueBorder"
+          ph="TwitterNameColumn.Content"
+          uid="{2482A169-EDFF-4D50-BF2B-3657DD9418FF}" />
+        <r
+          ds="{1F61373B-8994-4D4F-8051-D8357F4202F2}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=TwitterNameValue"
+          ph="TwitterNameValueBorder.Content"
+          uid="{E7D9692B-BC65-44B6-9623-05FE2AEF7C16}" />
+        <r
+          id="{5CB208F6-1860-426B-8221-FAA85B329848}"
+          par="Id=TwitterTimezoneColumn&amp;GridColumns=4"
+          ph="TwitterBasicInformationRow2.Content"
+          uid="{3AAD74FE-2A5D-4081-ABC5-C7D15FDAFC85}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=TwitterTimezoneLabelBorder"
+          ph="TwitterTimezoneColumn.Content"
+          uid="{16B260C6-D575-49C9-AF93-04176015953C}" />
+        <r
+          ds="{F1F568BE-5E44-49EE-80AE-78B7FB8A20A4}"
+          id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}"
+          par="Id=TwitterTimezoneLabel"
+          ph="TwitterTimezoneLabelBorder.Content"
+          uid="{3AEEA55B-EFEE-4AE0-AF00-4E67CFA20DE2}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=TwitterTimezoneValueBorder"
+          ph="TwitterTimezoneColumn.Content"
+          uid="{2482A169-EDFF-4D50-BF2B-3657DD9418FF}" />
+        <r
+          ds="{1F61373B-8994-4D4F-8051-D8357F4202F2}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=TwitterTimezoneValue"
+          ph="TwitterTimezoneValueBorder.Content"
+          uid="{E7D9692B-BC65-44B6-9623-05FE2AEF7C16}" />
+        <r
+          id="{5CB208F6-1860-426B-8221-FAA85B329848}"
+          par="Id=TwitterNumberOfTweetsColumn&amp;GridColumns=4"
+          ph="TwitterBasicInformationRow2.Content"
+          uid="{CF816EE6-7E1A-4165-BD86-228F99BEEC2C}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=TwitterNumberOfTweetsLabelBorder"
+          ph="TwitterNumberOfTweetsColumn.Content"
+          uid="{55207F5A-3118-4911-AE81-0EEB75E94964}" />
+        <r
+          ds="{CD39F59A-31D7-4368-9CF6-AD60E43A5CCA}"
+          id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}"
+          par="Id=TwitterNumberOfTweetsLabel"
+          ph="TwitterNumberOfTweetsLabelBorder.Content"
+          uid="{D5D77A1B-A99A-4FBE-8C6E-FB8BB6086B40}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=TwitterNumberOfTweetsValueBorder"
+          ph="TwitterNumberOfTweetsColumn.Content"
+          uid="{13C5CA81-F388-4185-AD39-83CBFA199A76}" />
+        <r
+          ds="{1F61373B-8994-4D4F-8051-D8357F4202F2}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=TwitterNumberOfTweetsValue"
+          ph="TwitterNumberOfTweetsValueBorder.Content"
+          uid="{C3D28AA4-DD42-410E-8F9A-109170820CCE}" />
+        <r
+          id="{C4393722-39FA-4869-9582-3A8EB8983A0D}"
+          par="UsePadding=True&amp;Id=TwitterBasicInformationRow3"
+          ph="TwitterBasicInformationBorder.Content"
+          uid="{F545D2C8-E612-4B74-B7B1-900C91F8A62B}" />
+        <r
+          id="{5CB208F6-1860-426B-8221-FAA85B329848}"
+          par="Id=TwitterLanguageColumn&amp;GridColumns=4"
+          ph="TwitterBasicInformationRow3.Content"
+          uid="{3AAD74FE-2A5D-4081-ABC5-C7D15FDAFC85}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=TwitterLanguageLabelBorder"
+          ph="TwitterLanguageColumn.Content"
+          uid="{16B260C6-D575-49C9-AF93-04176015953C}" />
+        <r
+          ds="{67BC8094-B939-4EB2-BC21-02E3F1957910}"
+          id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}"
+          par="Id=TwitterLanguageLabel"
+          ph="TwitterLanguageLabelBorder.Content"
+          uid="{3AEEA55B-EFEE-4AE0-AF00-4E67CFA20DE2}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=TwitterLanguageValueBorder"
+          ph="TwitterLanguageColumn.Content"
+          uid="{2482A169-EDFF-4D50-BF2B-3657DD9418FF}" />
+        <r
+          ds="{1F61373B-8994-4D4F-8051-D8357F4202F2}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=TwitterLanguageValue"
+          ph="TwitterLanguageValueBorder.Content"
+          uid="{E7D9692B-BC65-44B6-9623-05FE2AEF7C16}" />
+        <r
+          id="{5CB208F6-1860-426B-8221-FAA85B329848}"
+          par="Id=TwitterWebsiteColumn&amp;GridColumns=4"
+          ph="TwitterBasicInformationRow3.Content"
+          uid="{3AAD74FE-2A5D-4081-ABC5-C7D15FDAFC85}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=TwitterWebsiteLabelBorder"
+          ph="TwitterWebsiteColumn.Content"
+          uid="{16B260C6-D575-49C9-AF93-04176015953C}" />
+        <r
+          ds="{A0EAB499-EF6C-4670-AF74-3BC1F832BE58}"
+          id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}"
+          par="Id=TwitterWebsiteLabel"
+          ph="TwitterWebsiteLabelBorder.Content"
+          uid="{3AEEA55B-EFEE-4AE0-AF00-4E67CFA20DE2}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=TwitterWebsiteValueBorder"
+          ph="TwitterWebsiteColumn.Content"
+          uid="{2482A169-EDFF-4D50-BF2B-3657DD9418FF}" />
+        <r
+          ds="{1F61373B-8994-4D4F-8051-D8357F4202F2}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=TwitterWebsiteValue"
+          ph="TwitterWebsiteValueBorder.Content"
+          uid="{E7D9692B-BC65-44B6-9623-05FE2AEF7C16}" />
+        <r
+          id="{5CB208F6-1860-426B-8221-FAA85B329848}"
+          par="Id=TwitterCreatedColumn&amp;GridColumns=4"
+          ph="TwitterBasicInformationRow3.Content"
+          uid="{3AAD74FE-2A5D-4081-ABC5-C7D15FDAFC85}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=TwitterCreatedLabelBorder"
+          ph="TwitterCreatedColumn.Content"
+          uid="{16B260C6-D575-49C9-AF93-04176015953C}" />
+        <r
+          ds="{78278C54-83B9-4301-A5B3-7701CBB19FED}"
+          id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}"
+          par="Id=TwitterCreatedLabel"
+          ph="TwitterCreatedLabelBorder.Content"
+          uid="{3AEEA55B-EFEE-4AE0-AF00-4E67CFA20DE2}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=TwitterCreatedValueBorder"
+          ph="TwitterCreatedColumn.Content"
+          uid="{2482A169-EDFF-4D50-BF2B-3657DD9418FF}" />
+        <r
+          ds="{1F61373B-8994-4D4F-8051-D8357F4202F2}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=TwitterCreatedValue"
+          ph="TwitterCreatedValueBorder.Content"
+          uid="{E7D9692B-BC65-44B6-9623-05FE2AEF7C16}" />
+        <r
+          ds="{A74098E1-46D9-4813-866A-F1D23EE32FE0}"
+          id="{442BD093-FBAD-4E36-BC08-489E16C82D08}"
+          par="Id=TwitterRecentActivityPanel&amp;IsVisible=False&amp;IsOpen=False"
+          ph="TwitterTabBorder.Content"
+          uid="{72D11BC2-3BA4-4B54-A084-1132A8684A48}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=NoTwitterRecentActivityBorder&amp;IsVisible=False&amp;ContentAlignment=Center&amp;UsePadding=1"
+          ph="TwitterRecentActivityPanel.Body"
+          uid="{8FB17197-9C15-477E-90AE-50EE61B932B7}" />
+        <r
+          ds="{913D45B0-CAE0-4AB7-A187-FB1A2AE9E7F8}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=NoTwitterRecentActivityText"
+          ph="NoTwitterRecentActivityBorder.Content"
+          uid="{A8B33CDC-BE7B-48AF-9BC8-96B6EF7F2A95}" />
+        <r
+          ds="{88134D50-FA78-406D-8C52-8286EB12BB25}"
+          id="{FE9723FC-56E4-4CA8-9C64-CB34F29462A5}"
+          par="Id=TwitterRecentActivityProgressIndicator&amp;AutoShowTimeout=1000&amp;TargetControl=TwitterRecentActivityBorder"
+          ph="TwitterRecentActivityPanel.Body"
+          uid="{3AFDDF42-F04E-4ECC-ABE3-57A7E57F5F88}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=TwitterRecentActivityBorder&amp;IsVisible=True&amp;UsePadding=1"
+          ph="TwitterRecentActivityPanel.Body"
+          uid="{323BC6A1-1B52-4D43-B565-083CBB3E7698}" />
+      </d>
+    </r>
+Languages:
+- Language: da
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: TwitterPanel
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170614T103549Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: "de-DE"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: TwitterPanel
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170614T104058Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20140626T134620Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Twitter パネル
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170614T104444Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

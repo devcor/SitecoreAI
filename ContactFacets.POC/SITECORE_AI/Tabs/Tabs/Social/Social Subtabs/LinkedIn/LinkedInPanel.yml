@@ -1,0 +1,523 @@
+﻿---
+ID: "4815320b-d337-4676-9465-eaad74b9c519"
+Parent: "ef4d2c90-c445-425e-b127-328f0ee2751e"
+Template: "f62b4cd7-754c-4461-810f-2b6bd2c92a0d"
+Path: /sitecore/client/Applications/ExperienceProfile/Contact/PageSettings/Tabs/Social/Social Subtabs/LinkedIn/LinkedInPanel
+DB: core
+SharedFields:
+- ID: "deab3795-056f-4421-adf0-758844461b72"
+  Hint: Placeholder Name
+  Value: LinkedInPanel
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r>
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{759BEFD1-3323-404D-A243-E0ED81163C03}">
+        <r
+          id="{CB83D434-31ED-4AC3-A280-CCE2B63F9743}"
+          par="PageCodeScriptFileName=%2fsitecore%2fshell%2fclient%2fApplications%2fExperienceProfile%2fContact%2fSocial%2fLinkedInTab.js"
+          ph="Page.Body"
+          uid="{09C447C2-1342-4388-9BA7-E24274CE27E2}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=LinkedInTabBorder"
+          ph="Page.Body"
+          uid="{1FDA4411-A773-40B5-A715-71B2CFD93E68}" />
+        <r
+          ds="{116B39CD-40B4-409A-B46F-5BFD1722F83F}"
+          id="{442BD093-FBAD-4E36-BC08-489E16C82D08}"
+          par="Id=NoLinkedInDataPanel&amp;IsVisible=False&amp;IsCollapsible=0"
+          ph="LinkedInTabBorder.Content"
+          uid="{C2788A4F-ACD1-4F8F-AAAA-9D9E7ABBBB54}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=NoLinkedInDataBorder&amp;ContentAlignment=Center&amp;UsePadding=1"
+          ph="NoLinkedInDataPanel.Body"
+          uid="{E02A855E-C6E3-4796-A906-A2C09BFBE66F}" />
+        <r
+          ds="{F3FBAD2F-ABAB-41FE-9E4F-B8CDB8B1D63E}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=NoLinkedInDataText"
+          ph="NoLinkedInDataBorder.Content"
+          uid="{FC2C3FAF-25C5-4A00-81C2-F9A4AD81F94F}" />
+        <r
+          ds="{1FAF9747-68A1-4FD4-9FDE-C8EF77D1186F}"
+          id="{442BD093-FBAD-4E36-BC08-489E16C82D08}"
+          par="Id=LinkedInInformationPanel&amp;ShowAdditional=False&amp;IsVisible=False&amp;EnableAdditional=True&amp;IsCollapsible=0"
+          ph="LinkedInTabBorder.Content"
+          uid="{24406314-D083-4E7B-B1A3-C92F566821A5}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=LinkedInBasicInformationBorder&amp;UsePadding=0"
+          ph="LinkedInInformationPanel.Body"
+          uid="{E6DE280C-AE2B-42BC-985B-944322D56815}" />
+        <r
+          id="{C4393722-39FA-4869-9582-3A8EB8983A0D}"
+          par="UsePadding=True&amp;Id=LinkedInBasicInformationRow1"
+          ph="LinkedInBasicInformationBorder.Content"
+          uid="{E5252037-03D2-43FF-8634-98E9747CF329}" />
+        <r
+          id="{5CB208F6-1860-426B-8221-FAA85B329848}"
+          par="Id=LinkedInFirstNameColumn&amp;GridColumns=4"
+          ph="LinkedInBasicInformationRow1.Content"
+          uid="{05AD5740-0FF4-431F-BF23-3C7120374D7F}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=LinkedInFirstNameLabelBorder"
+          ph="LinkedInFirstNameColumn.Content"
+          uid="{2AB41F2D-4F00-4B32-AD44-2374C6789FD2}" />
+        <r
+          ds="{9A29684E-0127-48AC-BBBD-0F45B6F6107E}"
+          id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}"
+          par="Id=LinkedInFirstNameLabel"
+          ph="LinkedInFirstNameLabelBorder.Content"
+          uid="{80F72142-7B9F-4D5A-9B6D-90EA0918AED4}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=LinkedInFirstNameValueBorder"
+          ph="LinkedInFirstNameColumn.Content"
+          uid="{93776702-C845-496E-A473-6F9ADAD741EE}" />
+        <r
+          ds="{1F61373B-8994-4D4F-8051-D8357F4202F2}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=LinkedInFirstNameValue"
+          ph="LinkedInFirstNameValueBorder.Content"
+          uid="{05ADDF3A-F106-4478-AC87-A8CA76D8D1E9}" />
+        <r
+          id="{5CB208F6-1860-426B-8221-FAA85B329848}"
+          par="Id=LinkedInMainAddressColumn&amp;GridColumns=4"
+          ph="LinkedInBasicInformationRow1.Content"
+          uid="{2ADD583C-C7AB-4707-B645-E499B7B0A631}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=LinkedInMainAddressLabelBorder"
+          ph="LinkedInMainAddressColumn.Content"
+          uid="{F15EFD6D-F34E-4BD5-994B-95DC9D26D800}" />
+        <r
+          ds="{CDD299D6-D6C6-4774-B659-4FA10BDEBCD3}"
+          id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}"
+          par="Id=LinkedInMainAddressLabel"
+          ph="LinkedInMainAddressLabelBorder.Content"
+          uid="{5705AF41-93AC-4B0D-9078-6C2A061E0364}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=LinkedInMainAddressValueBorder"
+          ph="LinkedInMainAddressColumn.Content"
+          uid="{22A30EEF-1421-4E8F-BCA9-DB80F0BBA9E4}" />
+        <r
+          ds="{1F61373B-8994-4D4F-8051-D8357F4202F2}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=LinkedInMainAddressValue"
+          ph="LinkedInMainAddressValueBorder.Content"
+          uid="{FAD8C8F4-B579-45C4-9BA1-875DF1DF3E10}" />
+        <r
+          id="{5CB208F6-1860-426B-8221-FAA85B329848}"
+          par="Id=LinkedInTwitterAccountsColumn&amp;GridColumns=4"
+          ph="LinkedInBasicInformationRow1.Content"
+          uid="{B03D0C17-B1D0-4EFE-BBCC-10033B3FC53A}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=LinkedInTwitterAccountsLabelBorder"
+          ph="LinkedInTwitterAccountsColumn.Content"
+          uid="{53B55E41-19C7-47BF-B5FD-D1AF8A3180D0}" />
+        <r
+          ds="{2736C9AD-322F-4811-9267-C18160126B0B}"
+          id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}"
+          par="Id=LinkedInTwitterAccountsLabel"
+          ph="LinkedInTwitterAccountsLabelBorder.Content"
+          uid="{66CDF6F4-968E-4B22-B919-E13D7D220325}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=LinkedInTwitterAccountsValueBorder"
+          ph="LinkedInTwitterAccountsColumn.Content"
+          uid="{2B28C513-CD67-456F-AC12-DBC941866B2B}" />
+        <r
+          ds="{1F61373B-8994-4D4F-8051-D8357F4202F2}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=LinkedInTwitterAccountsValue"
+          ph="LinkedInTwitterAccountsValueBorder.Content"
+          uid="{AA92E0C1-5414-497F-A4D3-89E011795889}" />
+        <r
+          id="{C4393722-39FA-4869-9582-3A8EB8983A0D}"
+          par="UsePadding=True&amp;Id=LinkedInBasicInformationRow2"
+          ph="LinkedInBasicInformationBorder.Content"
+          uid="{79E19482-CCDB-4308-A321-BB234C5C6363}" />
+        <r
+          id="{5CB208F6-1860-426B-8221-FAA85B329848}"
+          par="Id=LinkedInLastNameColumn&amp;GridColumns=4"
+          ph="LinkedInBasicInformationRow2.Content"
+          uid="{CC12D2B3-F50D-4F21-AF0B-D5D1528E28E2}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=LinkedInLastNameLabelBorder"
+          ph="LinkedInLastNameColumn.Content"
+          uid="{8863AB9C-CAC7-4348-A151-0D56B4D87478}" />
+        <r
+          ds="{58D7D54A-F3CC-4CD7-827A-7D9A14220867}"
+          id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}"
+          par="Id=LinkedInLastNameLabel"
+          ph="LinkedInLastNameLabelBorder.Content"
+          uid="{90000D4F-9137-4661-91C0-565163E13757}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=LinkedInLastNameValueBorder"
+          ph="LinkedInLastNameColumn.Content"
+          uid="{E1186E91-058A-4808-AF1A-FC080EFD94E6}" />
+        <r
+          ds="{1F61373B-8994-4D4F-8051-D8357F4202F2}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=LinkedInLastNameValue"
+          ph="LinkedInLastNameValueBorder.Content"
+          uid="{C5A6BCF9-1FE6-4819-94CA-A4CDAC562DB4}" />
+        <r
+          id="{5CB208F6-1860-426B-8221-FAA85B329848}"
+          par="Id=LinkedInPhoneNumberColumn&amp;GridColumns=4"
+          ph="LinkedInBasicInformationRow2.Content"
+          uid="{C8396F38-CEBD-495C-8133-F5DE9ED48A3F}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=LinkedInPhoneNumberLabelBorder"
+          ph="LinkedInPhoneNumberColumn.Content"
+          uid="{B7EC9452-D5B1-4002-8DE1-3DA57BCF9A48}" />
+        <r
+          ds="{9F236540-4753-4AD7-A952-0504B07BA7C8}"
+          id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}"
+          par="Id=LinkedInPhoneNumberLabel"
+          ph="LinkedInPhoneNumberLabelBorder.Content"
+          uid="{81823AA6-1A48-4700-A1E9-EE043A2DB198}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=LinkedInPhoneNumberValueBorder"
+          ph="LinkedInPhoneNumberColumn.Content"
+          uid="{B9579DD2-10C5-43A8-9DA8-8C7703D16F1A}" />
+        <r
+          ds="{1F61373B-8994-4D4F-8051-D8357F4202F2}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=LinkedInPhoneNumberValue"
+          ph="LinkedInPhoneNumberValueBorder.Content"
+          uid="{556382DA-8278-41A7-8D99-A9E40AAB4A23}" />
+        <r
+          id="{5CB208F6-1860-426B-8221-FAA85B329848}"
+          par="Id=LinkedInIMAccountsColumn&amp;GridColumns=4"
+          ph="LinkedInBasicInformationRow2.Content"
+          uid="{01462154-55FC-4869-9D9C-6EE069A3E2E5}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=LinkedInIMAccountsLabelBorder"
+          ph="LinkedInIMAccountsColumn.Content"
+          uid="{EC789637-7C6A-4896-BBE3-BEF31FEDB037}" />
+        <r
+          ds="{741BB51E-3FAB-455C-9130-7D21E41CFC3F}"
+          id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}"
+          par="Id=LinkedInIMAccountsLabel"
+          ph="LinkedInIMAccountsLabelBorder.Content"
+          uid="{78E3EC7D-E8FC-40DB-B3CF-8212C5B922CC}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=LinkedInIMAccountsValueBorder"
+          ph="LinkedInIMAccountsColumn.Content"
+          uid="{0A583BFC-01E3-40E2-9647-86909CD5C65A}" />
+        <r
+          ds="{1F61373B-8994-4D4F-8051-D8357F4202F2}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=LinkedInIMAccountsValue"
+          ph="LinkedInIMAccountsValueBorder.Content"
+          uid="{C67BAF52-8043-47D0-A19F-BA77D88888A2}" />
+        <r
+          id="{C4393722-39FA-4869-9582-3A8EB8983A0D}"
+          par="UsePadding=True&amp;Id=LinkedInBasicInformationRow3"
+          ph="LinkedInBasicInformationBorder.Content"
+          uid="{550EE9AC-F960-482C-9C71-F899E7FF3A6F}" />
+        <r
+          id="{5CB208F6-1860-426B-8221-FAA85B329848}"
+          par="Id=LinkedInLocationColumn&amp;GridColumns=4"
+          ph="LinkedInBasicInformationRow3.Content"
+          uid="{F183673A-BDB3-43C4-BFF9-3CE653DD109F}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=LinkedInLocationLabelBorder"
+          ph="LinkedInLocationColumn.Content"
+          uid="{59BBFB33-9261-42C3-8B96-B8E2C3D1E5CA}" />
+        <r
+          ds="{2262F19F-E2A3-4340-9836-EE1B385CB0FE}"
+          id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}"
+          par="Id=LinkedInLocationLabel"
+          ph="LinkedInLocationLabelBorder.Content"
+          uid="{47EC7044-85B4-4A76-84EE-31032B096570}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=LinkedInLocationValueBorder"
+          ph="LinkedInLocationColumn.Content"
+          uid="{F9CEAED3-C19E-45A3-9D93-92FC84E9B185}" />
+        <r
+          ds="{1F61373B-8994-4D4F-8051-D8357F4202F2}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=LinkedInLocationValue"
+          ph="LinkedInLocationValueBorder.Content"
+          uid="{D7C3F3E2-649B-4A68-9F19-85D8BD9B64CE}" />
+        <r
+          id="{5CB208F6-1860-426B-8221-FAA85B329848}"
+          par="Id=LinkedInDayOfBirthColumn&amp;GridColumns=4"
+          ph="LinkedInBasicInformationRow3.Content"
+          uid="{53B2781E-D14D-4A8B-BF07-D61324BB6BBA}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=LinkedInDayOfBirthLabelBorder"
+          ph="LinkedInDayOfBirthColumn.Content"
+          uid="{9AC7E291-FE4E-4665-B347-4E884D071447}" />
+        <r
+          ds="{2F10F994-889C-4213-B8AD-61B2E1A78DB4}"
+          id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}"
+          par="Id=LinkedInDayOfBirthLabel"
+          ph="LinkedInDayOfBirthLabelBorder.Content"
+          uid="{C3AAE412-DE3B-4DDA-A47C-C6099C0C80C8}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=LinkedInDayOfBirthValueBorder"
+          ph="LinkedInDayOfBirthColumn.Content"
+          uid="{E9B97089-B709-4709-8924-F878FCDA4839}" />
+        <r
+          ds="{1F61373B-8994-4D4F-8051-D8357F4202F2}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=LinkedInDayOfBirthValue"
+          ph="LinkedInDayOfBirthValueBorder.Content"
+          uid="{D72388D6-E275-4328-B3C8-7831EB107651}" />
+        <r
+          id="{5CB208F6-1860-426B-8221-FAA85B329848}"
+          par="Id=LinkedInIndustryColumn&amp;GridColumns=4"
+          ph="LinkedInBasicInformationRow3.Content"
+          uid="{97BD099A-BA0F-4EC4-A192-81A8597845E7}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=LinkedInIndustryLabelBorder"
+          ph="LinkedInIndustryColumn.Content"
+          uid="{3539E22A-7AF8-4868-9059-40B4AF5F4930}" />
+        <r
+          ds="{BCC3231A-8322-4978-85F5-E76ED43248F9}"
+          id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}"
+          par="Id=LinkedInIndustryLabel"
+          ph="LinkedInIndustryLabelBorder.Content"
+          uid="{A553729A-CC9D-494D-A5DF-3AE5D49E4B6F}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=LinkedInIndustryValueBorder"
+          ph="LinkedInIndustryColumn.Content"
+          uid="{9A32F5AB-E09C-4BE5-97AD-ED9BE4AE809D}" />
+        <r
+          ds="{1F61373B-8994-4D4F-8051-D8357F4202F2}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=LinkedInIndustryValue"
+          ph="LinkedInIndustryValueBorder.Content"
+          uid="{CCDEC489-0244-48DC-9E4C-347AD4F19803}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=LinkedInAdditionalInformationBorder&amp;IsVisible=%7bBinding+LinkedInInformationPanel.ShowAdditional%7d"
+          ph="LinkedInInformationPanel.Body"
+          uid="{34909DDD-69BF-45AD-9A78-47859C943E72}" />
+        <r
+          id="{C4393722-39FA-4869-9582-3A8EB8983A0D}"
+          par="UsePadding=True&amp;Id=LinkedInAdditionalInformationRow1"
+          ph="LinkedInAdditionalInformationBorder.Content"
+          uid="{B9700154-7B4D-4F39-ABD6-F86EE5CB1223}" />
+        <r
+          id="{5CB208F6-1860-426B-8221-FAA85B329848}"
+          par="Id=LinkedInNumberOfConnectionsColumn&amp;GridColumns=4"
+          ph="LinkedInAdditionalInformationRow1.Content"
+          uid="{998A75F7-8B16-48D6-8A1C-600A30376098}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=LinkedInNumberOfConnectionsLabelBorder"
+          ph="LinkedInNumberOfConnectionsColumn.Content"
+          uid="{6DEE1C91-0DE2-4C29-816F-14116DEFC77A}" />
+        <r
+          ds="{86D94EFB-F1BB-4285-ADC9-B8948414ECCD}"
+          id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}"
+          par="Id=LinkedInNumberOfConnectionsLabel"
+          ph="LinkedInNumberOfConnectionsLabelBorder.Content"
+          uid="{F59F041D-1B73-43F1-9739-0A0F80958FEE}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=LinkedInNumberOfConnectionsValueBorder"
+          ph="LinkedInNumberOfConnectionsColumn.Content"
+          uid="{8FF31A4C-4F2E-4BCB-980A-674C455751A3}" />
+        <r
+          ds="{1F61373B-8994-4D4F-8051-D8357F4202F2}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=LinkedInNumberOfConnectionsValue"
+          ph="LinkedInNumberOfConnectionsValueBorder.Content"
+          uid="{7F62EB56-7FBD-4E6C-A924-76D5E8E7D020}" />
+        <r
+          id="{5CB208F6-1860-426B-8221-FAA85B329848}"
+          par="Id=LinkedInEducationColumn&amp;GridColumns=4"
+          ph="LinkedInAdditionalInformationRow1.Content"
+          uid="{9001AC6F-9F4B-46AF-BF64-46596EB02FF1}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=LinkedInEducationLabelBorder"
+          ph="LinkedInEducationColumn.Content"
+          uid="{DC6E771A-E0A1-4D3A-9B55-ACA3E8B26FFD}" />
+        <r
+          ds="{14D59F8C-FD19-47C9-B2A5-9ADB715CDD30}"
+          id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}"
+          par="Id=LinkedInEducationLabel"
+          ph="LinkedInEducationLabelBorder.Content"
+          uid="{8E8AE233-B711-47AB-ADBB-54B6A1A4D6E4}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=LinkedInEducationValueBorder"
+          ph="LinkedInEducationColumn.Content"
+          uid="{8467076D-3A8B-4C37-9D7C-A07FC47C084A}" />
+        <r
+          ds="{1F61373B-8994-4D4F-8051-D8357F4202F2}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=LinkedInEducationValue"
+          ph="LinkedInEducationValueBorder.Content"
+          uid="{6C2774E7-DEF3-4F99-8F4E-A59AC1CDF4B9}" />
+        <r
+          id="{5CB208F6-1860-426B-8221-FAA85B329848}"
+          par="Id=LinkedInPositionColumn&amp;GridColumns=4"
+          ph="LinkedInAdditionalInformationRow1.Content"
+          uid="{F779046B-0145-4D70-955B-35F08A123212}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=LinkedInPositionLabelBorder"
+          ph="LinkedInPositionColumn.Content"
+          uid="{8AA722C2-1208-4429-AAB6-D387868DB97B}" />
+        <r
+          ds="{EED24EA3-0DC6-40CC-AC7F-DF7E822B327C}"
+          id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}"
+          par="Id=LinkedInPositionLabel"
+          ph="LinkedInPositionLabelBorder.Content"
+          uid="{10B99FAA-42E2-42C8-9769-D76DDEC24A0F}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=LinkedInPositionValueBorder"
+          ph="LinkedInPositionColumn.Content"
+          uid="{9390B5AC-2806-4A15-BBDB-9075EA60EABF}" />
+        <r
+          ds="{1F61373B-8994-4D4F-8051-D8357F4202F2}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=LinkedInPositionValue"
+          ph="LinkedInPositionValueBorder.Content"
+          uid="{52C4BB21-A89C-4A68-AAAB-CC619352E904}" />
+        <r
+          id="{C4393722-39FA-4869-9582-3A8EB8983A0D}"
+          par="UsePadding=True&amp;Id=LinkedInAdditionalInformationRow2"
+          ph="LinkedInAdditionalInformationBorder.Content"
+          uid="{07B48920-E7F5-4818-8E7E-87C1860F9964}" />
+        <r
+          id="{5CB208F6-1860-426B-8221-FAA85B329848}"
+          par="Id=LinkedInCurrentPositionsColumn&amp;GridColumns=4"
+          ph="LinkedInAdditionalInformationRow2.Content"
+          uid="{64DB8336-6877-48CB-A7A1-4DA719D0AFB7}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=LinkedInCurrentPositionsLabelBorder"
+          ph="LinkedInCurrentPositionsColumn.Content"
+          uid="{438E7E9D-B830-446E-B18B-376ECCD76ACD}" />
+        <r
+          ds="{2AB0D8EA-20D7-40FE-857C-C3EFB419BE3B}"
+          id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}"
+          par="Id=LinkedInCurrentPositionsLabel"
+          ph="LinkedInCurrentPositionsLabelBorder.Content"
+          uid="{9CF26CEF-08F8-408C-BC31-C39CB3045D0C}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=LinkedInCurrentPositionsValueBorder"
+          ph="LinkedInCurrentPositionsColumn.Content"
+          uid="{7A165B20-E3F7-4A84-9EF8-9FFF991A1632}" />
+        <r
+          ds="{1F61373B-8994-4D4F-8051-D8357F4202F2}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=LinkedInCurrentPositionsValue"
+          ph="LinkedInCurrentPositionsValueBorder.Content"
+          uid="{360AE153-327B-4534-B660-7A1070308821}" />
+        <r
+          id="{5CB208F6-1860-426B-8221-FAA85B329848}"
+          par="Id=LinkedInPastPositionsColumn&amp;GridColumns=4"
+          ph="LinkedInAdditionalInformationRow2.Content"
+          uid="{E5D2E0A8-DC9E-404B-A6E3-3060D6B4ADF9}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=LinkedInPastPositionsLabelBorder"
+          ph="LinkedInPastPositionsColumn.Content"
+          uid="{4823EBFC-E562-4B6F-AD91-0ACD44286503}" />
+        <r
+          ds="{87F65F12-20EA-4D83-9D42-06BC0FFF4F5C}"
+          id="{98316BB6-F3F5-4E6F-81F0-79F173D151D8}"
+          par="Id=LinkedInPastPositionsLabel"
+          ph="LinkedInPastPositionsLabelBorder.Content"
+          uid="{56AA65D5-B897-4265-B7F7-6DBD695815E5}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=LinkedInPastPositionsValueBorder"
+          ph="LinkedInPastPositionsColumn.Content"
+          uid="{AF167A6E-4B9E-4068-A2BA-038AC5FF2FBC}" />
+        <r
+          ds="{1F61373B-8994-4D4F-8051-D8357F4202F2}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=LinkedInPastPositionsValue"
+          ph="LinkedInPastPositionsValueBorder.Content"
+          uid="{F6B78FBE-76F4-45C1-93D4-C791869DB44A}" />
+      </d>
+    </r>
+Languages:
+- Language: da
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: LinkedInPanel
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170614T103543Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: "de-DE"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: LinkedInPanel
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170614T104052Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20140626T141840Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: LinkedIn パネル
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170614T104438Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

@@ -1,0 +1,75 @@
+﻿---
+ID: "dcde7002-0184-4b85-8670-c86875855db9"
+Parent: "e1addf9d-f168-4234-80bc-2599465104d4"
+Template: "6b2c1723-b4e0-49be-8ef2-f1d12c969e54"
+Path: /sitecore/client/Applications/ExperienceProfile/Contact/PageSettings/Tabs/Overview/OverviewPanel/AllCampaignsHyperlinkButton
+DB: core
+Languages:
+- Language: da
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: AllCampaignsHyperlinkButton
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170113T074639Z
+    - ID: "368e1ab6-8708-4f58-af08-7daa53a5bf32"
+      Hint: Text
+      Value: Visning af de seneste kampagner – få mere information her...
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: "de-DE"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: AlleKampagnenHyperlinkButton
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: "20140611T165025:635381022251843559"
+    - ID: "368e1ab6-8708-4f58-af08-7daa53a5bf32"
+      Hint: Text
+      Value: "Neuste Kampagnen angeigen - für weitere Informationen lesen Sie bitte hier nach…"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20140121T165115
+    - ID: "368e1ab6-8708-4f58-af08-7daa53a5bf32"
+      Hint: Text
+      Value: "Recent campaigns shown - see more information here..."
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: すべてのキャンペーンのハイパーリンク ボタン
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170113T075714Z
+    - ID: "368e1ab6-8708-4f58-af08-7daa53a5bf32"
+      Hint: Text
+      Value: "最新のキャンペーンを表示 - 詳細情報を表示"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

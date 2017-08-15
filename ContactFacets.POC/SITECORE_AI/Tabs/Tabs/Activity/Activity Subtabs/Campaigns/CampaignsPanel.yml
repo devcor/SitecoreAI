@@ -1,0 +1,130 @@
+﻿---
+ID: "4e06fbba-1c8b-429c-986b-9578e9c41e16"
+Parent: "3dc10fb3-23f4-431e-a569-b01ea282a5a1"
+Template: "f62b4cd7-754c-4461-810f-2b6bd2c92a0d"
+Path: /sitecore/client/Applications/ExperienceProfile/Contact/PageSettings/Tabs/Activity/Activity Subtabs/Campaigns/CampaignsPanel
+DB: core
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+- ID: "deab3795-056f-4421-adf0-758844461b72"
+  Hint: Placeholder Name
+  Value: CampaignsPanel
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r>
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{759BEFD1-3323-404D-A243-E0ED81163C03}">
+        <r
+          id="{CB83D434-31ED-4AC3-A280-CCE2B63F9743}"
+          par="PageCodeScriptFileName=%2fsitecore%2fshell%2fclient%2fApplications%2fExperienceProfile%2fContact%2fCampaigns%2fCampaigns.js"
+          ph="Page.Body"
+          uid="{866AE4B9-1E02-41FE-A971-65849CE57530}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=CampaignsTabBorder"
+          ph="Page.Body"
+          uid="{0A33EA4D-EACC-4BBD-8075-5DF5A2EB7F47}" />
+        <r
+          id="{910155C7-3881-4A56-90FB-D126490EDE55}"
+          par="Id=CampaignsTabMessageBar"
+          ph="CampaignsTabBorder.Content"
+          uid="{AA97F233-837F-4026-8E33-D9A2E7FCEC7F}" />
+        <r
+          ds="{FD6305E3-39CA-4D5E-B9DD-92791EBA8109}"
+          id="{442BD093-FBAD-4E36-BC08-489E16C82D08}"
+          par="Id=CampaignsAccordion&amp;IsCollapsible=0"
+          ph="CampaignsTabBorder.Content"
+          uid="{36B0E5DE-7138-47A0-B426-36733DA22D6B}" />
+        <r
+          ds="{611B07A3-24B1-4B85-A81D-298618F79641}"
+          id="{ACE0AFD6-3DE0-42CF-8E62-4E68CD810A8D}"
+          par="Id=Campaigns&amp;Items=%7bBinding+CampaignsDataProvider.cidata%7d"
+          ph="CampaignsAccordion.Body"
+          uid="{C2134EA6-F2BE-4549-ABB8-C8BB4CF9A8A6}" />
+        <r
+          ds="{88134D50-FA78-406D-8C52-8286EB12BB25}"
+          id="{FE9723FC-56E4-4CA8-9C64-CB34F29462A5}"
+          par="Id=ProgressIndicatorCampaigns&amp;IsBusy=%7bBinding+CampaignsDataProvider.IsBusy%7d&amp;TargetControl=Campaigns"
+          ph="CampaignsAccordion.Body"
+          uid="{7CDFC095-C9E3-4E45-A711-5D7EAA9739F9}" />
+        <r
+          ds="{6CD06869-4264-420C-A161-3220DD3AB7BA}"
+          id="{A91523CD-6E56-4F08-8B21-C39018E0134A}"
+          par="Id=CampaignsDataProvider"
+          ph="CampaignsAccordion.Body"
+          uid="{E6641AAB-AFE0-4B60-88F8-60FDBD5E1ED6}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=MoreCampaignsBorder&amp;IsVisible=%7bBinding+CampaignsDataProvider.HasMoreData%7d&amp;ContentAlignment=Center&amp;UsePadding=1"
+          ph="CampaignsAccordion.Body"
+          uid="{A951F56F-AEE9-449A-9410-0494E680712F}" />
+        <r
+          ds="{7FE4B60B-C65B-4801-901A-C27BC53FB939}"
+          id="{913AB005-2527-4C2D-9827-FB3A8DFB135C}"
+          par="Click=javascript%3aapp.CampaignsDataProvider.nextListData()&amp;Id=MoreCampaignsButton&amp;IsEnabled=%7bBinding+CampaignsDataProvider.IsBusy%2c+Converter%3dNot%7d&amp;Dimension=Large"
+          ph="MoreCampaignsBorder.Content"
+          uid="{D8549A22-909E-4329-956E-254D87FEB0D2}" />
+      </d>
+    </r>
+Languages:
+- Language: da
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: CampaignsPanel
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170113T074520Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: "de-DE"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: KampagnenPanel
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: "20140611T164536:635381019367812310"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20131121T121351
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: キャンペーン パネル
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170113T075552Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
