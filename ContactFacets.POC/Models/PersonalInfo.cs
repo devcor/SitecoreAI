@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace ContactFacets.POC.Models
+﻿namespace ContactFacets.POC.Models
 {
     public class PersonalInfo
     {

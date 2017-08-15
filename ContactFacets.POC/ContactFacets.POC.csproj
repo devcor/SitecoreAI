@@ -71,6 +71,9 @@
     <Reference Include="Sitecore.Analytics.Model">
       <HintPath>..\Sitecore\Sitecore.Analytics.Model.dll</HintPath>
     </Reference>
+    <Reference Include="Sitecore.Cintel">
+      <HintPath>..\Sitecore\Sitecore.Cintel.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Kernel">
       <HintPath>..\Sitecore\Sitecore.Kernel.dll</HintPath>
     </Reference>
@@ -125,12 +128,17 @@
     <Compile Include="Models\AIContactPersonalInfo.cs" />
     <Compile Include="Models\IAIContactPersonalInfo.cs" />
     <Compile Include="Models\PersonalInfo.cs" />
-    <Compile Include="Pipelines\AIStoredData.cs" />
+    <Compile Include="Pipelines\ConstructAIDataTable.cs" />
+    <Compile Include="Pipelines\GetAIData.cs" />
+    <Compile Include="Pipelines\PopulateWithAIData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="sitecore\shell\client\Applications\ExperienceProfile\Contact\AI\AITab.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sitecore\shell\client\Applications\ExperienceProfile\Contact\AI\AITab.css">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Views\web.config" />
@@ -143,9 +151,7 @@
   <ItemGroup>
     <Content Include="Web.config" />
     <Content Include="Views\MainLayout.cshtml" />
-    <None Include="App_Config\Include\ContactFacets.POC.config">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    <Content Include="App_Config\Include\ContactFacets.POC.config" />
     <Content Include="App_Config\Include\Rainbow.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.zSharedSecret.config.example" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.UI.config" />

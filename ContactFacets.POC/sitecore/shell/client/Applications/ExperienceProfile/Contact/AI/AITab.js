@@ -1,7 +1,8 @@
 define(["sitecore", "/-/speak/v1/experienceprofile/DataProviderHelper.js"], function (sc, providerHelper) {
     var app = sc.Definitions.App.extend({
         initialized: function () {
-            var tableName = "sampleorders"; // Case Sensitive!
+            $('.sc-progressindicator').first().show().hide();
+            var tableName = "ai"; // Case Sensitive!
             var localUrl = "/intel/" + tableName;
 
             providerHelper.setupHeaders([
@@ -10,13 +11,22 @@ define(["sitecore", "/-/speak/v1/experienceprofile/DataProviderHelper.js"], func
 
             var url = sc.Contact.baseUrl + localUrl;
 
-            providerHelper.initProvider(this.SampleOrdersDataProvider, tableName, url, this.SampleOrdersTabMessageBar);
-            providerHelper.subscribeSorting(this.SampleOrdersDataProvider, this.SampleOrders);
-            providerHelper.getListData(this.SampleOrdersDataProvider);
+            providerHelper.initProvider(this.TrainingDataProvider, tableName, url, this.AITabMessageBar);
+            providerHelper.subscribeAccordionHeader(this.TrainingDataProvider, this.TrainingAccordion);
 
-            providerHelper.subscribeAccordionHeader(this.SampleOrdersDataProvider, this.SampleOrdersAccordion);
-
-            sc.Contact.subscribeVisitDialog(this.SampleOrders);
+            providerHelper.getData(this.TrainingDataProvider,
+                $.proxy(function (jsonData) {
+                    var dataSetProperty = "Data";
+                    if (jsonData.data.dataSet != null && jsonData.data.dataSet.ai.length > 0) {
+                        var aiData = jsonData.data.dataSet.ai[0]
+                        this.TrainingDataProvider.set(dataSetProperty, jsonData);
+                        this.NoTrainingData.set("text", aiData.AITraining);
+                        this.NoDetailsData.set("text", aiData.AIResult);
+                    }/* else {
+                        this.EmployeeIdLabel.set("isVisible", false);
+                        this.AITabMessageBar.addMessage("notification", this.NoEmployeeData.get("text"));
+                    }*/
+                }, this));
         }
     });
     return app;
