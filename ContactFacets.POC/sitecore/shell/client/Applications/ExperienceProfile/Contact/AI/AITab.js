@@ -9,7 +9,7 @@ define(["sitecore", "/-/speak/v1/experienceprofile/DataProviderHelper.js"], func
                 { urlKey: localUrl + "?", headerValue: tableName }
             ]);
 
-            var url = sc.Contact.baseUrl + localUrl;
+            var url = sc.Contact.baseUrl + localUrl; 
 
             providerHelper.initProvider(this.TrainingDataProvider, tableName, url, this.AITabMessageBar);
             //providerHelper.subscribeAccordionHeader(this.TrainingDataProvider, this.TrainingAccordion);
