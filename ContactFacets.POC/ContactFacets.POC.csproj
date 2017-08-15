@@ -169,14 +169,15 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
-    <Content Include="SITECORE_AI\AI\AI.yml" />
-    <Content Include="SITECORE_AI\AI\AI\AIPanel.yml" />
-    <Content Include="SITECORE_AI\AI\AI\AIPanel\AIDetailsAccordion.yml" />
-    <Content Include="SITECORE_AI\AI\AI\AIPanel\AITrainingAccordion.yml" />
-    <Content Include="SITECORE_AI\AI\AI\AIPanel\Texts.yml" />
-    <Content Include="SITECORE_AI\AI\AI\AIPanel\Texts\NoDetailsFound.yml" />
-    <Content Include="SITECORE_AI\AI\AI\AIPanel\Texts\NoTrainingDataFound.yml" />
-    <Content Include="SITECORE_AI\AI\AI\AIPanel\Texts\SubmitButton.yml" />
+    <Content Include="SITECORE_AI\Tabs\Tabs.yml" />
+    <Content Include="SITECORE_AI\Tabs\Tabs\AI.yml" />
+    <Content Include="SITECORE_AI\Tabs\Tabs\AI\AIPanel.yml" />
+    <Content Include="SITECORE_AI\Tabs\Tabs\AI\AIPanel\AIDetailsAccordion.yml" />
+    <Content Include="SITECORE_AI\Tabs\Tabs\AI\AIPanel\AITrainingAccordion.yml" />
+    <Content Include="SITECORE_AI\Tabs\Tabs\AI\AIPanel\Texts.yml" />
+    <Content Include="SITECORE_AI\Tabs\Tabs\AI\AIPanel\Texts\NoDetailsFound.yml" />
+    <Content Include="SITECORE_AI\Tabs\Tabs\AI\AIPanel\Texts\NoTrainingDataFound.yml" />
+    <Content Include="SITECORE_AI\Tabs\Tabs\AI\AIPanel\Texts\SubmitButton.yml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

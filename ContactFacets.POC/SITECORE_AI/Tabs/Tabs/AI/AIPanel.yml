@@ -83,6 +83,11 @@ SharedFields:
           par="Id=DetailsProgressIndicator&amp;AutoShowTimeout=1000&amp;TargetControl=DetailsAccordion"
           ph="DetailsBorder.Content"
           uid="{3C500681-AAEE-4591-BC3C-264964B5BE05}" />
+        <r
+          id="{A91523CD-6E56-4F08-8B21-C39018E0134A}"
+          par="Id=TrainingDataProvider"
+          ph="AITabBorder.Content"
+          uid="{D1BD73ED-8F2C-4A44-BD2D-8F9614EA2FD6}" />
       </d>
     </r>
 Languages:
