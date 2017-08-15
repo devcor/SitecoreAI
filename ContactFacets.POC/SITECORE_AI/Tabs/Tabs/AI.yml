@@ -20,7 +20,7 @@ SharedFields:
         id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
         <r
           id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
-          par="Id=AITabId&amp;Text=%7b75F8D8D7-117A-4278-A1AF-D38E18A64E38%7d"
+          par="Id=AITabId&amp;IsVisible=0&amp;Text=%7b75F8D8D7-117A-4278-A1AF-D38E18A64E38%7d"
           ph=""
           uid="{94C94534-9E0A-458F-949B-F8297ECBFBA5}" />
         <r
@@ -35,13 +35,13 @@ SharedFields:
           uid="{0688CBEE-3F45-43A0-9748-161EDABFDD03}" />
         <r
           id="{F517C5E4-9A53-46C3-B922-5B44E6DAAA48}"
-          par="Id=AIIndicatorImage&amp;IsVisible=%7bBinding+ProfilingLoadOnDemandPanel.isLoaded%2c+Converter%3dNot%7d&amp;Width=60px&amp;Height=60px"
+          par="Id=AIIndicatorImage&amp;IsVisible=%7bBinding+AILoadOnDemandPanel.isLoaded%2c+Converter%3dNot%7d&amp;Width=60px&amp;Height=60px"
           ph="AITabBorder.Content"
           uid="{A205E829-2348-44D6-BC5B-3CED81644696}" />
         <r
           ds="{88134D50-FA78-406D-8C52-8286EB12BB25}"
           id="{FE9723FC-56E4-4CA8-9C64-CB34F29462A5}"
-          par="Id=AIProgressIndicator&amp;AutoShowTimeout=1000"
+          par="Id=AIProgressIndicator&amp;IsBusy=%7bBinding+AILoadOnDemandPanel.isBusy%7d&amp;AutoShowTimeout=1000"
           ph="AITabBorder.Content"
           uid="{703D93FE-0297-48B3-9A99-EFF186EE3FE4}" />
       </d>

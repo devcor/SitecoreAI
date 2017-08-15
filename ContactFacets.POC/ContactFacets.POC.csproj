@@ -176,6 +176,7 @@
     <Content Include="SITECORE_AI\Tabs\Tabs\AI\AIPanel\Texts\NoDetailsFound.yml" />
     <Content Include="SITECORE_AI\Tabs\Tabs\AI\AIPanel\Texts\NoTrainingDataFound.yml" />
     <Content Include="SITECORE_AI\Tabs\Tabs\AI\AIPanel\Texts\SubmitButton.yml" />
+    <Content Include="SITECORE_AI\Sample Layout\Sample Layout.yml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
