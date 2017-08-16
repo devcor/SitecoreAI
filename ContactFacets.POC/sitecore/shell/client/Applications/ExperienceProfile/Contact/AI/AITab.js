@@ -34,13 +34,14 @@ define(["sitecore", "/-/speak/v1/experienceprofile/DataProviderHelper.js"], func
             var aiEndPoint = "/api/sitecore/AI/SaveData";
 
             var trainingInfo = {
+                id: "sdf",
                 labels: this.TrainingData.get('text')
             };
 
             jQuery.ajax({
                 type: "POST",
                 url: aiEndPoint,
-                data: { "AITraining": JSON.stringify(trainingInfo) },
+                data: { "aiTraining": JSON.stringify(trainingInfo) },
                 success: function (success) {
                     this.AITabMessageBar.addMessage("notification", this.SavedText.get("text"))
                 },
