@@ -151,11 +151,11 @@
   <ItemGroup>
     <Content Include="Web.config" />
     <Content Include="Views\MainLayout.cshtml" />
-    <Content Include="App_Config\Include\ContactFacets.POC.config" />
+    <Content Include="App_Config\Include\CustomPatches\ContactFacets.POC.config" />
     <Content Include="App_Config\Include\Rainbow.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.AutoPublish.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.config" />
-    <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.Default.config" />
+    <Content Include="App_Config\Include\CustomPatches\Unicorn.Configs.Default.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.Dependency.config.example" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.NewItemsOnly.example" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.CustomSerializationFolder.config.example" />
@@ -176,6 +176,8 @@
     <Content Include="SITECORE_AI\AI\AI\AIPanel\Texts\NoTrainingDataFound.yml" />
     <Content Include="SITECORE_AI\AI\AI\AIPanel\Texts\SubmitButton.yml" />
     <Content Include="SITECORE_AI\Sample Layout\Sample Layout.yml" />
+    <Content Include="SITECORE_AI\AI\AI\AIPanel\Texts\ErrorSaving.yml" />
+    <Content Include="SITECORE_AI\AI\AI\AIPanel\Texts\Saved.yml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

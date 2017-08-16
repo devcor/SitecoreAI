@@ -13,6 +13,7 @@ define(["sitecore", "/-/speak/v1/experienceprofile/DataProviderHelper.js"], func
 
             providerHelper.initProvider(this.TrainingDataProvider, tableName, url, this.AITabMessageBar);
             //providerHelper.subscribeAccordionHeader(this.TrainingDataProvider, this.TrainingAccordion);
+            /**/
 
             providerHelper.getData(this.TrainingDataProvider,
                 $.proxy(function (jsonData) {
@@ -22,12 +23,31 @@ define(["sitecore", "/-/speak/v1/experienceprofile/DataProviderHelper.js"], func
                         this.TrainingDataProvider.set(dataSetProperty, jsonData);
                         this.TrainingData.set("text", aiData.AITraining);
                         this.NoDetailsData.set("text", aiData.AIResult);
-                        //this.AITabMessageBar.addMessage("notification", this.NoTrainingData.get("text"));
                     }/* else {
                         this.EmployeeIdLabel.set("isVisible", false);
                         this.AITabMessageBar.addMessage("notification", this.NoEmployeeData.get("text"));
                     }*/
                 }, this));
+        },
+
+        saveData: function () {
+            var aiEndPoint = "/api/sitecore/AI/SaveData";
+
+            var trainingInfo = {
+                labels: this.TrainingData.get('text')
+            };
+
+            jQuery.ajax({
+                type: "POST",
+                url: aiEndPoint,
+                data: { "AITraining": JSON.stringify(trainingInfo) },
+                success: function (success) {
+                    this.AITabMessageBar.addMessage("notification", this.SavedText.get("text"))
+                },
+                error: function () {
+                    this.AITabMessageBar.addMessage("notification", this.ErrorSavingText.get("text"))
+                }
+            });
         }
     });
     return app;
