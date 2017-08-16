@@ -1,0 +1,120 @@
+﻿---
+ID: "135480c1-927f-4cc6-abba-509e4284e531"
+Parent: "75f8d8d7-117a-4278-a1af-d38e18a64e38"
+Template: "f62b4cd7-754c-4461-810f-2b6bd2c92a0d"
+Path: /sitecore/client/Applications/ExperienceProfile/Contact/PageSettings/Tabs/AI/AIPanel
+DB: core
+SharedFields:
+- ID: "deab3795-056f-4421-adf0-758844461b72"
+  Hint: Placeholder Name
+  Value: AIPanel
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r>
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{759BEFD1-3323-404D-A243-E0ED81163C03}">
+        <r
+          id="{CB83D434-31ED-4AC3-A280-CCE2B63F9743}"
+          par="PageCodeScriptFileName=%2fsitecore%2fshell%2fclient%2fApplications%2fExperienceProfile%2fContact%2fAI%2fAITab.js"
+          ph="Page.Body"
+          uid="{10E44F3C-CFB7-4DDB-9FFB-1E72A4ABF515}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=AITabBorder"
+          ph="Page.Body"
+          uid="{BF0CA734-CE1E-4358-8F95-90B086F92211}" />
+        <r
+          id="{910155C7-3881-4A56-90FB-D126490EDE55}"
+          par="Id=AITabMessageBar"
+          ph="AITabBorder.Content"
+          uid="{BA0B44A0-8C16-4C46-BA95-1689208EC93F}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=TrainingBorder"
+          ph="TrainingAccordion.Body"
+          uid="{74E26E18-6179-4DEE-A930-7ABABD7BE8C0}" />
+        <r
+          ds="{170AA9EC-4DBC-42AA-BF97-F9A944DB60B7}"
+          id="{442BD093-FBAD-4E36-BC08-489E16C82D08}"
+          par="Id=TrainingAccordion"
+          ph="AITabBorder.Content"
+          uid="{4247168B-E9EE-4F6B-8465-02CEBF01B2BF}" />
+        <r
+          ds="{EFF7B32D-3D82-4A7E-B6D4-843C5BF52EF3}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=NoTrainingData&amp;IsVisible=0"
+          ph="TrainingBorder.Content"
+          uid="{38F862DF-BA7A-4E80-9FFB-09971CED079C}" />
+        <r
+          ds="{84792C21-8AFE-4791-A264-4542B651D39B}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=SavedText&amp;IsVisible=0"
+          ph="TrainingBorder.Content"
+          uid="{E3FB7742-85E6-490D-B2AD-FBCD5D505A74}" />
+        <r
+          ds="{3C90FA31-DB45-4DAA-95EB-37D8163BB8E7}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=ErrorSavingText&amp;IsVisible=0"
+          ph="TrainingBorder.Content"
+          uid="{DB01F7CC-B095-4622-AF0E-D9006FD021AE}" />
+        <r
+          id="{57F86E9A-1844-45CE-BF8A-62900AE17A92}"
+          par="IsEnabled=1&amp;Id=TrainingData&amp;IsVisible=1&amp;Watermark=%7bBinding+NoTrainingData.Text%7d"
+          ph="TrainingBorder.Content"
+          uid="{F06B428E-28DB-4B25-A71B-E651365D3D84}" />
+        <r
+          ds="{11DEBA8A-A430-415F-9541-DFB6C1AD165D}"
+          id="{913AB005-2527-4C2D-9827-FB3A8DFB135C}"
+          par="Click=javascript%3aapp.saveData()&amp;Id=SubmitButton"
+          ph="TrainingBorder.Content"
+          uid="{4042D01F-5F97-4BC2-9F41-CB3DDCDF2352}" />
+        <r
+          ds="{88134D50-FA78-406D-8C52-8286EB12BB25}"
+          id="{FE9723FC-56E4-4CA8-9C64-CB34F29462A5}"
+          par="Id=TrainingProgressIndicator&amp;AutoShowTimeout=1000&amp;TargetControl=TrainingAccordion"
+          ph="TrainingBorder.Content"
+          uid="{8816E5A2-CAB9-4762-AD1A-6DB7BB650C99}" />
+        <r
+          ds="{1C629199-BD3D-4702-959F-3F89D05116F2}"
+          id="{442BD093-FBAD-4E36-BC08-489E16C82D08}"
+          par="Id=DetailsAccordion"
+          ph="AITabBorder.Content"
+          uid="{19CBCED6-2943-43B1-99A6-405B70A96351}" />
+        <r
+          id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
+          par="Id=DetailsBorder"
+          ph="DetailsAccordion.Body"
+          uid="{F5314B35-D3F4-4E1E-9463-34A1031F76ED}" />
+        <r
+          ds="{216210DC-6DB4-4CE6-92EB-C5C4415E76A7}"
+          id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
+          par="Id=NoDetailsData"
+          ph="DetailsBorder.Content"
+          uid="{3370872A-7511-4089-B62A-13A4E3A6D525}" />
+        <r
+          ds="{88134D50-FA78-406D-8C52-8286EB12BB25}"
+          id="{FE9723FC-56E4-4CA8-9C64-CB34F29462A5}"
+          par="Id=DetailsProgressIndicator&amp;AutoShowTimeout=1000&amp;TargetControl=DetailsAccordion"
+          ph="DetailsBorder.Content"
+          uid="{3C500681-AAEE-4591-BC3C-264964B5BE05}" />
+        <r
+          id="{A91523CD-6E56-4F08-8B21-C39018E0134A}"
+          par="Id=TrainingDataProvider"
+          ph="AITabBorder.Content"
+          uid="{D1BD73ED-8F2C-4A44-BD2D-8F9614EA2FD6}" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170808T213640Z
+    - ID: "aea872fb-aa91-4d1a-b877-3ca6fbbb4fd4"
+      Hint: Header
+      Value: AIPanel
