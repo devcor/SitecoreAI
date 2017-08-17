@@ -12,8 +12,6 @@ define(["sitecore", "/-/speak/v1/experienceprofile/DataProviderHelper.js"], func
             var url = sc.Contact.baseUrl + localUrl; 
 
             providerHelper.initProvider(this.TrainingDataProvider, tableName, url, this.AITabMessageBar);
-            //providerHelper.subscribeAccordionHeader(this.TrainingDataProvider, this.TrainingAccordion);
-            /**/
 
             providerHelper.getData(this.TrainingDataProvider,
                 $.proxy(function (jsonData) {
@@ -31,8 +29,9 @@ define(["sitecore", "/-/speak/v1/experienceprofile/DataProviderHelper.js"], func
         },
 
         saveData: function () {
+            var app = this;
             var aiEndPoint = "/api/sitecore/AI/SaveData";
-
+            
             var trainingInfo = {
                 id: "sdf",
                 labels: this.TrainingData.get('text')
@@ -43,10 +42,11 @@ define(["sitecore", "/-/speak/v1/experienceprofile/DataProviderHelper.js"], func
                 url: aiEndPoint,
                 data: { "aiTraining": JSON.stringify(trainingInfo) },
                 success: function (success) {
-                    this.AITabMessageBar.addMessage("notification", this.SavedText.get("text"))
+                    app.AITabMessageBar.addMessage("notification", app.SavedText.get("text"))
+                    app.AITabMessageBar.viewModel.$el.delay(2000).fadeOut();
                 },
                 error: function () {
-                    this.AITabMessageBar.addMessage("notification", this.ErrorSavingText.get("text"))
+                    app.AITabMessageBar.addMessage("notification", app.ErrorSavingText.get("text"))
                 }
             });
         }

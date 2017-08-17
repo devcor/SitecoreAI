@@ -1,13 +1,4 @@
-﻿using ContactFacets.POC.Models;
-using Sitecore.Analytics;
-using Sitecore.Analytics.Model.Entities;
-using Sitecore.Data;
-using Sitecore.SecurityModel;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using System.Web.Script.Serialization;
 
 namespace ContactFacets.POC.Controllers
@@ -17,12 +8,15 @@ namespace ContactFacets.POC.Controllers
         public ActionResult SaveData(string aiTraining)
         {
             var jss = new JavaScriptSerializer();
-            var trainingInfo = jss.Deserialize<TrainingInfo>(aiTraining);            
+            var trainingInfo = jss.Deserialize<TrainingInfo>(aiTraining);
 
-            var contactInfo = Tracker.Current.Contact;
-            
-            var aiInfo = contactInfo.GetFacet<IAIContactPersonalInfo>(AIContactPersonalInfo.FacetName);
-            aiInfo.AITraining = trainingInfo.labels;
+            //Accessing the Server & Database
+            //var connectionString = ConfigurationManager.ConnectionStrings["analytics"].ConnectionString;
+            //var client = new MongoClient(connectionString);
+            //var mongoUrl = new MongoUrl(connectionString);
+            //var database = client.GetDatabase(mongoUrl.DatabaseName);
+            //var collection = database.GetCollection<dynamic>("Contacts");
+                       
 
             return Json(new { success = true }, JsonRequestBehavior.AllowGet);
         }
