@@ -1,51 +1,52 @@
-define(["sitecore", "/-/speak/v1/experienceprofile/DataProviderHelper.js"], function (sc, providerHelper) {
+define(["sitecore", "/-/speak/v1/experienceprofile/DataProviderHelper.js", "/-/speak/v1/experienceprofile/CintelUtl.js"],
+function (sc, providerHelper, cintelUtil) {
     var app = sc.Definitions.App.extend({
         initialized: function () {
-            $('.sc-progressindicator').first().show().hide();
-            var tableName = "ai"; // Case Sensitive!
-            var localUrl = "/intel/" + tableName;
-
+            var app = this;
+            var tableName = "ai"; 
+            var localUrl = "/intel/" + tableName;            
+             
             providerHelper.setupHeaders([
                 { urlKey: localUrl + "?", headerValue: tableName }
             ]);
 
-            var url = sc.Contact.baseUrl + localUrl; 
+            var url = sc.Contact.baseUrl + localUrl;
+            providerHelper.initProvider(app.TrainingDataProvider, tableName, url, app.AITabMessageBar);
 
-            providerHelper.initProvider(this.TrainingDataProvider, tableName, url, this.AITabMessageBar);
-            //providerHelper.subscribeAccordionHeader(this.TrainingDataProvider, this.TrainingAccordion);
-            /**/
-
-            providerHelper.getData(this.TrainingDataProvider,
+            providerHelper.getData(app.TrainingDataProvider,
                 $.proxy(function (jsonData) {
                     var dataSetProperty = "Data";
                     if (jsonData.data.dataSet != null && jsonData.data.dataSet.ai.length > 0) {
-                        var aiData = jsonData.data.dataSet.ai[0]
-                        this.TrainingDataProvider.set(dataSetProperty, jsonData);
-                        this.TrainingData.set("text", aiData.AITraining);
-                        this.NoDetailsData.set("text", aiData.AIResult);
+                        var aiData = jsonData.data.dataSet.ai[0]                        
+                        app.TrainingDataProvider.set(dataSetProperty, jsonData);
+                        cintelUtil.setText(app.TrainingData, aiData.AITraining, true);
+                        cintelUtil.setText(app.NoDetailsData, aiData.AIResult, true);
                     }/* else {
-                        this.EmployeeIdLabel.set("isVisible", false);
-                        this.AITabMessageBar.addMessage("notification", this.NoEmployeeData.get("text"));
+                        app.EmployeeIdLabel.set("isVisible", false);
+                        app.AITabMessageBar.addMessage("notification", app.NoEmployeeData.get("text"));
                     }*/
                 }, this));
         },
 
         saveData: function () {
-            var aiEndPoint = "/api/sitecore/AI/SaveData";
-
-            var trainingInfo = {
-                labels: this.TrainingData.get('text')
+            var app = this;
+            var aiEndPoint = "/api/sitecore/AI/SaveData";            
+            
+            var TrainingInfo = {
+                Id: cintelUtil.getQueryParam("cid"),
+                Labels: app.TrainingData.get('text')
             };
 
             jQuery.ajax({
                 type: "POST",
                 url: aiEndPoint,
-                data: { "AITraining": JSON.stringify(trainingInfo) },
+                data: TrainingInfo,
                 success: function (success) {
-                    this.AITabMessageBar.addMessage("notification", this.SavedText.get("text"))
+                    app.AITabMessageBar.addMessage("notification", app.SavedText.get("text"))
+                    app.AITabMessageBar.viewModel.$el.delay(2000).fadeOut();
                 },
                 error: function () {
-                    this.AITabMessageBar.addMessage("notification", this.ErrorSavingText.get("text"))
+                    app.AITabMessageBar.addMessage("notification", app.ErrorSavingText.get("text"))
                 }
             });
         }
