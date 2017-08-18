@@ -142,17 +142,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="sitecore\shell\client\Applications\ExperienceProfile\Contact\AI\AITab.js">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="sitecore\shell\client\Applications\ExperienceProfile\Contact\AI\AITab.css">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <Content Include="sitecore\shell\client\Applications\ExperienceProfile\Contact\AI\AITab.js" />
+    <Content Include="sitecore\shell\client\Applications\ExperienceProfile\Contact\AI\AITab.css" />
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="sitecore\shell\client\Applications\ExperienceProfile\Dashboard\" />
+    <Folder Include="sitecore\shell\client\Applications\ExperienceProfile\Search\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Web.config" />
@@ -173,17 +171,19 @@
     <Content Include="App_Config\Include\CustomPatchFiles\ContactFacets.POC.config" />
     <Content Include="App_Config\Include\CustomPatchFiles\Unicorn.Configs.Default.config" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
-    <Content Include="SITECORE_AI\AI\AI.yml" />
-    <Content Include="SITECORE_AI\AI\AI\AIPanel.yml" />
-    <Content Include="SITECORE_AI\AI\AI\AIPanel\AIDetailsAccordion.yml" />
-    <Content Include="SITECORE_AI\AI\AI\AIPanel\AITrainingAccordion.yml" />
-    <Content Include="SITECORE_AI\AI\AI\AIPanel\Texts.yml" />
-    <Content Include="SITECORE_AI\AI\AI\AIPanel\Texts\NoDetailsFound.yml" />
-    <Content Include="SITECORE_AI\AI\AI\AIPanel\Texts\NoTrainingDataFound.yml" />
-    <Content Include="SITECORE_AI\AI\AI\AIPanel\Texts\SubmitButton.yml" />
-    <Content Include="SITECORE_AI\Sample Layout\Sample Layout.yml" />
-    <Content Include="SITECORE_AI\AI\AI\AIPanel\Texts\ErrorSaving.yml" />
-    <Content Include="SITECORE_AI\AI\AI\AIPanel\Texts\Saved.yml" />
+    <None Include="SITECORE_AI\Sample Layout\Sample Layout.yml" />
+    <None Include="SITECORE_AI\Search AI\AI.yml" />
+    <None Include="SITECORE_AI\Tab AI\AI.yml" />
+    <None Include="SITECORE_AI\Tab AI\AI\AIPanel.yml" />
+    <None Include="SITECORE_AI\Tab AI\AI\AIPanel\AIDetailsAccordion.yml" />
+    <None Include="SITECORE_AI\Tab AI\AI\AIPanel\AITrainingAccordion.yml" />
+    <None Include="SITECORE_AI\Tab AI\AI\AIPanel\Texts.yml" />
+    <None Include="SITECORE_AI\Tab AI\AI\AIPanel\Texts\ErrorSaving.yml" />
+    <None Include="SITECORE_AI\Tab AI\AI\AIPanel\Texts\NoDetailsFound.yml" />
+    <None Include="SITECORE_AI\Tab AI\AI\AIPanel\Texts\NoTrainingDataFound.yml" />
+    <None Include="SITECORE_AI\Tab AI\AI\AIPanel\Texts\Saved.yml" />
+    <None Include="SITECORE_AI\Tab AI\AI\AIPanel\Texts\SubmitButton.yml" />
+    <None Include="SITECORE_AI\Visitor AI\AI.yml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

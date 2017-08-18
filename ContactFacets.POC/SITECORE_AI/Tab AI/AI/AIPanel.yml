@@ -27,11 +27,6 @@ SharedFields:
           ph="Page.Body"
           uid="{BF0CA734-CE1E-4358-8F95-90B086F92211}" />
         <r
-          id="{910155C7-3881-4A56-90FB-D126490EDE55}"
-          par="Id=AITabMessageBar"
-          ph="AITabBorder.Content"
-          uid="{BA0B44A0-8C16-4C46-BA95-1689208EC93F}" />
-        <r
           id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}"
           par="Id=TrainingBorder"
           ph="TrainingAccordion.Body"
@@ -42,6 +37,11 @@ SharedFields:
           par="Id=TrainingAccordion"
           ph="AITabBorder.Content"
           uid="{4247168B-E9EE-4F6B-8465-02CEBF01B2BF}" />
+        <r
+          id="{910155C7-3881-4A56-90FB-D126490EDE55}"
+          par="Id=AITabMessageBar"
+          ph="TrainingBorder.Content"
+          uid="{BA0B44A0-8C16-4C46-BA95-1689208EC93F}" />
         <r
           ds="{EFF7B32D-3D82-4A7E-B6D4-843C5BF52EF3}"
           id="{7717EB6C-9F90-4C58-826D-5E87722A0318}"
