@@ -6,12 +6,12 @@ using System.Data;
 
 namespace ContactFacets.POC.Pipelines
 {
-    public class GetAIData : ReportProcessorBase
+    public class AIQuery : ReportProcessorBase
     {
         public override void Process(ReportProcessorArgs args)
         {
-            var queryExpression = this.CreateQuery().Build();
-            var table = base.GetTableFromContactQueryExpression(queryExpression, args.ReportParameters.ContactId, null);
+            var queryExpression = CreateQuery().Build();
+            var table = GetTableFromContactQueryExpression(queryExpression, args.ReportParameters.ContactId, null);
             RenameColumns(table);
             args.QueryResult = table;
         }
@@ -22,9 +22,8 @@ namespace ContactFacets.POC.Pipelines
             {
                 collectionName = "Contacts"
             };
-            builder.Fields.Add("_id");
-            builder.Fields.Add(AIContactPersonalInfo.FacetName + "_AIResult");
-            builder.Fields.Add(AIContactPersonalInfo.FacetName + "_AITraining");
+            builder.Fields.Add(AIFacet.FacetName + "." + AIFacet.FIELD_RESULT);
+            builder.Fields.Add(AIFacet.FacetName + "." + AIFacet.FIELD_TRAINING);
             builder.QueryParms.Add("_id", "@contactid");
             return builder;
         }
@@ -32,7 +31,7 @@ namespace ContactFacets.POC.Pipelines
         private void RenameColumns(DataTable dataTable)
         {
             foreach (DataColumn column in dataTable.Columns)
-                column.ColumnName = column.ColumnName.Replace(AIContactPersonalInfo.FacetName + "_", "");
+                column.ColumnName = column.ColumnName.Replace(AIFacet.FacetName + "_", "");
         }
     }
 }

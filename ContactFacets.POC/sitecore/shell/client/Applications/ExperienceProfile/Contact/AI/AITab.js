@@ -15,40 +15,56 @@ function (sc, providerHelper, cintelUtil) {
 
             providerHelper.getData(app.TrainingDataProvider,
                 $.proxy(function (jsonData) {
-                    var dataSetProperty = "Data";
                     if (jsonData.data.dataSet != null && jsonData.data.dataSet.ai.length > 0) {
                         var aiData = jsonData.data.dataSet.ai[0]                        
-                        app.TrainingDataProvider.set(dataSetProperty, jsonData);
-                        cintelUtil.setText(app.TrainingData, aiData.AITraining, true);
-                        cintelUtil.setText(app.NoDetailsData, aiData.AIResult, true);
-                    }/* else {
-                        app.EmployeeIdLabel.set("isVisible", false);
-                        app.AITabMessageBar.addMessage("notification", app.NoEmployeeData.get("text"));
-                    }*/
+                        app.TrainingDataProvider.set("Data", jsonData);
+                        if (aiData.Training != null) {
+                            cintelUtil.setText(app.TrainingData, aiData.Training, true);
+                        }
+                        if (aiData.Result != null) {
+                            cintelUtil.setText(app.DetailsData, aiData.Result, true);
+                        }                       
+                    }
                 }, this));
         },
 
         saveData: function () {
             var app = this;
-            var aiEndPoint = "/api/sitecore/AI/SaveData";            
-            
-            var TrainingInfo = {
-                Id: cintelUtil.getQueryParam("cid"),
-                Labels: app.TrainingData.get('text')
+            var labels = app.TrainingData.get("text");
+
+            app.AITabMessageBar.removeMessages();
+            var message = {
+                text: app.SavedText.get("text"),
+                actions: [],
+                temporary: false,
+                closable: true
             };
 
-            jQuery.ajax({
-                type: "POST",
-                url: aiEndPoint,
-                data: TrainingInfo,
-                success: function (success) {
-                    app.AITabMessageBar.addMessage("notification", app.SavedText.get("text"))
-                    app.AITabMessageBar.viewModel.$el.delay(2000).fadeOut();
-                },
-                error: function () {
-                    app.AITabMessageBar.addMessage("notification", app.ErrorSavingText.get("text"))
-                }
-            });
+            if (labels != "") {
+                var aiEndPoint = "/api/sitecore/AI/SaveData";
+
+                var TrainingInfo = {
+                    Id: cintelUtil.getQueryParam("cid"),
+                    Labels: app.TrainingData.get('text')
+                };
+
+                jQuery.ajax({
+                    type: "POST",
+                    url: aiEndPoint,
+                    data: TrainingInfo,
+                    success: function (success) {
+                        message.text = app.SavedText.get("text");
+                        app.AITabMessageBar.addMessage("notification", message);                        
+                    },
+                    error: function () {
+                        message.text = app.ErrorSavingText.get("text");
+                        app.AITabMessageBar.addMessage("error", message)
+                    }
+                });
+            } else {
+                message.text = app.ValidationText.get("text");
+                app.AITabMessageBar.addMessage("warning", message);
+            }
         }
     });
     return app;

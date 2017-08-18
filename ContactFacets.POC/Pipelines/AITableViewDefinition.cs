@@ -1,18 +1,18 @@
 ﻿using Sitecore.Cintel.Reporting.Processors;
 using Sitecore.Cintel.Reporting;
 using System.Data;
+using ContactFacets.POC.Models;
 
 namespace ContactFacets.POC.Pipelines
 {
-    public class ConstructAIDataTable : ReportProcessorBase
+    public class AITableViewDefinition : ReportProcessorBase
     {
         public override void Process(ReportProcessorArgs args)
         {            
             var columns = new DataColumn[]
             {
-                new ViewField<string>("_id").ToColumn(),
-                new ViewField<string>("AIResult").ToColumn(),
-                new ViewField<string>("AITraining").ToColumn()
+                new ViewField<string>(AIFacet.FIELD_RESULT).ToColumn(),
+                new ViewField<string>(AIFacet.FIELD_TRAINING).ToColumn()
             };
 
             args.ResultTableForView = new DataTable();

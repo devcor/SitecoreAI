@@ -4,7 +4,7 @@ using System.Data;
 
 namespace ContactFacets.POC.Pipelines
 {
-    public class PopulateWithAIData : ReportProcessorBase
+    public class AITableViewFiller : ReportProcessorBase
     {
         public override void Process(ReportProcessorArgs args)
         {

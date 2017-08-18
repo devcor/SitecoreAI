@@ -16,9 +16,9 @@ namespace ContactFacets.POC.Controllers
         {
             var db = GetMongoDB();
             var contacts = db.GetCollection<Contact>("Contacts");
-            
+
             contacts.Update(FilterById(data.Id),
-                Update.Set(AIContactPersonalInfo.FacetName + ".AITraining", data.Labels));
+                Update.Set(AIFacet.FacetName + "." + AIFacet.FIELD_TRAINING, data.Labels));
 
             return Json(new { success = true }, JsonRequestBehavior.AllowGet);
         }
