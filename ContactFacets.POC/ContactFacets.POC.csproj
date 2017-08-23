@@ -135,9 +135,11 @@
     <Compile Include="Models\AIFacet.cs" />
     <Compile Include="Models\IAIFacet.cs" />
     <Compile Include="Models\PersonalInfo.cs" />
+    <Compile Include="MongoDB\MongoDAO.cs" />
     <Compile Include="Pipelines\AITableViewDefinition.cs" />
     <Compile Include="Pipelines\AIQuery.cs" />
     <Compile Include="Pipelines\AITableViewFiller.cs" />
+    <Compile Include="Pipelines\Dashboard\QueryLatestVisitorsFromSearch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -168,8 +170,13 @@
     <Content Include="App_Config\Include\Unicorn\Unicorn.Remote.config.disabled" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.UI.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.zSharedSecret.config.example" />
-    <Content Include="App_Config\Include\CustomPatchFiles\AIFacets.POC.config" />
+    <Content Include="App_Config\Include\CustomPatchFiles\AIFacets.POC.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="App_Config\Include\CustomPatchFiles\Unicorn.Configs.Default.config" />
+    <Content Include="App_Config\Include\ExperienceProfile\Sitecore.ExperienceProfile.Zorder.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <Content Include="SITECORE_AI\Sample Layout\Sample Layout.yml" />
     <Content Include="SITECORE_AI\Search AI\AI.yml" />
