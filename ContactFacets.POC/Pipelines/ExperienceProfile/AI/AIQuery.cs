@@ -4,7 +4,7 @@ using Sitecore.Cintel.Reporting.ReportingServerDatasource;
 using ContactFacets.POC.Models;
 using System.Data;
 
-namespace ContactFacets.POC.Pipelines
+namespace ContactFacets.POC.Pipelines.ExperienceProfile.AI
 {
     public class AIQuery : ReportProcessorBase
     {

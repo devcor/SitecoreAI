@@ -6,19 +6,33 @@ using MongoDB.Driver.Builders;
 using Sitecore.Analytics.Tracking;
 using System;
 using System.Configuration;
+using System.Linq;
 
 namespace ContactFacets.POC.MongoDB
 {
     public class MongoDAO
-    {
-        public static string GetContactAIDetails(string id)
+    {        
+        public static string GetContactAIResult(string id)
         {
             var db = GetMongoDB();
             var query = GetQueryById(id);
-            var contacts = db.GetCollection<Contact>("Contacts");
-            var val = contacts.Find(query).SetFields(Fields.Include("AI.Details"));
+            var contacts = db.GetCollection("Contacts");
+            var cursor = contacts.Find(query);
+            var doc = cursor.SetFields(Fields.Include(AIFacet.FacetName)).ToList().FirstOrDefault();
 
-            return val.ToString();
+            if (doc == null)
+                return string.Empty;
+
+            var ai = doc.GetValue(AIFacet.FacetName);
+
+            var value = string.Empty;
+            try
+            {
+                value = ai[AIFacet.FIELD_RESULT].ToString();
+            }
+            catch { }          
+
+            return value;
         }
 
         public static void UpdateContact(string id, string training)

@@ -4,23 +4,19 @@ using Sitecore.Cintel.Reporting;
 using Sitecore.Cintel.Reporting.Processors;
 using System.Data;
 
-namespace ContactFacets.POC.Pipelines.Dashboard
+namespace ContactFacets.POC.Pipelines.ExperienceProfile.Dashboard
 {
     public class QueryLatestVisitorsFromSearch : ReportProcessorBase
     {
         public override void Process(ReportProcessorArgs args)
         {
-            args.ResultTableForView.Columns.Add(new ViewField<string>("AITraining").ToColumn());
+            string columnName = AIFacet.FacetName + AIFacet.FIELD_RESULT;
+            args.ResultTableForView.Columns.Add(new ViewField<string>(columnName).ToColumn());
             foreach(DataRow row in args.ResultTableForView.Rows)
             {
-                row["AITraining"] = GetTrainingValue(row["ContactId"].ToString());
+                var aiResult = MongoDAO.GetContactAIResult(row["ContactId"].ToString());
+                row[columnName] = TrainingProcessor.GetTrainingValue(aiResult);
             }
-        }
-
-        private string GetTrainingValue(string id)
-        {
-            return MongoDAO.GetContactAIDetails(id);
-           
         }
     }
 }

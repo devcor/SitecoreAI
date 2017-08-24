@@ -136,10 +136,11 @@
     <Compile Include="Models\IAIFacet.cs" />
     <Compile Include="Models\PersonalInfo.cs" />
     <Compile Include="MongoDB\MongoDAO.cs" />
-    <Compile Include="Pipelines\AITableViewDefinition.cs" />
-    <Compile Include="Pipelines\AIQuery.cs" />
-    <Compile Include="Pipelines\AITableViewFiller.cs" />
-    <Compile Include="Pipelines\Dashboard\QueryLatestVisitorsFromSearch.cs" />
+    <Compile Include="MongoDB\TrainingProcessor.cs" />
+    <Compile Include="Pipelines\ExperienceProfile\AI\AITableViewDefinition.cs" />
+    <Compile Include="Pipelines\ExperienceProfile\AI\AIQuery.cs" />
+    <Compile Include="Pipelines\ExperienceProfile\AI\AITableViewFiller.cs" />
+    <Compile Include="Pipelines\ExperienceProfile\Dashboard\QueryLatestVisitorsFromSearch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -170,13 +171,13 @@
     <Content Include="App_Config\Include\Unicorn\Unicorn.Remote.config.disabled" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.UI.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.zSharedSecret.config.example" />
-    <Content Include="App_Config\Include\CustomPatchFiles\AIFacets.POC.config">
+    <Content Include="App_Config\Include\ExperienceProfile\AI\AIFacets.POC.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="App_Config\Include\CustomPatchFiles\Unicorn.Configs.Default.config" />
-    <Content Include="App_Config\Include\ExperienceProfile\Sitecore.ExperienceProfile.Zorder.config">
+    <Content Include="App_Config\Include\ExperienceProfile\Unicorn.Configs.Default.config" />
+    <None Include="App_Config\Include\ExperienceProfile\AI\Dashboard.config">
       <SubType>Designer</SubType>
-    </Content>
+    </None>
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <Content Include="SITECORE_AI\Sample Layout\Sample Layout.yml" />
     <Content Include="SITECORE_AI\Search AI\AI.yml" />

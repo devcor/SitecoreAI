@@ -3,7 +3,7 @@ using Sitecore.Cintel.Reporting;
 using System.Data;
 using ContactFacets.POC.Models;
 
-namespace ContactFacets.POC.Pipelines
+namespace ContactFacets.POC.Pipelines.ExperienceProfile.AI
 {
     public class AITableViewDefinition : ReportProcessorBase
     {
