@@ -7,7 +7,8 @@ namespace SitecoreAI.Website.Controllers
     {
         public ActionResult SaveData(TrainingInfo data)
         {
-            MongoDAO.UpdateContact(data.Id, data.Labels);
+            var contact = new ContactDAO();
+            contact.SetAITraining(data.Id, data.Labels);
 
             return Json(new { success = true }, JsonRequestBehavior.AllowGet);
         }

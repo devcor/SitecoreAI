@@ -50,9 +50,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ContactDAO.cs" />
     <Compile Include="MongoDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TrainingProcessor.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SitecoreAI.Models\SitecoreAI.Models.csproj">

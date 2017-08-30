@@ -1,9 +1,7 @@
-﻿using System;
+﻿using System.Web.Http;
+using SitecoreAI.MongoDB;
 using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Web.Http;
+using System.Collections.Specialized;
 
 namespace SitecoreAI.WebApi.Controllers
 {
@@ -12,23 +10,27 @@ namespace SitecoreAI.WebApi.Controllers
     {
         [HttpPost]
         [Route("airesult/{id}")]
-        public string Save(string id)
+        public IEnumerable<string> Save([FromUri]string id, [FromBody] string aiResult)
         {
-            return "Post airesult";
+            var contacts = new ContactDAO();
+            contacts.SetAIResult(id, aiResult);
+            return new string[] { "Post airesult", id };
         }
 
         [HttpGet]
         [Route("airesult/{id}")]
         public string GetAiResult(string id)
         {
-            return "get airesult";
+            var contacts = new ContactDAO();
+            return contacts.GetAIResult(id);
         }
 
         [HttpGet]
         [Route("aitraining/{id}")]
         public string GetAiTraining(string id)
         {
-            return "get aitraining";
+            var contacts = new ContactDAO();
+            return contacts.GetAITraining(id);
         }
     }
 }
