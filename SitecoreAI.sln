@@ -1,9 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.16
+VisualStudioVersion = 15.0.26730.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactFacets.POC", "ContactFacets.POC\ContactFacets.POC.csproj", "{8279B2C4-3C6E-4827-9277-5BC002CC7DB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SitecoreAI.Models", "SitecoreAI.Models\SitecoreAI.Models.csproj", "{983C426C-2FC6-46B0-BA00-B79B6EA80885}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SitecoreAI.MongoDB", "SitecoreAI.MongoDB\SitecoreAI.MongoDB.csproj", "{B8C15B91-4690-4752-AA6E-81FAFC071A5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SitecoreAI.Pipelines", "SitecoreAI.Pipelines\SitecoreAI.Pipelines.csproj", "{D0269DD4-8099-473A-847B-6ECF2589B38A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SitecoreAI.WebApi", "SitecoreAI.WebApi\SitecoreAI.WebApi.csproj", "{9CAE7E1D-77DF-4924-A936-568F76F8A97D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SitecoreAI.Website", "SitecoreAI.Website\SitecoreAI.Website.csproj", "{1860B6D3-6A64-4250-BA24-B61EE88F0AE4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +25,31 @@ Global
 		{8279B2C4-3C6E-4827-9277-5BC002CC7DB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8279B2C4-3C6E-4827-9277-5BC002CC7DB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8279B2C4-3C6E-4827-9277-5BC002CC7DB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{983C426C-2FC6-46B0-BA00-B79B6EA80885}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{983C426C-2FC6-46B0-BA00-B79B6EA80885}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{983C426C-2FC6-46B0-BA00-B79B6EA80885}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{983C426C-2FC6-46B0-BA00-B79B6EA80885}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8C15B91-4690-4752-AA6E-81FAFC071A5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8C15B91-4690-4752-AA6E-81FAFC071A5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8C15B91-4690-4752-AA6E-81FAFC071A5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8C15B91-4690-4752-AA6E-81FAFC071A5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0269DD4-8099-473A-847B-6ECF2589B38A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0269DD4-8099-473A-847B-6ECF2589B38A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0269DD4-8099-473A-847B-6ECF2589B38A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0269DD4-8099-473A-847B-6ECF2589B38A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CAE7E1D-77DF-4924-A936-568F76F8A97D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CAE7E1D-77DF-4924-A936-568F76F8A97D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CAE7E1D-77DF-4924-A936-568F76F8A97D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CAE7E1D-77DF-4924-A936-568F76F8A97D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1860B6D3-6A64-4250-BA24-B61EE88F0AE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1860B6D3-6A64-4250-BA24-B61EE88F0AE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1860B6D3-6A64-4250-BA24-B61EE88F0AE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1860B6D3-6A64-4250-BA24-B61EE88F0AE4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A28410E-76D3-448E-8E65-E29F522B54B5}
 	EndGlobalSection
 EndGlobal

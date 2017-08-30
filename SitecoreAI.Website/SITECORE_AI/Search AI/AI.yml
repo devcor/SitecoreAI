@@ -1,0 +1,38 @@
+﻿---
+ID: "d0d33fd0-3bb9-4601-91a4-5dcf7ae34d98"
+Parent: "d7433e68-9cc5-47a6-bc1e-1f4feb54a317"
+Template: "d3cefe6e-e51b-4a84-b92e-aaf8aa8e8dc8"
+Path: /sitecore/client/Applications/ExperienceProfile/Search/PageSettings/SearchResults/AI
+DB: core
+SharedFields:
+- ID: "876d7f97-dcff-4a17-b1cc-7d127a273489"
+  Hint: ContentAlignment
+  Value: "{DD7C736F-EFF0-403E-9777-78D59F383810}"
+- ID: "b2a46ae4-38f9-4538-a2b3-8021083e0e40"
+  Hint: Sortable
+  Type: Checkbox
+  Value: 0
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+- ID: "e67f1b1f-3488-4cf4-80ae-be285c918c2e"
+  Hint: DataField
+  Value: AIResult
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170817T225756Z
+    - ID: "2e9fd749-0f47-4397-8ba2-c56c65366bf0"
+      Hint: HeaderText
+      Value: AI
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "75388012-d191-4561-8074-5340e149c0a5"
+      Hint: SortField
+      Value: AIResult
