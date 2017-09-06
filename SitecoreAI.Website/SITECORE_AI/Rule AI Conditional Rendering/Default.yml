@@ -1,35 +1,40 @@
 ﻿---
-ID: "14030e9f-ce92-49c6-ad87-7d49b50e42ea"
-Parent: "75cc5ce4-8979-4008-9d3c-806477d57619"
-Template: "3a45a723-64ee-4919-9d41-02fd40fd1466"
-Path: /sitecore/layout/Layouts/Sample Layout
+ID: "b60c6a64-b367-48f0-86d9-7fa1c3d3b603"
+Parent: "6f9a8f6e-5317-47e3-aeca-d7cbef06ec9a"
+Template: "854ba861-63ea-4a0c-8c7b-541e9a7ec4c1"
+Path: /sitecore/system/Settings/Rules/Conditional Renderings/Tags/Default
 DB: master
-BranchID: "3f0e643c-3b9a-4e3f-961a-75057ba3c4e8"
 SharedFields:
-- ID: "56776edf-261c-4abc-9fe7-70c618795239"
-  Hint: __Help link
-  Value: 
-- ID: "a036b2bc-ba04-44f6-a75f-bae6cd242abf"
-  Hint: Path
-  Value: /Views/MainLayout.cshtml
-- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
-  Hint: __Sortorder
-  Value: 0
-- ID: "dec8d2d5-e3cf-48b6-a653-8e69e2716641"
-  Hint: __Security
-  Value: 
+- ID: "42f77151-098f-496a-94cf-590b7edeeabe"
+  Hint: Tags
+  Type: Multilist
+  Value: |
+    {BBD6A192-1AB9-41B6-A012-A24BCFCF84B1}
+    {09340671-13CF-4181-A706-BE150B00D735}
+    {D8933FCB-48F3-468E-8FB6-8F2B5CFAF404}
+    {CCDEDBA3-3677-433E-BA09-64A3094808C9}
+    {ADA1A7B1-F84D-419F-96E2-77F95006DC37}
+    {95611296-3E75-45C0-B7A4-69E69C8499AB}
+    {5A355A23-0148-48CB-9017-90A696EAF155}
+    {B5BAE47B-7C89-46AE-A367-B3F5027E8D18}
+    {18C2D156-9B7B-494F-ADB2-2D0D9113000E}
+    {75A9275C-7975-4677-B197-14617DF58635}
+    {F1933AAE-5AC3-4F86-BFEB-3F0C49E39749}
+    {83E58187-D1E5-4FB8-953E-EE89816EC0B5}
+    {67D3BB0D-8883-474A-B6D4-D7CB20B0D1AC}
+    {2C477D5C-BAC9-4624-B7BA-ABB73B07D5FC}
 Languages:
 - Language: da
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: Prøvelayout
+    Value: Standard
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20170614T103835Z
+      Value: 20170614T103858Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -38,13 +43,13 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: Beispiel Layout
+    Value: Default
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20170614T104249Z
+      Value: 20170614T104316Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -55,7 +60,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20170813T165625Z
+      Value: 20120807T112600Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -64,13 +69,13 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: サンプル レイアウト
+    Value: デフォルト
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20170614T104631Z
+      Value: 20170614T104654Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
