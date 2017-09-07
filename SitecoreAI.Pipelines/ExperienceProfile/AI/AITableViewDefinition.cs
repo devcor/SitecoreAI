@@ -11,8 +11,8 @@ namespace SitecoreAI.Pipelines.ExperienceProfile.AI
         {            
             var columns = new DataColumn[]
             {
-                new ViewField<string>(AIFacet.FIELD_RESULT).ToColumn(),
-                new ViewField<string>(AIFacet.FIELD_TRAINING).ToColumn()
+                new ViewField<string>(AIFacet._RESULT).ToColumn(),
+                new ViewField<string>(AIFacet._TRAINING).ToColumn()
             };
 
             args.ResultTableForView = new DataTable();

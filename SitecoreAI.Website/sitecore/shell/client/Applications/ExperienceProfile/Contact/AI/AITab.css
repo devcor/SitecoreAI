@@ -1,0 +1,29 @@
+﻿div[data-sc-id=TrainingBorder], 
+div[data-sc-id=DetailsBorder] {
+    margin: 20px !important;
+}
+
+div[data-sc-id=TrainingAccordion],
+div[data-sc-id=DetailsAccordion] {
+    margin-top: 30px;
+}
+
+div[data-sc-id=TrainingDetails] {    
+    display: flex;
+}
+
+input[data-sc-id=TrainingData] {
+    width: 90%;
+}
+
+span.sc-text[data-sc-id=DetailsData] {
+    margin-right: 5px;
+    margin-left: 45%;
+}
+
+.airow span {
+    font-weight: bold;
+    display: block;
+    float: left;
+    width: 90px;
+}
