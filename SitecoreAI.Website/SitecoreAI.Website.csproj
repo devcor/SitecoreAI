@@ -172,6 +172,7 @@
     <Content Include="SITECORE_AI\Templates AI\AI\AIHome\Data.yml" />
     <Content Include="SITECORE_AI\Templates AI\AI\AIHome\Data\Text.yml" />
     <Content Include="SITECORE_AI\Templates AI\AI\AIHome\__Standard Values.yml" />
+    <Content Include="Views\Shared\AI\EnterRule.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

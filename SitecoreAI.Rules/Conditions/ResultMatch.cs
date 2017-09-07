@@ -10,7 +10,7 @@ namespace SitecoreAI.Rules.Conditions
 {
     public class ResultMatch<T> : StringOperatorCondition<T> where T : RuleContext
     {
-        public int Value { get; set; }
+        public string Value { get; set; }
 
         protected override bool Execute(T ruleContext)
         {
@@ -24,7 +24,7 @@ namespace SitecoreAI.Rules.Conditions
                 var datasourceId = conditionalRenderingsRuleContext.Reference.Settings.DataSource;
                 var contact = Tracker.Current.Contact;
                 var aiFacet = contact.GetFacet<IAIFacet>(AIFacet.FacetName);
-                matchFound = aiFacet.Training.Contains("ddd");
+                matchFound = aiFacet.Training.ToLower().Contains(Value.ToLower());
             }
             catch (Exception ex)
             {
