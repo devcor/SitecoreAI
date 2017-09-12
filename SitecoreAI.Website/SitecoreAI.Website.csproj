@@ -119,6 +119,7 @@
     <Content Include="SITECORE_AI\Rule AI Tag\AI.yml" />
     <Content Include="SITECORE_AI\Rule AI Tag\AI\Visibility.yml" />
     <Content Include="SITECORE_AI\Search AI\AI.yml" />
+    <Content Include="SITECORE_AI\Style AI\AITabStyle.yml" />
     <Content Include="SITECORE_AI\Tab AI\AI.yml" />
     <Content Include="SITECORE_AI\Tab AI\AI\AIPanel.yml" />
     <Content Include="SITECORE_AI\Tab AI\AI\AIPanel\AIDetailsAccordion.yml" />
@@ -175,6 +176,7 @@
     <None Include="Properties\PublishProfiles\Website.pubxml" />
     <Content Include="Views\Shared\AI\ManualFiller.cshtml" />
     <Content Include="Views\Shared\AI\EnterRule.cshtml" />
+    <Content Include="SITECORE_AI\Renderings AI\AI\EnterRule.yml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
