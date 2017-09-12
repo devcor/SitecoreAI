@@ -34,7 +34,7 @@
 
             var aiInfo = contactInfo.GetFacet<IAIFacet>(AIFacet.FacetName);
 
-            if (aiInfo.Training.Length == 0)
+            if (aiInfo.Training == null || aiInfo.Training.Length == 0)
             {
                 aiInfo.Training = string.Join(", ", labels);
             }

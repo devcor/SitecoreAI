@@ -11,10 +11,13 @@ namespace SitecoreAI.MongoDB
             var contact = MongoDAO.GetCollectionItem(COLLECTION_NAME, contactId);
             if (contact == null)
                 return string.Empty;
+                        
+            var AI = contact.GetValue(AIFacet.FacetName, null);
+            if (AI == null)
+                return string.Empty;
 
             //this part needs to be refactorized
-            var contactAI = contact.GetValue(AIFacet.FacetName);            
-            try { return contactAI[field].ToString(); }
+            try { return AI[field].ToString(); }
             catch { return string.Empty; }
         }
 
