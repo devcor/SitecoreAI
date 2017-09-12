@@ -188,6 +188,14 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\EE\ExperienceExtractor.Client\ExperienceExtractor.Client.csproj">
+      <Project>{7dd3c4ff-2cad-4e33-a6ae-4032b63b291a}</Project>
+      <Name>ExperienceExtractor.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EE\ExperienceExtractor\ExperienceExtractor.csproj">
+      <Project>{86510453-48e1-40d6-9ab4-810e9e570833}</Project>
+      <Name>ExperienceExtractor</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SitecoreAI.Models\SitecoreAI.Models.csproj">
       <Project>{983c426c-2fc6-46b0-ba00-b79b6ea80885}</Project>
       <Name>SitecoreAI.Models</Name>
