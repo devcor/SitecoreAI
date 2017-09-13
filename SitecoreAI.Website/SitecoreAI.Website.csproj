@@ -102,6 +102,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="sitecore\shell\client\Applications\ExperienceExtractor\ExperienceExtractorDimensions.js" />
     <Content Include="sitecore\shell\client\Applications\ExperienceProfile\Contact\AI\AITab.js" />
     <Content Include="sitecore\shell\client\Applications\ExperienceProfile\Contact\AI\AITab.css" />
     <Content Include="SITECORE_AI\Content AI\AIHome.yml" />
@@ -171,9 +172,9 @@
     <Content Include="App_Config\Include\SitecoreAI\Unicorn.Configs.2.Master.config" />
     <Content Include="App_Config\Include\SitecoreAI\Unicorn.Configs.1.Core.config" />
     <Content Include="App_Config\Include\SitecoreAI\Unicorn.Configs.0.Default.config" />
-    <None Include="App_Config\Include\SitecoreAI\Experience.Extractor.config.example">
+    <Content Include="App_Config\Include\SitecoreAI\ExperienceExtractor.config">
       <SubType>Designer</SubType>
-    </None>
+    </Content>
     <None Include="packages.config" />
     <Content Include="Views\Shared\AI\MainLayout.cshtml" />
     <None Include="Properties\PublishProfiles\Website.pubxml" />

@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ExperienceExtractor">
+      <HintPath>..\..\SitecoreDLL\ExperienceExtractor.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Analytics, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\SitecoreDLL\Sitecore.Analytics.dll</HintPath>
@@ -54,10 +57,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\EE\ExperienceExtractor\ExperienceExtractor.csproj">
-      <Project>{86510453-48e1-40d6-9ab4-810e9e570833}</Project>
-      <Name>ExperienceExtractor</Name>
-    </ProjectReference>
     <ProjectReference Include="..\SitecoreAI.Models\SitecoreAI.Models.csproj">
       <Project>{983c426c-2fc6-46b0-ba00-b79b6ea80885}</Project>
       <Name>SitecoreAI.Models</Name>
