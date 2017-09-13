@@ -15,7 +15,7 @@ namespace SitecoreAI.MongoDB
             return server.GetDatabase(mongoUrl.DatabaseName);
         }        
 
-        public static MongoCollection<BsonDocument> GetCollection(string collectionName)
+        private static MongoCollection<BsonDocument> GetCollection(string collectionName)
         {
             var db = GetMongoDB();
             return db.GetCollection(collectionName);
@@ -27,10 +27,12 @@ namespace SitecoreAI.MongoDB
             return GetCollection(collectionName).FindOne(query);
         }
 
-        public static void UpdateField(MongoCollection<BsonDocument> collection, string field, string value, string itemId)
+        public static WriteConcernResult UpdateField(string collectionName, string itemId, string field, string value)
         {
             var query = MongoUtilsDAO.GetQueryById(itemId);
-            collection.Update(query, Update.Set(field, value));
+            var collection = GetCollection(collectionName);
+
+            return collection.Update(query, Update.Set(field, value));
         }
     }
 }

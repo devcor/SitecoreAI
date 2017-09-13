@@ -11,20 +11,17 @@ namespace SitecoreAI.MongoDB
             var contact = MongoDAO.GetCollectionItem(COLLECTION_NAME, contactId);
             if (contact == null)
                 return string.Empty;
-                        
+
             var AI = contact.GetValue(AIFacet.FacetName, null);
             if (AI == null)
                 return string.Empty;
 
-            //this part needs to be refactorized
-            try { return AI[field].ToString(); }
-            catch { return string.Empty; }
+            return AI.AsBsonDocument.GetValue(field, string.Empty).ToString();
         }
 
-        private void UpdateField(string contactId, string field, string value)
+        private bool UpdateField(string contactId, string field, string value)
         {
-            var contacts = MongoDAO.GetCollection(COLLECTION_NAME);
-            MongoDAO.UpdateField(contacts, AIFacet.FacetName + "." + field, value, contactId);
+            return MongoDAO.UpdateField(COLLECTION_NAME, contactId, AIFacet.FacetName + "." + field, value).UpdatedExisting;
         }
 
         public string GetAIResult(string contactId)
@@ -37,14 +34,14 @@ namespace SitecoreAI.MongoDB
             return GetFieldValue(contactId, AIFacet._TRAINING);
         }        
 
-        public void SetAIResult(string contactId, string value)
+        public bool SetAIResult(string contactId, string value)
         {
-            UpdateField(contactId, AIFacet._RESULT, value);
+            return UpdateField(contactId, AIFacet._RESULT, value);
         }
 
-        public void SetAITraining(string contactId, string value)
+        public bool SetAITraining(string contactId, string value)
         {
-            UpdateField(contactId, AIFacet._TRAINING, value);
+            return UpdateField(contactId, AIFacet._TRAINING, value);
         }
     }
 }

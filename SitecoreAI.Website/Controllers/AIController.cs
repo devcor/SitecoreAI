@@ -9,9 +9,9 @@ namespace SitecoreAI.Website.Controllers
         public ActionResult SaveData(TrainingData data)
         {
             var contact = new ContactDAO();
-            contact.SetAITraining(data.ContactId, data.Training);
+            var response = contact.SetAITraining(data.ContactId, data.Training);
 
-            return Json(new { success = true }, JsonRequestBehavior.AllowGet);
+            return Json(new { success = response }, JsonRequestBehavior.AllowGet);
         }
     }
 }
