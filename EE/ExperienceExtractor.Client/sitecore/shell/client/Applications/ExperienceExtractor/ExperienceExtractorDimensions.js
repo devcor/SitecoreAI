@@ -308,7 +308,16 @@ define(["sitecore", "jquery", "experienceExtractor", "dynatree"], function (_sc,
 						};
 						
 						return data;
-					}));
+                    }));
+
+                    data.children.push(createDimension("AI Training", "AI", function (data) {
+                        data.select = false;
+                        data.updateJob = function (table, data) {
+                            table.fields.push("aitraining");
+                        }
+                        data.addClass = "dynatree-separate";
+                        return data;
+                    }));
 					
 					data.children.push(createDimension("{0} per visit", "GOALS", function(data){
 						data.customFields = ["@DisplayName", "Goal Facet 1", "Goal Facet 2", "Goal Facet 3", "Goal Facet 4"];

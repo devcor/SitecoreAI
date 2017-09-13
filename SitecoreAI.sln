@@ -33,6 +33,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{57521D
 		EE\.nuget\NuGet.targets = EE\.nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SitecoreAI.ExperienceExtractor", "SitecoreAI.ExperienceExtractor\SitecoreAI.ExperienceExtractor.csproj", "{A5BAE815-F310-4540-9D39-F07DA899FD1A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		8.0 update 0 to 4|Any CPU = 8.0 update 0 to 4|Any CPU
@@ -106,6 +108,12 @@ Global
 		{50432DC8-1768-4194-B880-D72AD2CBCE1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50432DC8-1768-4194-B880-D72AD2CBCE1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50432DC8-1768-4194-B880-D72AD2CBCE1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5BAE815-F310-4540-9D39-F07DA899FD1A}.8.0 update 0 to 4|Any CPU.ActiveCfg = Release|Any CPU
+		{A5BAE815-F310-4540-9D39-F07DA899FD1A}.8.0 update 0 to 4|Any CPU.Build.0 = Release|Any CPU
+		{A5BAE815-F310-4540-9D39-F07DA899FD1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5BAE815-F310-4540-9D39-F07DA899FD1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5BAE815-F310-4540-9D39-F07DA899FD1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5BAE815-F310-4540-9D39-F07DA899FD1A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
