@@ -8,7 +8,7 @@ using SitecoreAI.Models;
 namespace SitecoreAI.ExperienceExtractor
 {
     [ParseFactory("aitraining", "Training value", description: "The training value at the end of the visit")]
-    public class TrainingFactory : IParseFactory<IFieldMapper>
+    public class AIFactory : IParseFactory<IFieldMapper>
     {
         public IFieldMapper Parse(JobParser parser, ParseState state)
         {
