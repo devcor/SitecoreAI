@@ -90,13 +90,49 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="sitecore\shell\client\Applications\ExperienceExtractor\ExperienceExtractorDimensions.js" />
     <Content Include="sitecore\shell\client\Applications\ExperienceProfile\Contact\AI\AITab.js" />
+    <Content Include="sitecore\shell\client\Applications\ExperienceProfile\Contact\AI\AITab.css" />
+    <Content Include="SITECORE_AI\Content AI\AIHome.yml" />
+    <Content Include="SITECORE_AI\Layouts AI\AI.yml" />
+    <Content Include="SITECORE_AI\Layouts AI\AI\MainLayout.yml" />
+    <Content Include="SITECORE_AI\Renderings AI\AI.yml" />
+    <Content Include="SITECORE_AI\Renderings AI\AI\MainLayout.yml" />
+    <Content Include="SITECORE_AI\Renderings AI\AI\ManualFiller.yml" />
+    <Content Include="SITECORE_AI\Rule AI Conditional Rendering\Default.yml" />
+    <Content Include="SITECORE_AI\Rule AI Element\AI.yml" />
+    <Content Include="SITECORE_AI\Rule AI Element\AI\Result Match.yml" />
+    <Content Include="SITECORE_AI\Rule AI Element\AI\Tags.yml" />
+    <Content Include="SITECORE_AI\Rule AI Element\AI\Tags\Default.yml" />
+    <Content Include="SITECORE_AI\Rule AI Element\AI\Visibility.yml" />
+    <Content Include="SITECORE_AI\Rule AI Tag\AI.yml" />
+    <Content Include="SITECORE_AI\Rule AI Tag\AI\Visibility.yml" />
+    <Content Include="SITECORE_AI\Search AI\AI.yml" />
+    <Content Include="SITECORE_AI\Style AI\AITabStyle.yml" />
+    <Content Include="SITECORE_AI\Tab AI\AI.yml" />
+    <Content Include="SITECORE_AI\Tab AI\AI\AIPanel.yml" />
+    <Content Include="SITECORE_AI\Tab AI\AI\AIPanel\AIDetailsAccordion.yml" />
+    <Content Include="SITECORE_AI\Tab AI\AI\AIPanel\AITrainingAccordion.yml" />
+    <Content Include="SITECORE_AI\Tab AI\AI\AIPanel\Texts.yml" />
+    <Content Include="SITECORE_AI\Tab AI\AI\AIPanel\Texts\ErrorSaving.yml" />
+    <Content Include="SITECORE_AI\Tab AI\AI\AIPanel\Texts\NoDetailsFound.yml" />
+    <Content Include="SITECORE_AI\Tab AI\AI\AIPanel\Texts\NoTrainingDataFound.yml" />
+    <Content Include="SITECORE_AI\Tab AI\AI\AIPanel\Texts\Saved.yml" />
+    <Content Include="SITECORE_AI\Tab AI\AI\AIPanel\Texts\SubmitButton.yml" />
+    <Content Include="SITECORE_AI\Tab AI\AI\AIPanel\Texts\Validation.yml" />
+    <Content Include="SITECORE_AI\Templates AI\AI.yml" />
+    <Content Include="SITECORE_AI\Templates AI\AI\AIHome.yml" />
+    <Content Include="SITECORE_AI\Templates AI\AI\AIHome\Data.yml" />
+    <Content Include="SITECORE_AI\Templates AI\AI\AIHome\Data\Text.yml" />
+    <Content Include="SITECORE_AI\Templates AI\AI\AIHome\__Standard Values.yml" />
+    <Content Include="SITECORE_AI\Visitor AI\AI.yml" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AIController.cs" />
     <Compile Include="Models\PersonalInfo.cs" />
+    <Compile Include="Models\TrainingData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -107,7 +143,7 @@
     <Content Include="App_Config\Include\SitecoreAI\Dashboard.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="App_Config\Include\SitecoreAI\Unicorn.Configs.Default.config" />
+    <Content Include="App_Config\Include\SitecoreAI\Unicorn.Configs.3.Content.config" />
     <Content Include="App_Config\Include\Rainbow.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.AutoPublish.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.config" />
@@ -121,23 +157,18 @@
     <Content Include="App_Config\Include\Unicorn\Unicorn.Remote.config.disabled" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.UI.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.zSharedSecret.config.example" />
+    <Content Include="App_Config\Include\SitecoreAI\Unicorn.Configs.2.Master.config" />
+    <Content Include="App_Config\Include\SitecoreAI\Unicorn.Configs.1.Core.config" />
+    <Content Include="App_Config\Include\SitecoreAI\Unicorn.Configs.0.Default.config" />
+    <Content Include="App_Config\Include\SitecoreAI\ExperienceExtractor.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="packages.config" />
-    <Content Include="SITECORE_AI\Sample Layout\Sample Layout.yml" />
-    <Content Include="SITECORE_AI\Search AI\AI.yml" />
-    <Content Include="SITECORE_AI\Tab AI\AI\AIPanel\AIDetailsAccordion.yml" />
-    <Content Include="SITECORE_AI\Tab AI\AI\AIPanel\AITrainingAccordion.yml" />
-    <Content Include="SITECORE_AI\Tab AI\AI\AIPanel\Texts\ErrorSaving.yml" />
-    <Content Include="SITECORE_AI\Tab AI\AI\AIPanel\Texts\NoDetailsFound.yml" />
-    <Content Include="SITECORE_AI\Tab AI\AI\AIPanel\Texts\NoTrainingDataFound.yml" />
-    <Content Include="SITECORE_AI\Tab AI\AI\AIPanel\Texts\Saved.yml" />
-    <Content Include="SITECORE_AI\Tab AI\AI\AIPanel\Texts\SubmitButton.yml" />
-    <Content Include="SITECORE_AI\Tab AI\AI\AIPanel\Texts\Validation.yml" />
-    <Content Include="SITECORE_AI\Tab AI\AI\AIPanel\Texts.yml" />
-    <Content Include="SITECORE_AI\Tab AI\AI\AIPanel.yml" />
-    <Content Include="SITECORE_AI\Tab AI\AI.yml" />
-    <Content Include="SITECORE_AI\Visitor AI\AI.yml" />
-    <Content Include="Views\MainLayout.cshtml" />
+    <Content Include="Views\Shared\AI\MainLayout.cshtml" />
     <None Include="Properties\PublishProfiles\Website.pubxml" />
+    <Content Include="Views\Shared\AI\ManualFiller.cshtml" />
+    <Content Include="Views\Shared\AI\EnterRule.cshtml" />
+    <Content Include="SITECORE_AI\Renderings AI\AI\EnterRule.yml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -149,6 +180,10 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\SitecoreAI.ExperienceExtractor\SitecoreAI.ExperienceExtractor.csproj">
+      <Project>{a5bae815-f310-4540-9d39-f07da899fd1a}</Project>
+      <Name>SitecoreAI.ExperienceExtractor</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SitecoreAI.Models\SitecoreAI.Models.csproj">
       <Project>{983c426c-2fc6-46b0-ba00-b79b6ea80885}</Project>
       <Name>SitecoreAI.Models</Name>
@@ -160,6 +195,10 @@
     <ProjectReference Include="..\SitecoreAI.Pipelines\SitecoreAI.Pipelines.csproj">
       <Project>{d0269dd4-8099-473a-847b-6ecf2589b38a}</Project>
       <Name>SitecoreAI.Pipelines</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SitecoreAI.Rules\SitecoreAI.Rules.csproj">
+      <Project>{05515c38-e5b2-410f-a433-bd375527f53f}</Project>
+      <Name>SitecoreAI.Rules</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

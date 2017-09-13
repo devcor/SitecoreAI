@@ -22,7 +22,13 @@ function (sc, providerHelper, cintelUtil) {
                             cintelUtil.setText(app.TrainingData, aiData.Training, true);
                         }
                         if (aiData.Result != null) {
-                            cintelUtil.setText(app.DetailsData, aiData.Result, true);
+                            var innerContent = "";
+                            var partsOfStr = aiData.Result.split('|');
+                            for (var i = 0; i < partsOfStr.length; i++) {
+                                var line = partsOfStr[i].split(':');
+                                innerContent += '<div class="airow"><span>' + line[0] + '</span>: ' + line[1]+' %</div>';
+                            } 
+                            $("[data-sc-id=DetailsData]").html(innerContent);
                         }                       
                     }
                 }, this));
@@ -43,15 +49,15 @@ function (sc, providerHelper, cintelUtil) {
             if (labels != "") {
                 var aiEndPoint = "/api/sitecore/AI/SaveData";
 
-                var TrainingInfo = {
-                    Id: cintelUtil.getQueryParam("cid"),
-                    Labels: app.TrainingData.get('text')
+                var TrainingData = {
+                    ContactId: cintelUtil.getQueryParam("cid"),
+                    Training: app.TrainingData.get('text')
                 };
 
                 jQuery.ajax({
                     type: "POST",
                     url: aiEndPoint,
-                    data: TrainingInfo,
+                    data: TrainingData,
                     success: function (success) {
                         message.text = app.SavedText.get("text");
                         app.AITabMessageBar.addMessage("notification", message);                        

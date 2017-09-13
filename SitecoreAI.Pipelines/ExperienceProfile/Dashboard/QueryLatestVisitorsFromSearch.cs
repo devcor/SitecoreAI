@@ -5,6 +5,7 @@ using Sitecore.Cintel.Reporting.Processors;
 using System.Data;
 using System.Collections.Generic;
 using System;
+using System.Configuration;
 
 namespace SitecoreAI.Pipelines.ExperienceProfile.Dashboard
 {
@@ -12,7 +13,7 @@ namespace SitecoreAI.Pipelines.ExperienceProfile.Dashboard
     {
         private const string LabelSeparator = "|";
         private const string ValueSeparator = ":";
-        private const double MinLabelValue = 80;
+        private double MinLabelValue;
 
         private string GetTrainingValue(string aiResult)
         {
@@ -24,20 +25,25 @@ namespace SitecoreAI.Pipelines.ExperienceProfile.Dashboard
 
             foreach (var label in labels)
             {
-                var value = label.Split(new[] { ValueSeparator }, StringSplitOptions.RemoveEmptyEntries);
-                if (double.Parse(value[1].Replace("%", "")) >= MinLabelValue)
-                    newLabels.Add(value[0]);
+                var keyValue = label.Split(new[] { ValueSeparator }, StringSplitOptions.RemoveEmptyEntries);
+                if (keyValue.Length > 1)
+                {
+                    var success = double.TryParse(keyValue[1], out double value);
+                    if (success && value >= MinLabelValue)
+                        newLabels.Add(keyValue[0]);
+                }
             }
             return string.Join(", ", newLabels);
         }
 
         public override void Process(ReportProcessorArgs args)
         {
-            string columnName = AIFacet.FacetName + AIFacet.FIELD_RESULT;
-            args.ResultTableForView.Columns.Add(new ViewField<string>(columnName).ToColumn());
+            MinLabelValue = double.Parse(ConfigurationManager.AppSettings["MinValueToShowTag"] ?? "80");
+            var columnName = AIFacet.FacetName + AIFacet._RESULT;
+            args.ResultTableForView.Columns.Add(new ViewField<string>(columnName).ToColumn());            
 
             var contact = new ContactDAO();
-            foreach(DataRow row in args.ResultTableForView.Rows)
+            foreach (DataRow row in args.ResultTableForView.Rows)
             {
                 var aiResult = contact.GetAIResult(row["ContactId"].ToString());
                 row[columnName] = GetTrainingValue(aiResult);

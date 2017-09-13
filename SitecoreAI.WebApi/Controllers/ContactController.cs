@@ -1,7 +1,5 @@
 ﻿using System.Web.Http;
 using SitecoreAI.MongoDB;
-using System.Collections.Generic;
-using System.Collections.Specialized;
 
 namespace SitecoreAI.WebApi.Controllers
 {
@@ -10,11 +8,11 @@ namespace SitecoreAI.WebApi.Controllers
     {
         [HttpPost]
         [Route("airesult/{id}")]
-        public IEnumerable<string> Save([FromUri]string id, [FromBody] string aiResult)
+        public IHttpActionResult Save([FromUri]string id, [FromBody] string aiResult)
         {
             var contacts = new ContactDAO();
             contacts.SetAIResult(id, aiResult);
-            return new string[] { "Post airesult", id };
+            return Ok(new[] { "saved" });
         }
 
         [HttpGet]

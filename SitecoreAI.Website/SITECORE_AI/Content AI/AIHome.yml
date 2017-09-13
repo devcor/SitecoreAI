@@ -1,0 +1,17 @@
+﻿---
+ID: "81703b41-c912-410f-9467-7975b6c23572"
+Parent: "0de95ae4-41ab-4d01-9eb0-67441b7c2450"
+Template: "1375e1a2-c0f5-46bc-a9f5-dcad88ef4653"
+Path: /sitecore/content/AIHome
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170905T201933Z
+    - ID: "3b02aa4c-0b5f-4270-8c8b-51ce23626aeb"
+      Hint: Text
+      Value: This is the home for AI

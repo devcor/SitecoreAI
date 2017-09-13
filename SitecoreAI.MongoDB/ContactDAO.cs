@@ -1,62 +1,50 @@
-﻿using System.Linq;
-using MongoDB.Driver.Builders;
-using SitecoreAI.Models;
-using MongoDB.Bson;
+﻿using SitecoreAI.Models;
 
 namespace SitecoreAI.MongoDB
 {
     public class ContactDAO
     {
-        private BsonDocument GetContact(string id)
-        {
-            var query = MongoDAO.GetQueryById(id);
-            var contacts = MongoDAO.GetCollection("Contacts");
-            var cursor = contacts.Find(query);
-            return cursor.SetFields(Fields.Include(AIFacet.FacetName)).ToList().FirstOrDefault();
-        }
+        private const string COLLECTION_NAME = "Contacts";
 
         private string GetFieldValue(string contactId, string field)
         {
-            var doc = GetContact(contactId);
-            if (doc == null)
+            var contact = MongoDAO.GetCollectionItem(COLLECTION_NAME, contactId);
+            if (contact == null)
+                return string.Empty;
+                        
+            var AI = contact.GetValue(AIFacet.FacetName, null);
+            if (AI == null)
                 return string.Empty;
 
-            var ai = doc.GetValue(AIFacet.FacetName);
-
-            var value = string.Empty;
-            try { value = ai[field].ToString(); }
-            catch { }
-
-            return value;
+            //this part needs to be refactorized
+            try { return AI[field].ToString(); }
+            catch { return string.Empty; }
         }
 
         private void UpdateField(string contactId, string field, string value)
         {
-            var query = MongoDAO.GetQueryById(contactId);
-            var contacts = MongoDAO.GetCollection("Contacts");
-
-            contacts.Update(query,
-                Update.Set(AIFacet.FacetName + "." + field, value));
+            var contacts = MongoDAO.GetCollection(COLLECTION_NAME);
+            MongoDAO.UpdateField(contacts, AIFacet.FacetName + "." + field, value, contactId);
         }
 
         public string GetAIResult(string contactId)
         {
-            return GetFieldValue(contactId, AIFacet.FIELD_RESULT);
+            return GetFieldValue(contactId, AIFacet._RESULT);
         }
 
         public string GetAITraining(string contactId)
         {
-            return GetFieldValue(contactId, AIFacet.FIELD_TRAINING);
+            return GetFieldValue(contactId, AIFacet._TRAINING);
+        }        
+
+        public void SetAIResult(string contactId, string value)
+        {
+            UpdateField(contactId, AIFacet._RESULT, value);
         }
 
         public void SetAITraining(string contactId, string value)
         {
-            UpdateField(contactId, AIFacet.FIELD_TRAINING, value);
-        }
-
-        public void SetAIResult(string contactId, string value)
-        {
-            UpdateField(contactId, AIFacet.FIELD_RESULT, value);
+            UpdateField(contactId, AIFacet._TRAINING, value);
         }
     }
 }

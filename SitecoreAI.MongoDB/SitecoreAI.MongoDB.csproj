@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="ContactDAO.cs" />
     <Compile Include="MongoDAO.cs" />
+    <Compile Include="MongoUtilsDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
