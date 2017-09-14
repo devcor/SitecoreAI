@@ -30,7 +30,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Sitecore.Analytics.Model">
+    <Reference Include="Sitecore.Analytics.Model, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\SitecoreDLL\Sitecore.Analytics.Model.dll</HintPath>
     </Reference>
     <Reference Include="System" />
