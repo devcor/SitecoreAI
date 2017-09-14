@@ -2,7 +2,7 @@
 
 namespace SitecoreAI.MongoDB
 {
-    public class ContactDAO
+    public class ContactDAO : IContacts
     {
         private const string COLLECTION_NAME = "Contacts";
 
