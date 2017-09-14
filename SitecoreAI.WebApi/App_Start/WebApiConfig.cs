@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SitecoreAI.WebApi.IoC;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
@@ -10,6 +11,7 @@ namespace SitecoreAI.WebApi
         public static void Register(HttpConfiguration config)
         {
             // Web API configuration and services
+            Configurator.Register(config);
 
             // Web API routes
             config.MapHttpAttributeRoutes();
