@@ -7,7 +7,12 @@ namespace SitecoreAI.WebApi.Controllers
     [RoutePrefix("sitecore/globantai/contact")]
     public class ContactController : ApiController
     {
-        private readonly ContactDAO contacts = new ContactDAO();
+        private readonly IContacts _contacts;
+
+        public ContactController(IContacts contacts)
+        {
+            _contacts = contacts;
+        }
 
         [HttpPost]
         [Route("{id}/airesult")]
@@ -16,7 +21,7 @@ namespace SitecoreAI.WebApi.Controllers
             if (string.IsNullOrWhiteSpace(value?.Result))
                 return BadRequest("AI Result is required.");
 
-            var response = contacts.SetAIResult(id, value.Result);
+            var response = _contacts.SetAIResult(id, value.Result);
             return Ok(new { success = response });
         }
 
@@ -24,14 +29,14 @@ namespace SitecoreAI.WebApi.Controllers
         [Route("{id}/airesult")]
         public string GetAiResult(string id)
         {
-            return contacts.GetAIResult(id);
+            return _contacts.GetAIResult(id);
         }
 
         [HttpGet]
         [Route("{id}/aitraining")]
         public string GetAiTraining(string id)
         {
-            return contacts.GetAITraining(id);
+            return _contacts.GetAITraining(id);
         }
     }
 }
