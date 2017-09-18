@@ -8,7 +8,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{1860B6D3-6A64-4250-BA24-B61EE88F0AE4}</ProjectGuid>
+    <ProjectGuid>{19C90AE4-CDEE-429D-B337-D808B74B31E1}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -44,18 +44,37 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Configy, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Configy.1.0.0\lib\net45\Configy.dll</HintPath>
+    </Reference>
+    <Reference Include="Kamsar.WebConsole, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Kamsar.WebConsole.2.0.0\lib\net40\Kamsar.WebConsole.dll</HintPath>
+    </Reference>
+    <Reference Include="MicroCHAP, Version=1.2.2.2, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MicroCHAP.1.2.2.2\lib\net45\MicroCHAP.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Microsoft.Extensions.DependencyInjection">
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\SitecoreDLL\Microsoft.Extensions.DependencyInjection.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\SitecoreDLL\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
     </Reference>
-    <Reference Include="Sitecore.Kernel, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Rainbow, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rainbow.Core.2.0.0\lib\net452\Rainbow.dll</HintPath>
+    </Reference>
+    <Reference Include="Rainbow.Storage.Sc, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rainbow.Storage.Sc.2.0.0\lib\net452\Rainbow.Storage.Sc.dll</HintPath>
+    </Reference>
+    <Reference Include="Rainbow.Storage.Yaml, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rainbow.Storage.Yaml.2.0.0\lib\net452\Rainbow.Storage.Yaml.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Kernel">
       <HintPath>..\..\SitecoreDLL\Sitecore.Kernel.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.DynamicData" />
@@ -78,6 +97,9 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Unicorn, Version=4.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unicorn.Core.4.0.1\lib\net452\Unicorn.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Web.Razor">
@@ -103,64 +125,35 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Global.asax" />
-    <Content Include="sitecore\shell\client\Applications\ExperienceExtractor\ExperienceExtractorDimensions.js" />
-    <Content Include="sitecore\shell\client\Applications\ExperienceProfile\Contact\AI\AITab.js" />
-    <Content Include="sitecore\shell\client\Applications\ExperienceProfile\Contact\AI\AITab.css" />
-    <Content Include="SITECORE_AI\Content AI\AIHome.yml" />
-    <Content Include="SITECORE_AI\Layouts AI\AI.yml" />
-    <Content Include="SITECORE_AI\Layouts AI\AI\MainLayout.yml" />
-    <Content Include="SITECORE_AI\Renderings AI\AI.yml" />
-    <Content Include="SITECORE_AI\Renderings AI\AI\MainLayout.yml" />
-    <Content Include="SITECORE_AI\Renderings AI\AI\ManualFiller.yml" />
-    <Content Include="SITECORE_AI\Rule AI Conditional Rendering\Default.yml" />
-    <Content Include="SITECORE_AI\Rule AI Element\AI.yml" />
-    <Content Include="SITECORE_AI\Rule AI Element\AI\Result Match.yml" />
-    <Content Include="SITECORE_AI\Rule AI Element\AI\Tags.yml" />
-    <Content Include="SITECORE_AI\Rule AI Element\AI\Tags\Default.yml" />
-    <Content Include="SITECORE_AI\Rule AI Element\AI\Visibility.yml" />
-    <Content Include="SITECORE_AI\Rule AI Tag\AI.yml" />
-    <Content Include="SITECORE_AI\Rule AI Tag\AI\Visibility.yml" />
-    <Content Include="SITECORE_AI\Search AI\AI.yml" />
-    <Content Include="SITECORE_AI\Style AI\AITabStyle.yml" />
-    <Content Include="SITECORE_AI\Tab AI\AI.yml" />
-    <Content Include="SITECORE_AI\Tab AI\AI\AIPanel.yml" />
-    <Content Include="SITECORE_AI\Tab AI\AI\AIPanel\AIDetailsAccordion.yml" />
-    <Content Include="SITECORE_AI\Tab AI\AI\AIPanel\AITrainingAccordion.yml" />
-    <Content Include="SITECORE_AI\Tab AI\AI\AIPanel\Texts.yml" />
-    <Content Include="SITECORE_AI\Tab AI\AI\AIPanel\Texts\ErrorSaving.yml" />
-    <Content Include="SITECORE_AI\Tab AI\AI\AIPanel\Texts\NoDetailsFound.yml" />
-    <Content Include="SITECORE_AI\Tab AI\AI\AIPanel\Texts\NoTrainingDataFound.yml" />
-    <Content Include="SITECORE_AI\Tab AI\AI\AIPanel\Texts\Saved.yml" />
-    <Content Include="SITECORE_AI\Tab AI\AI\AIPanel\Texts\SubmitButton.yml" />
-    <Content Include="SITECORE_AI\Tab AI\AI\AIPanel\Texts\Validation.yml" />
-    <Content Include="SITECORE_AI\Templates AI\AI.yml" />
-    <Content Include="SITECORE_AI\Templates AI\AI\AIHome.yml" />
-    <Content Include="SITECORE_AI\Templates AI\AI\AIHome\Data.yml" />
-    <Content Include="SITECORE_AI\Templates AI\AI\AIHome\Data\Text.yml" />
-    <Content Include="SITECORE_AI\Templates AI\AI\AIHome\__Standard Values.yml" />
-    <Content Include="SITECORE_AI\Visitor AI\AI.yml" />
-    <Content Include="Web.config" />
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AIController.cs" />
+    <Compile Include="IoC\Configurator.cs" />
+    <Compile Include="IoC\ServiceCollectionExtensions.cs" />
     <Compile Include="Models\PersonalInfo.cs" />
     <Compile Include="Models\TrainingData.cs" />
-    <Compile Include="IoC\Configurator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="IoC\ServiceCollectionExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="sitecore\shell\client\Applications\ExperienceExtractor\ExperienceExtractorDimensions.js" />
+    <Content Include="sitecore\shell\client\Applications\ExperienceProfile\Contact\AI\AITab.css" />
+    <Content Include="sitecore\shell\client\Applications\ExperienceProfile\Contact\AI\AITab.js" />
     <Content Include="Views\web.config" />
+    <Content Include="App_Config\Include\Rainbow.config" />
     <Content Include="App_Config\Include\SitecoreAI\AIFacet.config">
       <SubType>Designer</SubType>
     </Content>
     <Content Include="App_Config\Include\SitecoreAI\Dashboard.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="App_Config\Include\SitecoreAI\DependencyInjection.config" />
+    <Content Include="App_Config\Include\SitecoreAI\ExperienceExtractor.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Config\Include\SitecoreAI\Unicorn.Configs.0.Default.config" />
+    <Content Include="App_Config\Include\SitecoreAI\Unicorn.Configs.1.Core.config" />
+    <Content Include="App_Config\Include\SitecoreAI\Unicorn.Configs.2.Master.config" />
     <Content Include="App_Config\Include\SitecoreAI\Unicorn.Configs.3.Content.config" />
-    <Content Include="App_Config\Include\Rainbow.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.AutoPublish.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.Dependency.config.example" />
@@ -173,19 +166,47 @@
     <Content Include="App_Config\Include\Unicorn\Unicorn.Remote.config.disabled" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.UI.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.zSharedSecret.config.example" />
-    <Content Include="App_Config\Include\SitecoreAI\Unicorn.Configs.2.Master.config" />
-    <Content Include="App_Config\Include\SitecoreAI\Unicorn.Configs.1.Core.config" />
-    <Content Include="App_Config\Include\SitecoreAI\Unicorn.Configs.0.Default.config" />
-    <Content Include="App_Config\Include\SitecoreAI\ExperienceExtractor.config">
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="App_Config\Include\SitecoreAI\DependencyInjection.config" />
+    <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.Default.example" />
     <None Include="packages.config" />
-    <Content Include="Views\Shared\AI\MainLayout.cshtml" />
-    <None Include="Properties\PublishProfiles\Website.pubxml" />
-    <Content Include="Views\Shared\AI\ManualFiller.cshtml" />
-    <Content Include="Views\Shared\AI\EnterRule.cshtml" />
+    <Content Include="SITECORE_AI\Content AI\AIHome.yml" />
+    <Content Include="SITECORE_AI\Layouts AI\AI\MainLayout.yml" />
+    <Content Include="SITECORE_AI\Layouts AI\AI.yml" />
     <Content Include="SITECORE_AI\Renderings AI\AI\EnterRule.yml" />
+    <Content Include="SITECORE_AI\Renderings AI\AI\MainLayout.yml" />
+    <Content Include="SITECORE_AI\Renderings AI\AI\ManualFiller.yml" />
+    <Content Include="SITECORE_AI\Renderings AI\AI.yml" />
+    <Content Include="SITECORE_AI\Rule AI Conditional Rendering\Default.yml" />
+    <Content Include="SITECORE_AI\Rule AI Element\AI\Result Match.yml" />
+    <Content Include="SITECORE_AI\Rule AI Element\AI\Tags\Default.yml" />
+    <Content Include="SITECORE_AI\Rule AI Element\AI\Tags.yml" />
+    <Content Include="SITECORE_AI\Rule AI Element\AI\Visibility.yml" />
+    <Content Include="SITECORE_AI\Rule AI Element\AI.yml" />
+    <Content Include="SITECORE_AI\Rule AI Tag\AI\Visibility.yml" />
+    <Content Include="SITECORE_AI\Rule AI Tag\AI.yml" />
+    <Content Include="SITECORE_AI\Search AI\AI.yml" />
+    <Content Include="SITECORE_AI\Style AI\AITabStyle.yml" />
+    <Content Include="SITECORE_AI\Tab AI\AI\AIPanel\AIDetailsAccordion.yml" />
+    <Content Include="SITECORE_AI\Tab AI\AI\AIPanel\AITrainingAccordion.yml" />
+    <Content Include="SITECORE_AI\Tab AI\AI\AIPanel\Texts\ErrorSaving.yml" />
+    <Content Include="SITECORE_AI\Tab AI\AI\AIPanel\Texts\NoDetailsFound.yml" />
+    <Content Include="SITECORE_AI\Tab AI\AI\AIPanel\Texts\NoTrainingDataFound.yml" />
+    <Content Include="SITECORE_AI\Tab AI\AI\AIPanel\Texts\Saved.yml" />
+    <Content Include="SITECORE_AI\Tab AI\AI\AIPanel\Texts\SubmitButton.yml" />
+    <Content Include="SITECORE_AI\Tab AI\AI\AIPanel\Texts\Validation.yml" />
+    <Content Include="SITECORE_AI\Tab AI\AI\AIPanel\Texts.yml" />
+    <Content Include="SITECORE_AI\Tab AI\AI\AIPanel.yml" />
+    <Content Include="SITECORE_AI\Tab AI\AI.yml" />
+    <Content Include="SITECORE_AI\Templates AI\AI\AIHome\__Standard Values.yml" />
+    <Content Include="SITECORE_AI\Templates AI\AI\AIHome\Data\Text.yml" />
+    <Content Include="SITECORE_AI\Templates AI\AI\AIHome\Data.yml" />
+    <Content Include="SITECORE_AI\Templates AI\AI\AIHome.yml" />
+    <Content Include="SITECORE_AI\Templates AI\AI.yml" />
+    <Content Include="SITECORE_AI\Visitor AI\AI.yml" />
+    <Content Include="Web.config" />
+    <Content Include="Views\Shared\AI\EnterRule.cshtml" />
+    <Content Include="Views\Shared\AI\MainLayout.cshtml" />
+    <Content Include="Views\Shared\AI\ManualFiller.cshtml" />
+    <None Include="Properties\PublishProfiles\Website.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -231,7 +252,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>57090</DevelopmentServerPort>
+          <DevelopmentServerPort>51751</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:57090/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
