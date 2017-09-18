@@ -138,7 +138,9 @@
     <Content Include="sitecore\shell\client\Applications\ExperienceExtractor\ExperienceExtractorDimensions.js" />
     <Content Include="sitecore\shell\client\Applications\ExperienceProfile\Contact\AI\AITab.css" />
     <Content Include="sitecore\shell\client\Applications\ExperienceProfile\Contact\AI\AITab.js" />
-    <Content Include="Views\web.config" />
+    <Content Include="Views\web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="App_Config\Include\Rainbow.config" />
     <Content Include="App_Config\Include\SitecoreAI\AIFacet.config">
       <SubType>Designer</SubType>
@@ -254,7 +256,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>51751</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:57090/</IISUrl>
+          <IISUrl>http://localhost:51751/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
