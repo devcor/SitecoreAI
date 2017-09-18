@@ -179,7 +179,7 @@
     <Content Include="App_Config\Include\SitecoreAI\ExperienceExtractor.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="App_Config\Include\DependencyInjection.config" />
+    <Content Include="App_Config\Include\SitecoreAI\DependencyInjection.config" />
     <None Include="packages.config" />
     <Content Include="Views\Shared\AI\MainLayout.cshtml" />
     <None Include="Properties\PublishProfiles\Website.pubxml" />
