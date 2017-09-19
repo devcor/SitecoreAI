@@ -15,8 +15,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SitecoreAI.Rules", "Sitecor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SitecoreAI.ExperienceExtractor", "SitecoreAI.ExperienceExtractor\SitecoreAI.ExperienceExtractor.csproj", "{A5BAE815-F310-4540-9D39-F07DA899FD1A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SitecoreAI.Package", "SitecoreAI.Package\SitecoreAI.Package.csproj", "{4B749B05-6CDE-4633-8DFB-C6A7CDF78EDA}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SitecoreAI.Website", "SitecoreAI.Website\SitecoreAI.Website.csproj", "{19C90AE4-CDEE-429D-B337-D808B74B31E1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SitecoreAI.BusinessRules", "SitecoreAI.BusinessRules\SitecoreAI.BusinessRules.csproj", "{92D330FE-37E8-49DC-A630-DE8CA2772BCA}"
@@ -66,12 +64,6 @@ Global
 		{A5BAE815-F310-4540-9D39-F07DA899FD1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5BAE815-F310-4540-9D39-F07DA899FD1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5BAE815-F310-4540-9D39-F07DA899FD1A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4B749B05-6CDE-4633-8DFB-C6A7CDF78EDA}.8.0 update 0 to 4|Any CPU.ActiveCfg = Release|Any CPU
-		{4B749B05-6CDE-4633-8DFB-C6A7CDF78EDA}.8.0 update 0 to 4|Any CPU.Build.0 = Release|Any CPU
-		{4B749B05-6CDE-4633-8DFB-C6A7CDF78EDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4B749B05-6CDE-4633-8DFB-C6A7CDF78EDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4B749B05-6CDE-4633-8DFB-C6A7CDF78EDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4B749B05-6CDE-4633-8DFB-C6A7CDF78EDA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{19C90AE4-CDEE-429D-B337-D808B74B31E1}.8.0 update 0 to 4|Any CPU.ActiveCfg = Release|Any CPU
 		{19C90AE4-CDEE-429D-B337-D808B74B31E1}.8.0 update 0 to 4|Any CPU.Build.0 = Release|Any CPU
 		{19C90AE4-CDEE-429D-B337-D808B74B31E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
