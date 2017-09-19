@@ -6,5 +6,6 @@
         string GetAITraining(string contactId);
         bool SetAIResult(string contactId, string value);
         bool SetAITraining(string contactId, string value);
+        string GetLabelsGreaterThan(string currentLabels, double minValue);
     }
 }
