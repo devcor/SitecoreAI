@@ -51,13 +51,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\SitecoreAI.Interfaces\SitecoreAI.Interfaces.csproj">
+      <Project>{d53e59e7-0a44-4b6c-b958-91ed026ad49e}</Project>
+      <Name>SitecoreAI.Interfaces</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SitecoreAI.Models\SitecoreAI.Models.csproj">
       <Project>{983c426c-2fc6-46b0-ba00-b79b6ea80885}</Project>
       <Name>SitecoreAI.Models</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SitecoreAI.MongoDB\SitecoreAI.MongoDB.csproj">
-      <Project>{b8c15b91-4690-4752-aa6e-81fafc071a5b}</Project>
-      <Name>SitecoreAI.MongoDB</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

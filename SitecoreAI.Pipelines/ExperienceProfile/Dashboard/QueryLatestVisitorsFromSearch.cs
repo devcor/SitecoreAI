@@ -1,11 +1,11 @@
 ﻿using SitecoreAI.Models;
-using SitecoreAI.MongoDB;
 using Sitecore.Cintel.Reporting;
 using Sitecore.Cintel.Reporting.Processors;
 using System.Data;
 using System.Collections.Generic;
 using System;
 using System.Configuration;
+using SitecoreAI.Interfaces.BusinessRules;
 
 namespace SitecoreAI.Pipelines.ExperienceProfile.Dashboard
 {
@@ -14,6 +14,12 @@ namespace SitecoreAI.Pipelines.ExperienceProfile.Dashboard
         private const string LabelSeparator = "|";
         private const string ValueSeparator = ":";
         private double MinLabelValue;
+        private readonly IContact _contact;
+
+        public QueryLatestVisitorsFromSearch(IContact contact)
+        {
+            _contact = contact;
+        }
 
         private string GetTrainingValue(string aiResult)
         {
@@ -42,10 +48,9 @@ namespace SitecoreAI.Pipelines.ExperienceProfile.Dashboard
             var columnName = AIFacet.FacetName + AIFacet._RESULT;
             args.ResultTableForView.Columns.Add(new ViewField<string>(columnName).ToColumn());            
 
-            var contact = new ContactDAO();
             foreach (DataRow row in args.ResultTableForView.Rows)
             {
-                var aiResult = contact.GetAIResult(row["ContactId"].ToString());
+                var aiResult = _contact.GetAIResult(row["ContactId"].ToString());
                 row[columnName] = GetTrainingValue(aiResult);
             }
         }

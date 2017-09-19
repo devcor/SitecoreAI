@@ -224,29 +224,13 @@
       <Project>{92d330fe-37e8-49dc-a630-de8ca2772bca}</Project>
       <Name>SitecoreAI.BusinessRules</Name>
     </ProjectReference>
-    <ProjectReference Include="..\SitecoreAI.ExperienceExtractor\SitecoreAI.ExperienceExtractor.csproj">
-      <Project>{a5bae815-f310-4540-9d39-f07da899fd1a}</Project>
-      <Name>SitecoreAI.ExperienceExtractor</Name>
-    </ProjectReference>
     <ProjectReference Include="..\SitecoreAI.Interfaces\SitecoreAI.Interfaces.csproj">
       <Project>{d53e59e7-0a44-4b6c-b958-91ed026ad49e}</Project>
       <Name>SitecoreAI.Interfaces</Name>
     </ProjectReference>
-    <ProjectReference Include="..\SitecoreAI.Models\SitecoreAI.Models.csproj">
-      <Project>{983c426c-2fc6-46b0-ba00-b79b6ea80885}</Project>
-      <Name>SitecoreAI.Models</Name>
-    </ProjectReference>
     <ProjectReference Include="..\SitecoreAI.MongoDB\SitecoreAI.MongoDB.csproj">
       <Project>{b8c15b91-4690-4752-aa6e-81fafc071a5b}</Project>
       <Name>SitecoreAI.MongoDB</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SitecoreAI.Pipelines\SitecoreAI.Pipelines.csproj">
-      <Project>{d0269dd4-8099-473a-847b-6ecf2589b38a}</Project>
-      <Name>SitecoreAI.Pipelines</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SitecoreAI.Rules\SitecoreAI.Rules.csproj">
-      <Project>{05515c38-e5b2-410f-a433-bd375527f53f}</Project>
-      <Name>SitecoreAI.Rules</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
