@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B8C15B91-4690-4752-AA6E-81FAFC071A5B}</ProjectGuid>
+    <ProjectGuid>{D53E59E7-0A44-4B6C-B958-91ED026AD49E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SitecoreAI.MongoDB</RootNamespace>
-    <AssemblyName>SitecoreAI.MongoDB</AssemblyName>
+    <RootNamespace>SitecoreAI.Interfaces</RootNamespace>
+    <AssemblyName>SitecoreAI.Interfaces</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,17 +30,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MongoDB.Bson">
-      <HintPath>..\..\SitecoreDLL\MongoDB.Bson.dll</HintPath>
-    </Reference>
-    <Reference Include="MongoDB.Driver">
-      <HintPath>..\..\SitecoreDLL\MongoDB.Driver.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.Analytics">
-      <HintPath>..\..\SitecoreDLL\Sitecore.Analytics.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -50,20 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ContactDAO.cs" />
-    <Compile Include="MongoDAO.cs" />
-    <Compile Include="MongoUtilsDAO.cs" />
+    <Compile Include="BusinessRules\IContact.cs" />
+    <Compile Include="DAO\IContactDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\SitecoreAI.Interfaces\SitecoreAI.Interfaces.csproj">
-      <Project>{d53e59e7-0a44-4b6c-b958-91ed026ad49e}</Project>
-      <Name>SitecoreAI.Interfaces</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SitecoreAI.Models\SitecoreAI.Models.csproj">
-      <Project>{983c426c-2fc6-46b0-ba00-b79b6ea80885}</Project>
-      <Name>SitecoreAI.Models</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("SitecoreAI.Pipelines")]
+[assembly: AssemblyTitle("SitecoreAI.BusinessRules")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Globant")]
-[assembly: AssemblyProduct("SitecoreAI.Pipelines")]
+[assembly: AssemblyProduct("SitecoreAI.BusinessRules")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("Globant")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("d0269dd4-8099-473a-847b-6ecf2589b38a")]
+[assembly: Guid("92d330fe-37e8-49dc-a630-de8ca2772bca")]
 
 // Version information for an assembly consists of the following four values:
 //

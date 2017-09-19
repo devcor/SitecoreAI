@@ -1,14 +1,14 @@
 ﻿using System.Web.Mvc;
-using SitecoreAI.MongoDB;
 using SitecoreAI.Website.Models;
+using SitecoreAI.Interfaces.BusinessRules;
 
 namespace SitecoreAI.Website.Controllers
 {
     public class AIController : Controller
     {
-        private readonly IContacts _contacts;
+        private readonly IContact _contacts;
 
-        public AIController(IContacts contacts)
+        public AIController(IContact contacts)
         {
             _contacts = contacts;
         }

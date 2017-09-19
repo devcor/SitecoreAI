@@ -1,8 +1,9 @@
-﻿using SitecoreAI.Models;
+﻿using SitecoreAI.Interfaces.DAO;
+using SitecoreAI.Models;
 
 namespace SitecoreAI.MongoDB
 {
-    public class ContactDAO : IContacts
+    public class ContactDAO : IContactDAO
     {
         private const string COLLECTION_NAME = "Contacts";
 

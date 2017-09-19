@@ -1,15 +1,15 @@
 ﻿using System.Web.Http;
-using SitecoreAI.MongoDB;
 using SitecoreAI.WebApi.Models;
+using SitecoreAI.Interfaces.BusinessRules;
 
 namespace SitecoreAI.WebApi.Controllers
 {
     [RoutePrefix("sitecore/globantai/contact")]
     public class ContactController : ApiController
     {
-        private readonly IContacts _contacts;
+        private readonly IContact _contacts;
 
-        public ContactController(IContacts contacts)
+        public ContactController(IContact contacts)
         {
             _contacts = contacts;
         }

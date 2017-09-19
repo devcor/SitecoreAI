@@ -1,6 +1,6 @@
-﻿namespace SitecoreAI.MongoDB
+﻿namespace SitecoreAI.Interfaces.DAO
 {
-    public interface IContacts
+    public interface IContactDAO
     {
         string GetAIResult(string contactId);
         string GetAITraining(string contactId);

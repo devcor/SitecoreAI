@@ -123,6 +123,14 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\SitecoreAI.BusinessRules\SitecoreAI.BusinessRules.csproj">
+      <Project>{92D330FE-37E8-49DC-A630-DE8CA2772BCA}</Project>
+      <Name>SitecoreAI.BusinessRules</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SitecoreAI.Interfaces\SitecoreAI.Interfaces.csproj">
+      <Project>{D53E59E7-0A44-4B6C-B958-91ED026AD49E}</Project>
+      <Name>SitecoreAI.Interfaces</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SitecoreAI.MongoDB\SitecoreAI.MongoDB.csproj">
       <Project>{b8c15b91-4690-4752-aa6e-81fafc071a5b}</Project>
       <Name>SitecoreAI.MongoDB</Name>
