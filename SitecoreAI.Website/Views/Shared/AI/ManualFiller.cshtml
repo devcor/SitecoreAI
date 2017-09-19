@@ -9,23 +9,20 @@
 <div>
     @{
         var ran = new Random();
-
-        var users = new List<PersonalInfo> {
-            new PersonalInfo { Email = "pepito@hotmail.com", EngagementPoints = 9, FirstName = "Pepito", SurName = "Perez" },
-            new PersonalInfo { Email = "juan@gmail.com", EngagementPoints = 7, FirstName = "Juan", SurName = "Castaño" },
-            new PersonalInfo { Email = "pablo@gmail.com", EngagementPoints = 10, FirstName = "Pablo", SurName = "Neruda" },
-            new PersonalInfo { Email = "oscar@hotmail.com", EngagementPoints = 12, FirstName = "Oscar", SurName = "Restrepo" },
-            new PersonalInfo { Email = "julian@gmail.com", EngagementPoints = 8, FirstName = "Julián", SurName = "Heredia" },
-            new PersonalInfo { Email = "jimmy@gmail.com", EngagementPoints = 6, FirstName = "Jimmy", SurName = "Coral" }
-        };
-
+        var userCount = ran.Next(1, 50);
+        var users = new List<PersonalInfo>();
         var labels = new List<string> { "Bot", "Competitor", "Bad client", "Good client", "IT team" };
+
+        for (var i=0; i<userCount; i++)
+        {
+            users.Add(new PersonalInfo { Email = i + "_user@hotmail.com", EngagementPoints = ran.Next(1, 20), FirstName = i + "_UserName", SurName = i + "_UserLastName" });
+        }
 
         foreach (var user in users)
         {
-            try 
-	        {	        
-		        Tracker.Current.Session.Identify(user.Email);
+            try
+            {
+                Tracker.Current.Session.Identify(user.Email);
                 Tracker.Current.Interaction.Value = user.EngagementPoints;
 
                 var contactInfo = Tracker.Current.Contact;
