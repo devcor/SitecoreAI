@@ -1,7 +1,6 @@
 ﻿using Sitecore.Analytics;
 using Sitecore.Diagnostics;
 using Sitecore.Rules;
-using Sitecore.Rules.ConditionalRenderings;
 using Sitecore.Rules.Conditions;
 using SitecoreAI.Models;
 using System;
@@ -20,8 +19,6 @@ namespace SitecoreAI.Rules.Conditions
 
             try
             {
-                var conditionalRenderingsRuleContext = ruleContext as ConditionalRenderingsRuleContext;
-                var datasourceId = conditionalRenderingsRuleContext.Reference.Settings.DataSource;
                 var contact = Tracker.Current.Contact;
                 var aiFacet = contact.GetFacet<IAIFacet>(AIFacet.FacetName);
                 matchFound = aiFacet.Training.ToLower().Contains(Value.ToLower());

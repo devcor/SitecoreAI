@@ -14,17 +14,9 @@ namespace SitecoreAI.BusinessRules
             _contactDAO = contactDAO;
         }
 
-        public string GetAIResult(string contactId)
-        {
-            return _contactDAO.GetAIResult(contactId);
-        }
+        #region Private Methods
 
-        public string GetAITraining(string contactId)
-        {
-            return _contactDAO.GetAITraining(contactId);
-        }
-
-        public string GetLabelsGreaterThan(string currentLabels, double minValue)
+        private string GetLabelsGreaterThan(string currentLabels, double minValue)
         {
             if (currentLabels == string.Empty)
                 return currentLabels;
@@ -45,14 +37,44 @@ namespace SitecoreAI.BusinessRules
             return string.Join(", ", newLabels);
         }
 
-        public bool SetAIResult(string contactId, string value)
+        #endregion
+
+        #region Public Methods
+
+        public string GetAIResult(Guid contactId)
+        {
+            return _contactDAO.GetAIResult(contactId);
+        }
+
+        public string GetAIResult(Guid contactId, double minValue)
+        {
+            var labels = _contactDAO.GetAIResult(contactId);
+
+            if (string.IsNullOrEmpty(labels))
+            {
+                SetAIResult(contactId, string.Empty);
+                SetAITraining(contactId, string.Empty);
+                return string.Empty;
+            }
+
+            return GetLabelsGreaterThan(labels, minValue);
+        }
+
+        public string GetAITraining(Guid contactId)
+        {
+            return _contactDAO.GetAITraining(contactId);
+        }       
+
+        public bool SetAIResult(Guid contactId, string value)
         {
             return _contactDAO.SetAIResult(contactId, value);
         }
 
-        public bool SetAITraining(string contactId, string value)
+        public bool SetAITraining(Guid contactId, string value)
         {
             return _contactDAO.SetAITraining(contactId, value);
         }
+
+        #endregion
     }
 }

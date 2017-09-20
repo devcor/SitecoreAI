@@ -10,12 +10,7 @@ namespace SitecoreAI.ExperienceExtractor
     [ParseFactory("aitraining", "Training value", description: "The training value at the end of the visit")]
     public class AIFactory : IParseFactory<IFieldMapper>
     {
-        public IFieldMapper Parse(JobParser parser, ParseState state)
-        {
-            return new SimpleFieldMapper("AITraining", scope => GetTrainingValue(scope.Current<IVisitAggregationContext>().Contact),
-                valueType: typeof(string),
-                fieldType: FieldType.Dimension);
-        }
+        #region Private Methods
 
         private static string GetTrainingValue(IContact contact)
         {
@@ -24,10 +19,20 @@ namespace SitecoreAI.ExperienceExtractor
 
             var aiInfo = contact.GetFacet<IAIFacet>(AIFacet.FacetName);
 
-            if (aiInfo?.Training == null || aiInfo.Training.Length == 0)
+            if (aiInfo?.Training == null)
                 return string.Empty;
 
             return aiInfo.Training;
         }
+
+        #endregion
+
+        public IFieldMapper Parse(JobParser parser, ParseState state)
+        {
+            return new SimpleFieldMapper("AITraining", 
+                scope => GetTrainingValue(scope.Current<IVisitAggregationContext>().Contact),
+                valueType: typeof(string),
+                fieldType: FieldType.Dimension);
+        }        
     }
 }

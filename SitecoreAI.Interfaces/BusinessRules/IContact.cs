@@ -1,11 +1,13 @@
-﻿namespace SitecoreAI.Interfaces.BusinessRules
+﻿using System;
+
+namespace SitecoreAI.Interfaces.BusinessRules
 {
     public interface IContact
     {
-        string GetAIResult(string contactId);
-        string GetAITraining(string contactId);
-        bool SetAIResult(string contactId, string value);
-        bool SetAITraining(string contactId, string value);
-        string GetLabelsGreaterThan(string currentLabels, double minValue);
+        string GetAIResult(Guid contactId);
+        string GetAIResult(Guid contactId, double minValue);
+        string GetAITraining(Guid contactId);
+        bool SetAIResult(Guid contactId, string value);
+        bool SetAITraining(Guid contactId, string value);
     }
 }

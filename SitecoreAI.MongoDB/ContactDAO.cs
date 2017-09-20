@@ -1,15 +1,24 @@
 ﻿using SitecoreAI.Interfaces.DAO;
 using SitecoreAI.Models;
+using System;
 
 namespace SitecoreAI.MongoDB
 {
     public class ContactDAO : IContactDAO
     {
         private const string COLLECTION_NAME = "Contacts";
+        private MongoDAO _mongoDAO;
 
-        private string GetFieldValue(string contactId, string field)
+        public ContactDAO()
         {
-            var contact = MongoDAO.GetCollectionItem(COLLECTION_NAME, contactId);
+            _mongoDAO = new MongoDAO();
+        }
+
+        #region Private Methods
+
+        private string GetFieldValue(Guid contactId, string field)
+        {
+            var contact = _mongoDAO.GetCollectionItem(COLLECTION_NAME, contactId);
             if (contact == null)
                 return string.Empty;
 
@@ -20,29 +29,35 @@ namespace SitecoreAI.MongoDB
             return AI.AsBsonDocument.GetValue(field, string.Empty).ToString();
         }
 
-        private bool UpdateField(string contactId, string field, string value)
+        private bool UpdateField(Guid contactId, string field, string value)
         {
-            return MongoDAO.UpdateField(COLLECTION_NAME, contactId, AIFacet.FacetName + "." + field, value).UpdatedExisting;
+            return _mongoDAO.UpdateField(COLLECTION_NAME, contactId, AIFacet.FacetName + "." + field, value).UpdatedExisting;
         }
 
-        public string GetAIResult(string contactId)
+        #endregion
+
+        #region Public Methods
+
+        public string GetAIResult(Guid contactId)
         {
             return GetFieldValue(contactId, AIFacet._RESULT);
         }
 
-        public string GetAITraining(string contactId)
+        public string GetAITraining(Guid contactId)
         {
             return GetFieldValue(contactId, AIFacet._TRAINING);
         }        
 
-        public bool SetAIResult(string contactId, string value)
+        public bool SetAIResult(Guid contactId, string value)
         {
             return UpdateField(contactId, AIFacet._RESULT, value);
         }
 
-        public bool SetAITraining(string contactId, string value)
+        public bool SetAITraining(Guid contactId, string value)
         {
             return UpdateField(contactId, AIFacet._TRAINING, value);
         }
+
+        #endregion
     }
 }

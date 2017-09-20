@@ -1,10 +1,12 @@
-﻿namespace SitecoreAI.Interfaces.DAO
+﻿using System;
+
+namespace SitecoreAI.Interfaces.DAO
 {
     public interface IContactDAO
     {
-        string GetAIResult(string contactId);
-        string GetAITraining(string contactId);
-        bool SetAIResult(string contactId, string value);
-        bool SetAITraining(string contactId, string value);
+        string GetAIResult(Guid contactId);
+        string GetAITraining(Guid contactId);
+        bool SetAIResult(Guid contactId, string value);
+        bool SetAITraining(Guid contactId, string value);
     }
 }

@@ -8,6 +8,8 @@ namespace SitecoreAI.Pipelines.ExperienceProfile.AI
 {
     public class AIQuery : ReportProcessorBase
     {
+        #region Private Methods
+
         private QueryBuilder CreateQuery()
         {
             var builder = new QueryBuilder
@@ -27,6 +29,8 @@ namespace SitecoreAI.Pipelines.ExperienceProfile.AI
             foreach (DataColumn column in dataTable.Columns)
                 column.ColumnName = column.ColumnName.Replace(AIFacet.FacetName + "_", "");
         }
+
+        #endregion
 
         public override void Process(ReportProcessorArgs args)
         {

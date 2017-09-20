@@ -1,6 +1,7 @@
 ﻿using System.Web.Http;
 using SitecoreAI.WebApi.Models;
 using SitecoreAI.Interfaces.BusinessRules;
+using System;
 
 namespace SitecoreAI.WebApi.Controllers
 {
@@ -16,7 +17,7 @@ namespace SitecoreAI.WebApi.Controllers
 
         [HttpPost]
         [Route("{id}/airesult")]
-        public IHttpActionResult Save(string id, AIModel value)
+        public IHttpActionResult Save(Guid id, AIModel value)
         {
             if (string.IsNullOrWhiteSpace(value?.Result))
                 return BadRequest("AI Result is required.");
@@ -27,14 +28,14 @@ namespace SitecoreAI.WebApi.Controllers
 
         [HttpGet]
         [Route("{id}/airesult")]
-        public string GetAiResult(string id)
+        public string GetAiResult(Guid id)
         {
             return _contacts.GetAIResult(id);
         }
 
         [HttpGet]
         [Route("{id}/aitraining")]
-        public string GetAiTraining(string id)
+        public string GetAiTraining(Guid id)
         {
             return _contacts.GetAITraining(id);
         }

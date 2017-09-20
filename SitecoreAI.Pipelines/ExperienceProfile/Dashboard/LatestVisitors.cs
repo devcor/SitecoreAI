@@ -4,6 +4,7 @@ using Sitecore.Cintel.Reporting.Processors;
 using System.Data;
 using System.Configuration;
 using SitecoreAI.Interfaces.BusinessRules;
+using System;
 
 namespace SitecoreAI.Pipelines.ExperienceProfile.Dashboard
 {
@@ -25,11 +26,8 @@ namespace SitecoreAI.Pipelines.ExperienceProfile.Dashboard
             var columnName = AIFacet.FacetName + AIFacet._RESULT;
             args.ResultTableForView.Columns.Add(new ViewField<string>(columnName).ToColumn());            
 
-            foreach (DataRow row in args.ResultTableForView.Rows)
-            {
-                var aiResult = _contact.GetAIResult(row["ContactId"].ToString());
-                row[columnName] = _contact.GetLabelsGreaterThan(aiResult, minLabelValue);
-            }
+            foreach (DataRow row in args.ResultTableForView.Rows)            
+                row[columnName] = _contact.GetAIResult(new Guid(row["ContactId"].ToString()), minLabelValue);            
         }
     }
 }

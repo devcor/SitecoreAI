@@ -1,38 +1,56 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Driver;
 using MongoDB.Driver.Builders;
+using System;
 using System.Configuration;
 
 namespace SitecoreAI.MongoDB
 {
     internal class MongoDAO
     {
-        private static MongoDatabase GetMongoDB()
+        private MongoServer _server;
+        private MongoUrl _mongoUrl;
+
+        #region Private Methods
+
+        private void Connect()
         {
             var connectionString = ConfigurationManager.ConnectionStrings["analytics"].ConnectionString;
-            var mongoUrl = new MongoUrl(connectionString);
-            var server = (new MongoClient(connectionString)).GetServer();
-            return server.GetDatabase(mongoUrl.DatabaseName);
+            _mongoUrl = new MongoUrl(connectionString);
+            _server = (new MongoClient(connectionString)).GetServer();
+        }
+
+        private MongoDatabase GetMongoDB()
+        {
+            if (_server == null)
+                Connect();
+
+            return _server.GetDatabase(_mongoUrl.DatabaseName);
         }        
 
-        private static MongoCollection<BsonDocument> GetCollection(string collectionName)
+        private MongoCollection<BsonDocument> GetCollection(string collectionName)
         {
             var db = GetMongoDB();
             return db.GetCollection(collectionName);
         }
 
-        public static BsonDocument GetCollectionItem(string collectionName, string itemId)
+        #endregion
+
+        #region Public Methods
+
+        public BsonDocument GetCollectionItem(string collectionName, Guid itemId)
         {
             var query = MongoUtilsDAO.GetQueryById(itemId);
             return GetCollection(collectionName).FindOne(query);
         }
 
-        public static WriteConcernResult UpdateField(string collectionName, string itemId, string field, string value)
+        public WriteConcernResult UpdateField(string collectionName, Guid itemId, string field, string value)
         {
             var query = MongoUtilsDAO.GetQueryById(itemId);
             var collection = GetCollection(collectionName);
-
             return collection.Update(query, Update.Set(field, value));
         }
+
+        #endregion
     }
 }
