@@ -1,10 +1,11 @@
 ﻿using System;
 
-namespace SitecoreAI.Website.Models
+namespace SitecoreAI.Models
 {
-    public class TrainingData
+    public class AIModel
     {
         public Guid ContactId { get; set; }
+        public string Result { get; set; }
         public string Training { get; set; }
     }
 }

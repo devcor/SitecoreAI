@@ -106,7 +106,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\AIModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -130,6 +129,10 @@
     <ProjectReference Include="..\SitecoreAI.Interfaces\SitecoreAI.Interfaces.csproj">
       <Project>{D53E59E7-0A44-4B6C-B958-91ED026AD49E}</Project>
       <Name>SitecoreAI.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SitecoreAI.Models\SitecoreAI.Models.csproj">
+      <Project>{983C426C-2FC6-46B0-BA00-B79B6EA80885}</Project>
+      <Name>SitecoreAI.Models</Name>
     </ProjectReference>
     <ProjectReference Include="..\SitecoreAI.MongoDB\SitecoreAI.MongoDB.csproj">
       <Project>{b8c15b91-4690-4752-aa6e-81fafc071a5b}</Project>

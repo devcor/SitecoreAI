@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
-using SitecoreAI.Website.Models;
 using SitecoreAI.Interfaces.BusinessRules;
+using SitecoreAI.Models;
 
 namespace SitecoreAI.Website.Controllers
 {
@@ -13,7 +13,7 @@ namespace SitecoreAI.Website.Controllers
             _contacts = contacts;
         }
 
-        public ActionResult SaveData(TrainingData data)
+        public ActionResult SaveData(AIModel data)
         {
             var response = _contacts.SetAITraining(data.ContactId, data.Training);
             return Json(new { success = response }, JsonRequestBehavior.AllowGet);

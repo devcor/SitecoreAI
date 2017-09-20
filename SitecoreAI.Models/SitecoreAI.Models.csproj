@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AIFacet.cs" />
+    <Compile Include="AIModel.cs" />
     <Compile Include="IAIFacet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
