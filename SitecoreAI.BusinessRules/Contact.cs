@@ -6,9 +6,7 @@ using System.Collections.Generic;
 namespace SitecoreAI.BusinessRules
 {
     public class Contact : IContact
-    {
-        private const string LabelSeparator = "|";
-        private const string ValueSeparator = ":";
+    {        
         private readonly IContactDAO _contactDAO;
 
         public Contact(IContactDAO contactDAO)
@@ -31,12 +29,12 @@ namespace SitecoreAI.BusinessRules
             if (currentLabels == string.Empty)
                 return currentLabels;
 
-            var labels = currentLabels.Split(new[] { LabelSeparator }, StringSplitOptions.RemoveEmptyEntries);
+            var labels = currentLabels.Split(new[] { "|" }, StringSplitOptions.RemoveEmptyEntries);
             var newLabels = new List<string>();
 
             foreach (var label in labels)
             {
-                var keyValue = label.Split(new[] { ValueSeparator }, StringSplitOptions.RemoveEmptyEntries);
+                var keyValue = label.Split(new[] { ":" }, StringSplitOptions.RemoveEmptyEntries);
                 if (keyValue.Length > 1)
                 {
                     var success = double.TryParse(keyValue[1], out double value);

@@ -47,7 +47,7 @@
     <Compile Include="ExperienceProfile\AI\AIQuery.cs" />
     <Compile Include="ExperienceProfile\AI\AITableViewDefinition.cs" />
     <Compile Include="ExperienceProfile\AI\AITableViewFiller.cs" />
-    <Compile Include="ExperienceProfile\Dashboard\QueryLatestVisitorsFromSearch.cs" />
+    <Compile Include="ExperienceProfile\Dashboard\LatestVisitors.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

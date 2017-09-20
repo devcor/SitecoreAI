@@ -7,11 +7,11 @@ using SitecoreAI.Interfaces.BusinessRules;
 
 namespace SitecoreAI.Pipelines.ExperienceProfile.Dashboard
 {
-    public class QueryLatestVisitorsFromSearch : ReportProcessorBase
+    public class LatestVisitors : ReportProcessorBase
     {
         private readonly IContact _contact;
 
-        public QueryLatestVisitorsFromSearch(IContact contact)
+        public LatestVisitors(IContact contact)
         {
             _contact = contact;
         }
