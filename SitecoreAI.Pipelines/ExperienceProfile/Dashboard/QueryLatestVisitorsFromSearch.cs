@@ -18,6 +18,9 @@ namespace SitecoreAI.Pipelines.ExperienceProfile.Dashboard
 
         public override void Process(ReportProcessorArgs args)
         {
+            if (args.ResultTableForView.Rows.Count == 0)
+                return;
+
             var minLabelValue = double.Parse(ConfigurationManager.AppSettings["MinValueToShowTag"] ?? "80");
             var columnName = AIFacet.FacetName + AIFacet._RESULT;
             args.ResultTableForView.Columns.Add(new ViewField<string>(columnName).ToColumn());            
