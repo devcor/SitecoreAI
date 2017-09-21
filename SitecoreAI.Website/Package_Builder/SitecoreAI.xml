@@ -2,14 +2,14 @@
   <Metadata>
     <metadata>
       <PackageName>SitecoreAI</PackageName>
-      <Author>Globant</Author>
+      <Author />
       <Version>1.0.0</Version>
       <Revision />
       <License />
       <Comment />
       <Attributes />
       <Readme />
-      <Publisher>Globant</Publisher>
+      <Publisher />
       <PostStep />
       <PackageID />
     </metadata>
@@ -18,13 +18,6 @@
   <Sources>
     <xitems>
       <Entries>
-        <x-item>/master/sitecore/layout/Layouts/AI/{F327A765-F45C-40D2-822A-A4988306472C}/invariant/0</x-item>
-        <x-item>/master/sitecore/layout/Layouts/AI/MainLayout/{DD215D0D-94C7-459D-BCB3-A6F04CDB3F55}/invariant/0</x-item>
-        <x-item>/master/sitecore/layout/Renderings/AI/{0E7B7F84-02F6-4191-B418-96A4B42FF1D4}/invariant/0</x-item>
-        <x-item>/master/sitecore/layout/Renderings/AI/EnterRule/{78F578B2-1D33-4749-8375-F9E438B0422A}/invariant/0</x-item>
-        <x-item>/master/sitecore/layout/Renderings/AI/MainLayout/{3AA113FF-53AA-403C-8820-46A1E5C453D0}/invariant/0</x-item>
-        <x-item>/master/sitecore/layout/Renderings/AI/ManualFiller/{FB72BC38-B47D-4C35-9222-EAE0154F10C5}/invariant/0</x-item>
-        <x-item>/master/sitecore/system/Settings/Rules/Conditional Renderings/Tags/Default/{B60C6A64-B367-48F0-86D9-7FA1C3D3B603}/invariant/0</x-item>
         <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/AI/{53FFB522-4450-4081-AF3D-C19519F97DC0}/invariant/0</x-item>
         <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/AI/Result Match/{EC2CDE7F-8AB5-40CF-8005-91137672E6E0}/invariant/0</x-item>
         <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/AI/Tags/{1C544ACF-99DB-4E1B-91C6-AF9BB2F52DF6}/invariant/0</x-item>
@@ -32,34 +25,6 @@
         <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/AI/Visibility/{D91F2C8A-F23C-43CA-B534-80D92EE32FA4}/invariant/0</x-item>
         <x-item>/master/sitecore/system/Settings/Rules/Definitions/Tags/AI/{2C477D5C-BAC9-4624-B7BA-ABB73B07D5FC}/invariant/0</x-item>
         <x-item>/master/sitecore/system/Settings/Rules/Definitions/Tags/AI/Visibility/{3C0CBBF5-B6A5-44A4-9B85-6AF564775CED}/invariant/0</x-item>
-        <x-item>/master/sitecore/templates/AI/{76E67CD2-43B1-4240-B08A-6F0167B48514}/invariant/0</x-item>
-        <x-item>/master/sitecore/templates/AI/AIHome/__Standard Values/{C2D9B2BC-DC53-4E65-AF1A-B902C1729A15}/invariant/0</x-item>
-        <x-item>/master/sitecore/templates/AI/AIHome/{1375E1A2-C0F5-46BC-A9F5-DCAD88EF4653}/invariant/0</x-item>
-        <x-item>/master/sitecore/templates/AI/AIHome/Data/{25B3E70F-9B1D-46B5-A77D-D35CEECF5C72}/invariant/0</x-item>
-        <x-item>/master/sitecore/templates/AI/AIHome/Data/Text/{3B02AA4C-0B5F-4270-8C8B-51CE23626AEB}/invariant/0</x-item>
-      </Entries>
-      <SkipVersions>False</SkipVersions>
-      <Converter>
-        <ItemToEntryConverter>
-          <Transforms>
-            <InstallerConfigurationTransform>
-              <Options>
-                <BehaviourOptions>
-                  <ItemMode>Undefined</ItemMode>
-                  <ItemMergeMode>Undefined</ItemMergeMode>
-                </BehaviourOptions>
-              </Options>
-            </InstallerConfigurationTransform>
-          </Transforms>
-        </ItemToEntryConverter>
-      </Converter>
-      <Include />
-      <Exclude />
-      <Name>ai_master</Name>
-    </xitems>
-    <xitems>
-      <Entries>
-        <x-item>/master/sitecore/content/AIHome/{81703B41-C912-410F-9467-7975B6C23572}/invariant/0</x-item>
       </Entries>
       <SkipVersions>False</SkipVersions>
       <Converter>
@@ -78,7 +43,7 @@
       </Converter>
       <Include />
       <Exclude />
-      <Name>ai_content</Name>
+      <Name>ai_master</Name>
     </xitems>
     <xfiles>
       <Entries>
@@ -141,9 +106,6 @@
         <x-item>/sitecore/shell/client/Applications/ExperienceExtractor/ExperienceExtractorDimensions.js</x-item>
         <x-item>/sitecore/shell/client/Applications/ExperienceProfile/Contact/AI/AITab.css</x-item>
         <x-item>/sitecore/shell/client/Applications/ExperienceProfile/Contact/AI/AITab.js</x-item>
-        <x-item>/Views/Shared/AI/EnterRule.cshtml</x-item>
-        <x-item>/Views/Shared/AI/MainLayout.cshtml</x-item>
-        <x-item>/Views/Shared/AI/ManualFiller.cshtml</x-item>
       </Entries>
       <Converter>
         <FileToEntryConverter>
@@ -187,6 +149,29 @@
       <Exclude />
       <Name>ee_bin</Name>
     </xfiles>
+    <xitems>
+      <Entries>
+        <x-item>/master/sitecore/system/Settings/Rules/Conditional Renderings/Tags/Default/{B60C6A64-B367-48F0-86D9-7FA1C3D3B603}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Merge</ItemMode>
+                  <ItemMergeMode>Clear</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>ai_conditional_render</Name>
+    </xitems>
   </Sources>
   <Converter>
     <TrivialConverter>

@@ -1,0 +1,87 @@
+<project>
+  <Metadata>
+    <metadata>
+      <PackageName>SitecoreAI-Dummy</PackageName>
+      <Author />
+      <Version>1.0.0</Version>
+      <Revision />
+      <License />
+      <Comment>Before installing this package, SitecoreAI package must be installed. This package allows you to create a random number of users to be listed in Sitecore Experience Profile Dashboard; Please publish all sitecore site after installing this package, then enter to [sitecoresite]/aihome url to create random users.</Comment>
+      <Attributes />
+      <Readme />
+      <Publisher />
+      <PostStep />
+      <PackageID />
+    </metadata>
+  </Metadata>
+  <SaveProject>True</SaveProject>
+  <Sources>
+    <xitems>
+      <Entries>
+        <x-item>/master/sitecore/content/AIHome/{81703B41-C912-410F-9467-7975B6C23572}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Layouts/AI/{F327A765-F45C-40D2-822A-A4988306472C}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Layouts/AI/MainLayout/{DD215D0D-94C7-459D-BCB3-A6F04CDB3F55}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Renderings/AI/{0E7B7F84-02F6-4191-B418-96A4B42FF1D4}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Renderings/AI/EnterRule/{78F578B2-1D33-4749-8375-F9E438B0422A}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Renderings/AI/MainLayout/{3AA113FF-53AA-403C-8820-46A1E5C453D0}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Renderings/AI/ManualFiller/{FB72BC38-B47D-4C35-9222-EAE0154F10C5}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/AI/{76E67CD2-43B1-4240-B08A-6F0167B48514}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/AI/AIHome/__Standard Values/{C2D9B2BC-DC53-4E65-AF1A-B902C1729A15}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/AI/AIHome/{1375E1A2-C0F5-46BC-A9F5-DCAD88EF4653}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/AI/AIHome/Data/{25B3E70F-9B1D-46B5-A77D-D35CEECF5C72}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/AI/AIHome/Data/Text/{3B02AA4C-0B5F-4270-8C8B-51CE23626AEB}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>dummy_content</Name>
+    </xitems>
+    <xfiles>
+      <Entries>
+        <x-item>/Views/Shared/AI/EnterRule.cshtml</x-item>
+        <x-item>/Views/Shared/AI/MainLayout.cshtml</x-item>
+        <x-item>/Views/Shared/AI/ManualFiller.cshtml</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>dummy_files</Name>
+    </xfiles>
+  </Sources>
+  <Converter>
+    <TrivialConverter>
+      <Transforms />
+    </TrivialConverter>
+  </Converter>
+  <Include />
+  <Exclude />
+  <Name />
+</project>

@@ -134,6 +134,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="Package_Builder\SitecoreAI-Dummy.xml" />
     <Content Include="Package_Builder\SitecoreAI.xml" />
     <Content Include="sitecore\shell\client\Applications\ExperienceExtractor\ExperienceExtractorDimensions.js" />
     <Content Include="sitecore\shell\client\Applications\ExperienceProfile\Contact\AI\AITab.css" />
