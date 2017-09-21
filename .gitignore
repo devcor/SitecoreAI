@@ -163,6 +163,11 @@ PublishScripts/
 *.nuget.props
 *.nuget.targets
 
+# The Sitecore components can be ignored
+**/components/*
+# except Readme.txt file, which is used as an information source.
+!**/components/Readme.txt
+
 # Microsoft Azure Build Output
 csx/
 *.build.csdef
