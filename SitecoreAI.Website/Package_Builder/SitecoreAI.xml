@@ -39,8 +39,8 @@
             <InstallerConfigurationTransform>
               <Options>
                 <BehaviourOptions>
-                  <ItemMode>Undefined</ItemMode>
-                  <ItemMergeMode>Undefined</ItemMergeMode>
+                  <ItemMode>Overwrite</ItemMode>
+                  <ItemMergeMode>Clear</ItemMergeMode>
                 </BehaviourOptions>
               </Options>
             </InstallerConfigurationTransform>
