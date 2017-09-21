@@ -30,6 +30,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Sitecore.Analytics">
+      <HintPath>..\..\SitecoreDLL\Sitecore.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Analytics.Model">
+      <HintPath>..\..\SitecoreDLL\Sitecore.Analytics.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Kernel">
+      <HintPath>..\..\SitecoreDLL\Sitecore.Kernel.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -47,6 +56,10 @@
     <ProjectReference Include="..\SitecoreAI.Interfaces\SitecoreAI.Interfaces.csproj">
       <Project>{d53e59e7-0a44-4b6c-b958-91ed026ad49e}</Project>
       <Name>SitecoreAI.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SitecoreAI.Models\SitecoreAI.Models.csproj">
+      <Project>{983C426C-2FC6-46B0-BA00-B79B6EA80885}</Project>
+      <Name>SitecoreAI.Models</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
