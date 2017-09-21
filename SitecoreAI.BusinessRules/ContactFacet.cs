@@ -5,11 +5,11 @@ using System.Collections.Generic;
 
 namespace SitecoreAI.BusinessRules
 {
-    public class Contact : IContact
+    public class ContactFacet : IContactFacet
     {        
-        private readonly IContactDAO _contactDAO;
+        private readonly IContactFacetDAO _contactDAO;
 
-        public Contact(IContactDAO contactDAO)
+        public ContactFacet(IContactFacetDAO contactDAO)
         {
             _contactDAO = contactDAO;
         }

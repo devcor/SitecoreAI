@@ -4,12 +4,12 @@ using System;
 
 namespace SitecoreAI.MongoDB
 {
-    public class ContactDAO : IContactDAO
+    public class ContactFacetDAO : IContactFacetDAO
     {
         private const string COLLECTION_NAME = "Contacts";
         private MongoDAO _mongoDAO;
 
-        public ContactDAO()
+        public ContactFacetDAO()
         {
             _mongoDAO = new MongoDAO();
         }

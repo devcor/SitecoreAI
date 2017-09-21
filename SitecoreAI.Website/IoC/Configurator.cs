@@ -11,8 +11,8 @@ namespace SitecoreAI.Website.IoC
     {
         public void Configure(IServiceCollection serviceCollection)
         {            
-            serviceCollection.AddScoped(typeof(IContactDAO), typeof(ContactDAO));
-            serviceCollection.AddScoped(typeof(IContact), typeof(Contact));
+            serviceCollection.AddScoped(typeof(IContactFacetDAO), typeof(ContactFacetDAO));
+            serviceCollection.AddScoped(typeof(IContactFacet), typeof(ContactFacet));
             serviceCollection.AddMvcControllersInCurrentAssembly();
         }
     }

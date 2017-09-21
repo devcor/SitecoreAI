@@ -12,8 +12,8 @@ namespace SitecoreAI.WebApi.IoC
         public static void Register(HttpConfiguration config)
         {
             var container = new UnityContainer();
-            container.RegisterType<IContactDAO, ContactDAO>(new HierarchicalLifetimeManager());
-            container.RegisterType<IContact, Contact>(new HierarchicalLifetimeManager());
+            container.RegisterType<IContactFacetDAO, ContactFacetDAO>(new HierarchicalLifetimeManager());
+            container.RegisterType<IContactFacet, ContactFacet>(new HierarchicalLifetimeManager());
             config.DependencyResolver = new UnityDependencyResolver(container);
         }
     }

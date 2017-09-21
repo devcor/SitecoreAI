@@ -2,7 +2,7 @@
 
 namespace SitecoreAI.Interfaces.DAO
 {
-    public interface IContactDAO
+    public interface IContactFacetDAO
     {
         string GetAIResult(Guid contactId);
         string GetAITraining(Guid contactId);

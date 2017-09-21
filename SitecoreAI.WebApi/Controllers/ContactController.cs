@@ -8,9 +8,9 @@ namespace SitecoreAI.WebApi.Controllers
     [RoutePrefix("sitecore/globantai/contact")]
     public class ContactController : ApiController
     {
-        private readonly IContact _contacts;
+        private readonly IContactFacet _contacts;
 
-        public ContactController(IContact contacts)
+        public ContactController(IContactFacet contacts)
         {
             _contacts = contacts;
         }

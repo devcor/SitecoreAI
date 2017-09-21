@@ -40,8 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BusinessRules\IContact.cs" />
-    <Compile Include="DAO\IContactDAO.cs" />
+    <Compile Include="BusinessRules\IContactFacet.cs" />
+    <Compile Include="DAO\IContactFacetDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

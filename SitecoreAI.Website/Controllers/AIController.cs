@@ -6,9 +6,9 @@ namespace SitecoreAI.Website.Controllers
 {
     public class AIController : Controller
     {
-        private readonly IContact _contacts;
+        private readonly IContactFacet _contacts;
 
-        public AIController(IContact contacts)
+        public AIController(IContactFacet contacts)
         {
             _contacts = contacts;
         }

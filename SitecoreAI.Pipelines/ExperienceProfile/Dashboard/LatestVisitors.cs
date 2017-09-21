@@ -10,9 +10,9 @@ namespace SitecoreAI.Pipelines.ExperienceProfile.Dashboard
 {
     public class LatestVisitors : ReportProcessorBase
     {
-        private readonly IContact _contact;
+        private readonly IContactFacet _contact;
 
-        public LatestVisitors(IContact contact)
+        public LatestVisitors(IContactFacet contact)
         {
             _contact = contact;
         }

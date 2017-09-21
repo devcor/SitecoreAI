@@ -50,7 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ContactDAO.cs" />
+    <Compile Include="ContactFacetDAO.cs" />
     <Compile Include="MongoDAO.cs" />
     <Compile Include="MongoUtilsDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
