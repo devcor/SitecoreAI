@@ -18,6 +18,41 @@
   <Sources>
     <xitems>
       <Entries>
+        <x-item>/core/sitecore/client/Applications/ExperienceProfile/Contact/PageSettings/AITabStyle/{6CD68615-13AC-4F0E-9721-BE15B5D2C73B}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceProfile/Contact/PageSettings/Tabs/AI/{75F8D8D7-117A-4278-A1AF-D38E18A64E38}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceProfile/Contact/PageSettings/Tabs/AI/AIPanel/{135480C1-927F-4CC6-ABBA-509E4284E531}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceProfile/Contact/PageSettings/Tabs/AI/AIPanel/AIDetailsAccordion/{1C629199-BD3D-4702-959F-3F89D05116F2}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceProfile/Contact/PageSettings/Tabs/AI/AIPanel/AITrainingAccordion/{170AA9EC-4DBC-42AA-BF97-F9A944DB60B7}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceProfile/Contact/PageSettings/Tabs/AI/AIPanel/Texts/{1E705DA8-A4B2-4557-963B-DC3CEF38701D}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceProfile/Contact/PageSettings/Tabs/AI/AIPanel/Texts/ErrorSaving/{3C90FA31-DB45-4DAA-95EB-37D8163BB8E7}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceProfile/Contact/PageSettings/Tabs/AI/AIPanel/Texts/NoDetailsFound/{216210DC-6DB4-4CE6-92EB-C5C4415E76A7}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceProfile/Contact/PageSettings/Tabs/AI/AIPanel/Texts/NoTrainingDataFound/{EFF7B32D-3D82-4A7E-B6D4-843C5BF52EF3}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceProfile/Contact/PageSettings/Tabs/AI/AIPanel/Texts/Saved/{84792C21-8AFE-4791-A264-4542B651D39B}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceProfile/Contact/PageSettings/Tabs/AI/AIPanel/Texts/SubmitButton/{11DEBA8A-A430-415F-9541-DFB6C1AD165D}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceProfile/Contact/PageSettings/Tabs/AI/AIPanel/Texts/Validation/{8E46CD8F-85C2-46CC-BD3D-EAD750BE01C3}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceProfile/Dashboard/PageSettings/LatestVisitors/AI/{AB44F212-2410-4D5D-AD4F-1918A614E8E1}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>ai_core</Name>
+    </xitems>
+    <xitems>
+      <Entries>
         <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/AI/{53FFB522-4450-4081-AF3D-C19519F97DC0}/invariant/0</x-item>
         <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/AI/Result Match/{EC2CDE7F-8AB5-40CF-8005-91137672E6E0}/invariant/0</x-item>
         <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/AI/Tags/{1C544ACF-99DB-4E1B-91C6-AF9BB2F52DF6}/invariant/0</x-item>
@@ -126,29 +161,6 @@
       <Exclude />
       <Name>ai_shellclient</Name>
     </xfiles>
-    <xfiles>
-      <Entries>
-        <x-item>/bin/ExperienceExtractor.dll</x-item>
-      </Entries>
-      <Converter>
-        <FileToEntryConverter>
-          <Root>/</Root>
-          <Transforms>
-            <InstallerConfigurationTransform>
-              <Options>
-                <BehaviourOptions>
-                  <ItemMode>Skip</ItemMode>
-                  <ItemMergeMode>Undefined</ItemMergeMode>
-                </BehaviourOptions>
-              </Options>
-            </InstallerConfigurationTransform>
-          </Transforms>
-        </FileToEntryConverter>
-      </Converter>
-      <Include />
-      <Exclude />
-      <Name>ee_bin</Name>
-    </xfiles>
     <xitems>
       <Entries>
         <x-item>/master/sitecore/system/Settings/Rules/Conditional Renderings/Tags/Default/{B60C6A64-B367-48F0-86D9-7FA1C3D3B603}/invariant/0</x-item>
@@ -172,6 +184,29 @@
       <Exclude />
       <Name>ai_conditional_render</Name>
     </xitems>
+    <xfiles>
+      <Entries>
+        <x-item>/bin/ExperienceExtractor.dll</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Skip</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>ee_bin</Name>
+    </xfiles>
   </Sources>
   <Converter>
     <TrivialConverter>
