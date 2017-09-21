@@ -31,7 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Sitecore.Cintel">
-      <HintPath>..\..\SitecoreDLL\Sitecore.Cintel.dll</HintPath>
+      <HintPath>..\components\Sitecore.Cintel.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />

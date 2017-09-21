@@ -31,13 +31,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Sitecore.Analytics">
-      <HintPath>..\..\SitecoreDLL\Sitecore.Analytics.dll</HintPath>
+      <HintPath>..\components\Sitecore.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Analytics.Model">
-      <HintPath>..\..\SitecoreDLL\Sitecore.Analytics.Model.dll</HintPath>
+      <HintPath>..\components\Sitecore.Analytics.Model.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Kernel">
-      <HintPath>..\..\SitecoreDLL\Sitecore.Kernel.dll</HintPath>
+      <HintPath>..\components\Sitecore.Kernel.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

@@ -31,17 +31,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ExperienceExtractor">
-      <HintPath>..\..\SitecoreDLL\ExperienceExtractor.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.Analytics, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\SitecoreDLL\Sitecore.Analytics.dll</HintPath>
+      <HintPath>..\components\ExperienceExtractor.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Analytics.Aggregation">
-      <HintPath>..\..\SitecoreDLL\Sitecore.Analytics.Aggregation.dll</HintPath>
+      <HintPath>..\components\Sitecore.Analytics.Aggregation.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Analytics.Model">
-      <HintPath>..\..\SitecoreDLL\Sitecore.Analytics.Model.dll</HintPath>
+      <HintPath>..\components\Sitecore.Analytics.Model.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
