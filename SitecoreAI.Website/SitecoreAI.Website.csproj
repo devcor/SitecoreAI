@@ -205,6 +205,8 @@
     <Content Include="Views\Shared\AI\EnterRule.cshtml" />
     <Content Include="Views\Shared\AI\MainLayout.cshtml" />
     <Content Include="Views\Shared\AI\ManualFiller.cshtml" />
+    <Content Include="Package_Builder\SitecoreAI-1.0.0.zip" />
+    <Content Include="Package_Builder\SitecoreAI-Dummy-1.0.0.zip" />
     <None Include="Properties\PublishProfiles\Website.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
