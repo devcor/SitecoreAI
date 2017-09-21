@@ -49,14 +49,6 @@ namespace SitecoreAI.BusinessRules
         public string GetAIResult(Guid contactId, double minValue)
         {
             var labels = _contactDAO.GetAIResult(contactId);
-
-            if (string.IsNullOrEmpty(labels))
-            {
-                SetAIResult(contactId, string.Empty);
-                SetAITraining(contactId, string.Empty);
-                return string.Empty;
-            }
-
             return GetLabelsGreaterThan(labels, minValue);
         }
 
