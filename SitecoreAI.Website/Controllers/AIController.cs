@@ -1,6 +1,6 @@
-﻿using System.Web.Mvc;
-using SitecoreAI.Interfaces.BusinessRules;
+﻿using SitecoreAI.Interfaces.BusinessRules;
 using SitecoreAI.Models;
+using System.Web.Mvc;
 
 namespace SitecoreAI.Website.Controllers
 {

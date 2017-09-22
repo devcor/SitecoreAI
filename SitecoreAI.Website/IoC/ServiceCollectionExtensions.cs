@@ -1,13 +1,13 @@
-﻿using System;
+﻿using Microsoft.Extensions.DependencyInjection;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Text.RegularExpressions;
-using System.Web.Mvc;
-using Microsoft.Extensions.DependencyInjection;
 using System.Web.Http;
+using System.Web.Mvc;
 
 namespace SitecoreAI.Website.IoC
 {

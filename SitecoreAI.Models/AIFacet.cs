@@ -1,5 +1,5 @@
-﻿using System;
-using Sitecore.Analytics.Model.Framework;
+﻿using Sitecore.Analytics.Model.Framework;
+using System;
 
 namespace SitecoreAI.Models
 {

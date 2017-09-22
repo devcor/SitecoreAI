@@ -1,5 +1,5 @@
-﻿using Sitecore.Cintel.Reporting.Processors;
-using Sitecore.Cintel.Reporting;
+﻿using Sitecore.Cintel.Reporting;
+using Sitecore.Cintel.Reporting.Processors;
 using Sitecore.Cintel.Reporting.ReportingServerDatasource;
 using SitecoreAI.Models;
 using System.Data;

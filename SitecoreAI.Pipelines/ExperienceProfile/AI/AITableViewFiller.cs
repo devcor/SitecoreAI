@@ -1,5 +1,5 @@
-﻿using Sitecore.Cintel.Reporting.Processors;
-using Sitecore.Cintel.Reporting;
+﻿using Sitecore.Cintel.Reporting;
+using Sitecore.Cintel.Reporting.Processors;
 using System.Data;
 
 namespace SitecoreAI.Pipelines.ExperienceProfile.AI

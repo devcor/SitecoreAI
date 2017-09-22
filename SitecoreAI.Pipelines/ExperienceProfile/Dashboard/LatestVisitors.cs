@@ -1,10 +1,10 @@
-﻿using SitecoreAI.Models;
-using Sitecore.Cintel.Reporting;
+﻿using Sitecore.Cintel.Reporting;
 using Sitecore.Cintel.Reporting.Processors;
-using System.Data;
-using System.Configuration;
 using SitecoreAI.Interfaces.BusinessRules;
+using SitecoreAI.Models;
 using System;
+using System.Configuration;
+using System.Data;
 
 namespace SitecoreAI.Pipelines.ExperienceProfile.Dashboard
 {

@@ -1,7 +1,7 @@
-﻿using System.Web.Http;
-using SitecoreAI.Interfaces.BusinessRules;
-using System;
+﻿using SitecoreAI.Interfaces.BusinessRules;
 using SitecoreAI.Models;
+using System;
+using System.Web.Http;
 
 namespace SitecoreAI.WebApi.Controllers
 {
