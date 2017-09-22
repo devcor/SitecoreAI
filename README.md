@@ -15,10 +15,10 @@ For further information about [Sitecore Experience Extractor](https://github.com
 
 Compatibility
 -
-Sitecore AI has been tested with Sitecore XP 8.2 rev. 170614. Also this package requires access to Sitecore Analytics and Mongo DB database, and is currently not compatible with Sitecore xDB Cloud Service.
+Sitecore AI has been tested with Sitecore XP 8.2 rev. 170614. Also this package requires access to Sitecore Analytics and Mongo DB database, and it's currently not compatible with Sitecore xDB Cloud Service.
 
 Installation
 -
 Download and install [SitecoreAI-1.0.0.zip](https://github.com/devcor/SitecoreAI/raw/master/SitecoreAI.Website/Package_Builder/SitecoreAI-1.0.0.zip) on the server(s) where Sitecore AI will be available. Please make sure you have installed [Sitecore Experience Extractor](https://github.com/Sitecore/experience-extractor) before proceding. If Sitecore Experiences extractor is not installed, you won't be able to extract AI information from the system but information will remain in your Sitecore instance.
 
-Furthermore, when you install Sitecore AI package first, and then you install Sitecore Experience Extractor all AI preccess will be working but Sitecore AI information will not be available for using on Sitecore Experience Extractor. To make it available you must install again the Sitecore AI package.
+Furthermore, when you install Sitecore AI package first, and then you install Sitecore Experience Extractor all AI preccess will be working but Sitecore AI information will not be available for using on Sitecore Experience Extractor. To make it available you must install again the Sitecore AI package and overwride the previous one.
