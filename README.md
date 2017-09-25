@@ -1,14 +1,14 @@
 Sitecore AI
 =================
-As we know, sitecore stores usefull information about user interactions and the visitors of our sites. Nevertheless, it is necessary a person to analize the data and to clasify what kind of user has visited the site such a new potential client or more important clients for us.
+Sitecore stores usefull information about user interactions and the visitors of our sites. Nevertheless, it is necessary a person to analize the data and to clasify what kind of user has visited the site such a new potential client or more important clients for us.
 
-Allowing sitecore to automatically indentify visitors could be possible through Machine Learning proceesing wich this project was made for. On sitecore experience profile we can configure some parameters (labels) that they will be analysed throgh an AI processor service to clasify or fill the percentaje between 0 and 100 of each user accomplish with each label. In that way, next time we enter to the experience profile dashboard we are going to see what kind of user we have in a new column of the table.
+Allowing sitecore to automatically indentify visitors could be possible through Machine Learning processing which this project was made for. On sitecore experience profile we can configure some parameters (labels) that will be analyzed through an AI processor service to clasify or fill the percentage between 0 and 100 of each user accomplish with each label. In that way, next time we enter to the experience profile dashboard we are going to see what kind of user we have in a new column of the table.
 
 About
 -
-Sitecore AI is a tool that uses Machine Learning advantage to:
+Sitecore AI is a tool that uses Machine Learning advantages to:
 - Automatically clasify visitors according to our conditions
-- Identify posible clients that are visiting our site
+- Identify posible clients visiting our site
 - Integrate clasification data in Sitecore Experience Extractor to take advantage of its benefits
 
 For further information about [Sitecore Experience Extractor](https://github.com/Sitecore/experience-extractor) please follow the [link](https://github.com/Sitecore/experience-extractor).
