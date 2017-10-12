@@ -84,7 +84,6 @@
       <Entries>
         <x-item>/App_Config/Include/SitecoreAI/AIFacet.config</x-item>
         <x-item>/App_Config/Include/SitecoreAI/Dashboard.config</x-item>
-        <x-item>/App_Config/Include/SitecoreAI/DependencyInjection.config</x-item>
         <x-item>/App_Config/Include/SitecoreAI/ExperienceExtractor.config</x-item>
       </Entries>
       <Converter>
