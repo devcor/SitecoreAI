@@ -1,5 +1,7 @@
-﻿using SitecoreAI.Interfaces.BusinessRules;
+﻿using SitecoreAI.BusinessRules;
+using SitecoreAI.Interfaces.BusinessRules;
 using SitecoreAI.Models;
+using SitecoreAI.MongoDB;
 using System.Web.Mvc;
 
 namespace SitecoreAI.Website.Controllers
@@ -8,9 +10,9 @@ namespace SitecoreAI.Website.Controllers
     {
         private readonly IContactFacet _contacts;
 
-        public AIController(IContactFacet contacts)
+        public AIController()
         {
-            _contacts = contacts;
+            _contacts = new ContactFacet(new ContactFacetDAO());
         }
 
         public ActionResult SaveData(AIModel data)
