@@ -20,11 +20,11 @@ namespace SitecoreAI.MongoDB
         {
             var contact = _mongoDAO.GetCollectionItem(COLLECTION_NAME, contactId);
             if (contact == null)
-                return string.Empty;
+                return "Contact does not exist";
 
             var AI = contact.GetValue(AIFacet.FacetName, null);
             if (AI == null)
-                return string.Empty;
+                return "Contact does not contain " + AIFacet.FacetName + " facet";
 
             return AI.AsBsonDocument.GetValue(field, string.Empty).ToString();
         }
