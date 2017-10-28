@@ -1,9 +1,10 @@
-﻿using Microsoft.Practices.Unity;
-using SitecoreAI.BusinessRules;
+﻿using SitecoreAI.BusinessRules;
 using SitecoreAI.Interfaces.BusinessRules;
 using SitecoreAI.Interfaces.DAO;
 using SitecoreAI.MongoDB;
 using System.Web.Http;
+using Unity;
+using Unity.Lifetime;
 
 namespace SitecoreAI.WebApi.IoC
 {
